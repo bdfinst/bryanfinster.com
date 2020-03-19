@@ -1,14 +1,14 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { graphql } from "gatsby";
-import Layout from "../layout";
-import PostListing from "../components/PostListing";
-import SEO from "../components/SEO";
-import config from "../../data/SiteConfig";
+import React from 'react'
+import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
+import Layout from '../layout'
+import PostListing from '../components/PostListing'
+import SEO from '../components/SEO'
+import config from '../../data/SiteConfig'
 
 class Index extends React.Component {
   render() {
-    const postEdges = this.props.data.allMarkdownRemark.edges;
+    const postEdges = this.props.data.allMarkdownRemark.edges
     return (
       <Layout location={this.props.location} title="Home">
         <div className="index-container">
@@ -20,11 +20,11 @@ class Index extends React.Component {
           <PostListing postEdges={postEdges} />
         </div>
       </Layout>
-    );
+    )
   }
 }
 
-export default Index;
+export default Index
 
 export const pageQuery = graphql`
   query IndexQuery {
@@ -50,4 +50,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

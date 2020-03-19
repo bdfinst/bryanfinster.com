@@ -1,61 +1,61 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { graphql } from "gatsby";
-import Card from "react-md/lib/Cards";
-import CardText from "react-md/lib/Cards/CardText";
-import Layout from "../layout";
-import UserInfo from "../components/UserInfo";
-import Disqus from "../components/Disqus";
-import PostTags from "../components/PostTags";
-import PostCover from "../components/PostCover";
-import PostInfo from "../components/PostInfo";
-import SocialLinks from "../components/SocialLinks";
-import PostSuggestions from "../components/PostSuggestions";
-import SEO from "../components/SEO";
-import config from "../../data/SiteConfig";
-import "./b16-tomorrow-dark.css";
-import "./post.scss";
+import React from 'react'
+import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
+import Card from 'react-md/lib/Cards'
+import CardText from 'react-md/lib/Cards/CardText'
+import Layout from '../layout'
+import UserInfo from '../components/UserInfo'
+import Disqus from '../components/Disqus'
+import PostTags from '../components/PostTags'
+import PostCover from '../components/PostCover'
+import PostInfo from '../components/PostInfo'
+import SocialLinks from '../components/SocialLinks'
+import PostSuggestions from '../components/PostSuggestions'
+import SEO from '../components/SEO'
+import config from '../../data/SiteConfig'
+import './b16-tomorrow-dark.css'
+import './post.scss'
 
 export default class PostTemplate extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
-      mobile: true
-    };
-    this.handleResize = this.handleResize.bind(this);
+      mobile: true,
+    }
+    this.handleResize = this.handleResize.bind(this)
   }
 
   componentDidMount() {
-    this.handleResize();
-    window.addEventListener("resize", this.handleResize);
+    this.handleResize()
+    window.addEventListener('resize', this.handleResize)
   }
 
   componentWillUnmount() {
-    window.removeEventListener("resize", this.handleResize);
+    window.removeEventListener('resize', this.handleResize)
   }
 
   handleResize() {
     if (window.innerWidth >= 640) {
-      this.setState({ mobile: false });
+      this.setState({ mobile: false })
     } else {
-      this.setState({ mobile: true });
+      this.setState({ mobile: true })
     }
   }
 
   render() {
-    const { mobile } = this.state;
-    const { location, pageContext } = this.props;
-    const { slug, nexttitle, nextslug, prevtitle, prevslug } = pageContext;
-    const expanded = !mobile;
-    const postOverlapClass = mobile ? "post-overlap-mobile" : "post-overlap";
-    const postNode = this.props.data.markdownRemark;
-    const post = postNode.frontmatter;
+    const { mobile } = this.state
+    const { location, pageContext } = this.props
+    const { slug, nexttitle, nextslug, prevtitle, prevslug } = pageContext
+    const expanded = !mobile
+    const postOverlapClass = mobile ? 'post-overlap-mobile' : 'post-overlap'
+    const postNode = this.props.data.markdownRemark
+    const post = postNode.frontmatter
 
     if (!post.id) {
-      post.id = slug;
+      post.id = slug
     }
 
-    const coverHeight = mobile ? 180 : 350;
+    const coverHeight = mobile ? 180 : 350
     return (
       <Layout location={location}>
         <div className="post-page md-grid md-grid--no-spacing">
@@ -103,7 +103,7 @@ export default class PostTemplate extends React.Component {
           />
         </div>
       </Layout>
-    );
+    )
   }
 }
 
@@ -126,4 +126,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`
