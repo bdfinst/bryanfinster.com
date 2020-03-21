@@ -7,12 +7,12 @@ class PostCover extends Component {
   render() {
     const { fileEdges, postNode, coverHeight, coverClassName } = this.props
     const post = postNode.frontmatter ? postNode.frontmatter : postNode
-    const coverNodeList = fileEdges.filter(fileNode => {
+    const coverNodeList = fileEdges.filter((fileNode) => {
       if (fileNode.node.childImageSharp === null) return false
 
       if (
         fileNode.node.absolutePath.indexOf(
-          path.join('/static/assets/', post.cover)
+          path.join('/static/assets/', post.cover),
         ) !== -1
       )
         return true

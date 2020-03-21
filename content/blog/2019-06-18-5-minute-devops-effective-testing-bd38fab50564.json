@@ -1,0 +1,1280 @@
+{
+  "title": "5 Minute DevOps: Effective Testing",
+  "link": "https://medium.com/walmartlabs/5-minute-devops-effective-testing-bd38fab50564",
+  "author": "Bryan Finster",
+  "published": "Tue, 18 Jun 2019 17:42:30 GMT",
+  "tags": [
+    "continuous-delivery",
+    "testing",
+    "devops",
+    "engineering",
+    "continuous-integration"
+  ],
+  "content": {
+    "node": "root",
+    "child": [
+      {
+        "node": "element",
+        "tag": "figure",
+        "child": [
+          {
+            "node": "element",
+            "tag": "img",
+            "attr": {
+              "alt": "",
+              "src": "https://cdn-images-1.medium.com/max/1024/1*JI1qdObQxEUJqk9jRH5gfA.png"
+            }
+          },
+          {
+            "node": "element",
+            "tag": "figcaption",
+            "child": [
+              {
+                "node": "element",
+                "tag": "a",
+                "attr": {
+                  "href": "https://pixabay.com/en/developer-programmer-technology-3461405/"
+                },
+                "child": [
+                  {
+                    "node": "text",
+                    "text": "https://pixabay.com/en/developer-programmer-technology-3461405/"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "h3",
+        "child": [
+          {
+            "node": "text",
+            "text": "Protecting the Business"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "Developer driven software testing is not new. "
+          },
+          {
+            "node": "element",
+            "tag": "a",
+            "attr": {
+              "href": "https://cloudplatformonline.com/rs/248-TPC-286/images/DORA-State%20of%20DevOps.pdf"
+            },
+            "child": [
+              {
+                "node": "text",
+                "text": "Studies show"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": " that high performing organizations depend on tests written by developers instead of handing off to external teams of “Test Automators”. Many vendors sell "
+          },
+          {
+            "node": "element",
+            "tag": "em",
+            "child": [
+              {
+                "node": "text",
+                "text": "The One Test Tool to Rule Them All "
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": "and promise to take the thought out of testing. I’ve seen repeated demos of tools with slick UIs designed to dazzle those with budget control that promise to make testing so easy that even external contractors with no context can do it. I’ve been told that only unit tests are the responsibility of the development team. I have even heard that for developer productivity testing should be given to testing teams because, “developers have better things to do and aren’t qualified to test anyway”. Wow!"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "These misguided beliefs put the business at risk. Customers do not care about anything but outcomes and the data is on the side of better outcomes coming from DevOps principles and the practices of CI/CD. Tools don’t solve that. Skilled, professional developers using effective tools do."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "h3",
+        "child": [
+          {
+            "node": "text",
+            "text": "CI/CD == Test"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "For anyone wishing to master CI/CD, there are few areas of study more important than the effective use of metrics and testing."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "The entire point of a CD pipeline is to safely deliver value continuously to our end users. Code must "
+          },
+          {
+            "node": "element",
+            "tag": "strong",
+            "child": [
+              {
+                "node": "text",
+                "text": "prove"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": " to the pipeline that it is worthy of delivery and the pipeline’s job is to prevent that delivery unless worth is proved and as fast as possible. To enable this, a "
+          },
+          {
+            "node": "element",
+            "tag": "a",
+            "attr": {
+              "href": "https://medium.com/@bdfinst/5-minute-devops-designing-product-teams-33b82e6c1c5c"
+            },
+            "child": [
+              {
+                "node": "text",
+                "text": "product team"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": " should have the following priorities:"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "ol",
+        "child": [
+          {
+            "node": "element",
+            "tag": "li",
+            "child": [
+              {
+                "node": "text",
+                "text": "Build and harden the CD pipeline."
+              }
+            ]
+          },
+          {
+            "node": "element",
+            "tag": "li",
+            "child": [
+              {
+                "node": "text",
+                "text": "Keep the pipeline green. If there is a broken build, drop everything and fix it. If you cannot ship, nothing else you are working on matters anyway. Make sure that change can be delivered on demand to protect the ability to fix production without heroics."
+              }
+            ]
+          },
+          {
+            "node": "element",
+            "tag": "li",
+            "child": [
+              {
+                "node": "element",
+                "tag": "strong",
+                "child": [
+                  {
+                    "node": "text",
+                    "text": "When"
+                  }
+                ]
+              },
+              {
+                "node": "text",
+                "text": " (not if) a defect penetrates, harden the pipeline further by designing additional efficient tests for that defect."
+              }
+            ]
+          },
+          {
+            "node": "element",
+            "tag": "li",
+            "child": [
+              {
+                "node": "text",
+                "text": "Write features and ship them daily to continuously "
+              },
+              {
+                "node": "element",
+                "tag": "strong",
+                "child": [
+                  {
+                    "node": "text",
+                    "text": "test our ability to fix production"
+                  }
+                ]
+              },
+              {
+                "node": "text",
+                "text": " with minimal MTTR."
+              }
+            ]
+          },
+          {
+            "node": "element",
+            "tag": "li",
+            "child": [
+              {
+                "node": "text",
+                "text": "Get feedback about the status of the changes as fast as possible."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "CI/CD is not tools. It’s how we USE the tools. If you are claiming to execute a CD process, then the following are true."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "ul",
+        "child": [
+          {
+            "node": "element",
+            "tag": "li",
+            "child": [
+              {
+                "node": "text",
+                "text": "All tests for any code change are implemented and verified before code is committed in version control. Test Driven Development is a good idea. Test DURING Development is a non-negotiable."
+              }
+            ]
+          },
+          {
+            "node": "element",
+            "tag": "li",
+            "child": [
+              {
+                "node": "text",
+                "text": "There is only a single path to production for any code change, no matter how critical. We always use our emergency process and we always test the same way."
+              }
+            ]
+          },
+          {
+            "node": "element",
+            "tag": "li",
+            "child": [
+              {
+                "node": "text",
+                "text": "Tests version with the code."
+              }
+            ]
+          },
+          {
+            "node": "element",
+            "tag": "li",
+            "child": [
+              {
+                "node": "text",
+                "text": "Test may not be deactivated for an emergency."
+              }
+            ]
+          },
+          {
+            "node": "element",
+            "tag": "li",
+            "child": [
+              {
+                "node": "text",
+                "text": "While there may be a button to push to deliver to production, there are no other manual stage gates, human intervention, or handoffs to external teams once code has passed code review."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "If the above are not true, it doesn’t matter how well you can script Jenkins or how much you pay a testing team. You will never attain sustainable quality and you will be risking the business during every change, especially during an emergency."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "The secret to CD is the right mindset: "
+          },
+          {
+            "node": "element",
+            "tag": "strong",
+            "child": [
+              {
+                "node": "text",
+                "text": "it’s always an emergency"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": ". We architect the pipeline to standardize work and remove manual touch points because at 3:00am when a dumpster fire is raging in production, VP’s are breathing down are necks, and we are operating on coffee and terror, we don’t want to forget steps in our “hotfix process”. We only use our standard process. It’s already a nightmare, so let’s not make it worse by cowboying changes in, ok?"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "All of the above have implications to how we architect our test plan."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "h3",
+        "child": [
+          {
+            "node": "text",
+            "text": "Building a Resilient Test Plan"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "Your test suite needs to be hardened against the realities of the chaotic world. In a fantasy testing world, networks never have latency, external dependencies are always up and always stable, and the teams who own those dependencies never deploy breaking API changes without versioning. It’s fine to assume everything will work perfectly, until it’s an emergency and your assumptions are sadly mistaken. You MUST trust your tests. You must not accept random failures in your tests. Your critical path pipeline tests must work even when everything around you is falling apart."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "h4",
+        "child": [
+          {
+            "node": "text",
+            "text": "The Table Stakes: Solid Unit Tests"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "Unit tests are absolutely the foundation. They are also where most developers stop. While unit tests are crucial, they need to be used for the correct purpose; black box testing of complicated, isolated units of code. Typically, we are talking about classes, methods, or functions at this level. For architecting a Continuous Delivery test suite, we want it to be fast and efficient. We want to target testing at risky behaviors. 100% code coverage is neither reasonable nor efficient. There’s no purpose in testing things like getter and setter methods unless they are doing something interesting. Testing Java’s ability to assign data to a variable isn’t useful unless we are developing the JVM. There are libraries full of good information on patterns and anti-patterns for unit testing. A favorite is "
+          },
+          {
+            "node": "element",
+            "tag": "a",
+            "attr": {
+              "href": "http://xunitpatterns.com"
+            },
+            "child": [
+              {
+                "node": "text",
+                "text": "xUnit Test Patterns"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": ". It’s a massive tome on proper testing and common anti-patterns that I highly recommend."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "h4",
+        "child": [
+          {
+            "node": "text",
+            "text": "Meeting the Business Goals: Functional Tests"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "Unit testing will give a good view of how individual units will perform, but most applications are implementing some business flow. Testing that core business domain logic is critical and unit tests are ineffective at that. Many teams will jump immediately to end to end testing to solve this, but those are unstable (flakey test anti-pattern) and cannot effectively test all of the logic branches."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "A better approach is using functional tests that independently test each business feature."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "element",
+            "tag": "strong",
+            "child": [
+              {
+                "node": "element",
+                "tag": "em",
+                "child": [
+                  {
+                    "node": "text",
+                    "text": "“Given I have £20 in the bank"
+                  },
+                  {
+                    "node": "element",
+                    "tag": "br"
+                  },
+                  {
+                    "node": "text",
+                    "text": "When I ask the cash machine for £20"
+                  },
+                  {
+                    "node": "element",
+                    "tag": "br"
+                  },
+                  {
+                    "node": "text",
+                    "text": "Then it should give me £20"
+                  },
+                  {
+                    "node": "element",
+                    "tag": "br"
+                  },
+                  {
+                    "node": "text",
+                    "text": "And debit my account.”"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "element",
+            "tag": "strong",
+            "child": [
+              {
+                "node": "element",
+                "tag": "em",
+                "child": [
+                  {
+                    "node": "text",
+                    "text": "Excerpt From: "
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "node": "element",
+            "tag": "a",
+            "attr": {
+              "href": "https://leanpub.com/bdd"
+            },
+            "child": [
+              {
+                "node": "element",
+                "tag": "strong",
+                "child": [
+                  {
+                    "node": "element",
+                    "tag": "em",
+                    "child": [
+                      {
+                        "node": "text",
+                        "text": "Liz Keogh. “Behaviour-Driven Development.”"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "Here we have a single business feature that can be implemented by an account service. This takes no special tools to implement, only the thought process of “I need to test this flow”. Just like a good unit test, each functional test should be focused, be able to run in parallel, and should not directly integrate ouside the scope of the test."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "h4",
+        "child": [
+          {
+            "node": "text",
+            "text": "Being a Good API Citizen: API Contract Tests"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "Communication interfaces are where most defects occur. It’s obvious then that we should prioritize testing those interfaces even before implementing the behavior behind them. This is where "
+          },
+          {
+            "node": "element",
+            "tag": "a",
+            "attr": {
+              "href": "https://martinfowler.com/bliki/ContractTest.html"
+            },
+            "child": [
+              {
+                "node": "text",
+                "text": "contract testing"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": " and "
+          },
+          {
+            "node": "element",
+            "tag": "a",
+            "attr": {
+              "href": "https://medium.com/@carlescliment/an-experience-with-contract-driven-development-480a700b277"
+            },
+            "child": [
+              {
+                "node": "text",
+                "text": "contact driven development"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": " become important."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "There are many poor ways of documenting API contracts, but only one correct way: contract tests and contract mocks documented and tested by the provider. A contract test in its basic form is a simple unit test of the shape of the contract."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "Here’s a simple example:"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "iframe",
+        "attr": {
+          "src": "",
+          "width": "0",
+          "height": "0",
+          "frameborder": "0",
+          "scrolling": "no"
+        }
+      },
+      {
+        "node": "element",
+        "tag": "a",
+        "attr": {
+          "href": "https://medium.com/media/52a7072982d9b9ee18044a3d29b4754d/href"
+        },
+        "child": [
+          {
+            "node": "text",
+            "text": "https://medium.com/media/52a7072982d9b9ee18044a3d29b4754d/href"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "h4",
+        "child": [
+          {
+            "node": "text",
+            "text": "Playing Well With Others: Integration Tests"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "Contract tests give you a level of confidence during CI builds that you’ve not broken a contract or broken how you consume one but since they are mocked, they require another layer of test to validate the mocks."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "Many people will use “Integration Test” to refer to the activity of testing business flows through several components, and End to End test. Other use it to refer to the functional test I mentioned above. In the references I mention below, they will refer to integration testing as the act of verifying communication paths between components; a shallow test where the consumer asks, “can I understand the response from my dependency?” The test should not attempt to test the behavior of the dependency, only that the response is understandable."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "Integration tests have a weakness that architects of CD pipelines need to understand: they are flakey. You cannot promise that the dependency will be available when the CD flow executes. If that dependency is not available, it’s still "
+          },
+          {
+            "node": "element",
+            "tag": "strong",
+            "child": [
+              {
+                "node": "text",
+                "text": "your"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": " team’s responsibility to deliver. Remember the rules of CD above. You are not allowed to bypass tests to deliver. So, we have a conflict. How do we design a solution?"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "element",
+            "tag": "strong",
+            "child": [
+              {
+                "node": "text",
+                "text": "Step 1:"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": " Service Virtualization. Using "
+          },
+          {
+            "node": "element",
+            "tag": "a",
+            "attr": {
+              "href": "http://wiremock.org/"
+            },
+            "child": [
+              {
+                "node": "text",
+                "text": "Wiremock"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": ", "
+          },
+          {
+            "node": "element",
+            "tag": "a",
+            "attr": {
+              "href": "http://www.mbtest.org/"
+            },
+            "child": [
+              {
+                "node": "text",
+                "text": "Mountebank"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": ", or other related tools we can virtually integrate. These tools can act as proxies for actual dependencies and the "
+          },
+          {
+            "node": "element",
+            "tag": "a",
+            "attr": {
+              "href": "http://www.mbtest.org/"
+            },
+            "child": [
+              {
+                "node": "text",
+                "text": "better ones"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": " can replicate latency and handle more than just HTTP. In addition, they reduce the need for the test data management that is required for all but the simplest integration tests. Data is the hardest thing to handle in a test, so avoid it."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "element",
+            "tag": "strong",
+            "child": [
+              {
+                "node": "text",
+                "text": "Step 2:"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": " Scheduled integration tests. When direct integration testing is needed, run it on a schedule outside the standard flow. Build alerts to tell you when it breaks and follow up on the causes for the breaks. If the dependency is unstable, keep track of how so you can rapidly detect when it’s their instability vs. a breaking change they made or a problem with your virtual integration tests that needs addressing."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "Using this method, you can reduce much of the flakiness of typical integration testing as well as repeatedly and quickly test for complex scenarios that cannot effectively be tested with less refined methods."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "h4",
+        "child": [
+          {
+            "node": "text",
+            "text": "Verifying User Journeys: End to End Test"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "End to End testing tests for a flow of information and behavior across multiple components. Beware of vendors selling record and replay testing tools that purport to take the load off of the developer by simply testing the entire system this way. However…"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "element",
+            "tag": "em",
+            "child": [
+              {
+                "node": "text",
+                "text": "“"
+              }
+            ]
+          },
+          {
+            "node": "element",
+            "tag": "strong",
+            "child": [
+              {
+                "node": "element",
+                "tag": "em",
+                "child": [
+                  {
+                    "node": "text",
+                    "text": "The main problem with Recorded Tests is the level of granularity they record. Most commercial tools record actions at the user interface (UI) element level, which results in Fragile Tests”"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "element",
+            "tag": "strong",
+            "child": [
+              {
+                "node": "element",
+                "tag": "em",
+                "child": [
+                  {
+                    "node": "text",
+                    "text": "Excerpt From: Gerard Meszaros. “xUnit Test Patterns: Refactoring Test Code"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "End to End tests are not a substitution for "
+          },
+          {
+            "node": "element",
+            "tag": "a",
+            "attr": {
+              "href": "http://xunitpatterns.com/Layer%20Test.html"
+            },
+            "child": [
+              {
+                "node": "text",
+                "text": "properly layered tests"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": ". They lack the granularity and the data control required for effective testing. A proper E2E test will be focused on a few happy path flows to verify a user journey through the application. Expanding the scope of an E2E into the domains better covered by other test layers results in the slow and unreliable tests. This is made worse if the responsibility is handed off to an external test team."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "h4",
+        "child": [
+          {
+            "node": "text",
+            "text": "What Didn’t We Test?"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "Exploratory testing is needed to discover the things that we didn’t think of to test. We’ll never think of everything, so it’s important to have people on the team who are skilled at breaking things continuously trying to break things so that tests for those breaks can be added. Yes, this is manual exploration but it’s not acceptance testing. If you use a checklist, you’re doing it wrong."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "h4",
+        "child": [
+          {
+            "node": "text",
+            "text": "Will it Really Operate?"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "Load testing and performance testing shouldn’t be things left to the end. You should be standing those up and executing them continuously. There’s nothing worse than believing everything is fine and then failing when someone tries to use it. Operational stability is your first feature, not an afterthought."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "h4",
+        "child": [
+          {
+            "node": "text",
+            "text": "Entropy Happens"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "ul",
+        "child": [
+          {
+            "node": "element",
+            "tag": "li",
+            "child": [
+              {
+                "node": "text",
+                "text": "What if that critical dependency isn’t available?"
+              }
+            ]
+          },
+          {
+            "node": "element",
+            "tag": "li",
+            "child": [
+              {
+                "node": "text",
+                "text": "What happens if it sends you garbage?"
+              }
+            ]
+          },
+          {
+            "node": "element",
+            "tag": "li",
+            "child": [
+              {
+                "node": "text",
+                "text": "Cloud provider reboots for an upgrade or has an outage?"
+              }
+            ]
+          },
+          {
+            "node": "element",
+            "tag": "li",
+            "child": [
+              {
+                "node": "text",
+                "text": "Excessive latency?"
+              }
+            ]
+          },
+          {
+            "node": "element",
+            "tag": "li",
+            "child": [
+              {
+                "node": "text",
+                "text": "Coronal Mass Ejection?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "The world is a messy place. Resiliency testing verifies that you can handle the mess in the best way possible. Design for graceful degradation of service and then test for it."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "h3",
+        "child": [
+          {
+            "node": "text",
+            "text": "Testing Ain’t Easy!"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "Proper testing takes the right mindset and at least as much design as production code. It takes a curious, sometimes evil, mind and the ability to ponder ���what if?” Proper test engineers don’t test code for you; they help "
+          },
+          {
+            "node": "element",
+            "tag": "strong",
+            "child": [
+              {
+                "node": "text",
+                "text": "you"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": " test better. Tests should be fast, efficient, and should fully document the behavior of your application because tests are the "
+          },
+          {
+            "node": "element",
+            "tag": "strong",
+            "child": [
+              {
+                "node": "text",
+                "text": "only"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": " reliable documentation. If you aren’t confident in your ability to test every layer, study it. It’s not an added extra that delays delivery. It’s the job."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "If you’re a professional developer and student of your craft, here’s more references for deeper learning:"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "ul",
+        "child": [
+          {
+            "node": "element",
+            "tag": "li",
+            "child": [
+              {
+                "node": "element",
+                "tag": "a",
+                "attr": {
+                  "href": "https://itrevolution.com/book/accelerate/"
+                },
+                "child": [
+                  {
+                    "node": "text",
+                    "text": "Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "node": "element",
+            "tag": "li",
+            "child": [
+              {
+                "node": "element",
+                "tag": "a",
+                "attr": {
+                  "href": "https://continuousdelivery.com/"
+                },
+                "child": [
+                  {
+                    "node": "text",
+                    "text": "Continuous Delivery"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "node": "element",
+            "tag": "li",
+            "child": [
+              {
+                "node": "element",
+                "tag": "a",
+                "attr": {
+                  "href": "https://martinfowler.com/articles/practical-test-pyramid.html"
+                },
+                "child": [
+                  {
+                    "node": "text",
+                    "text": "Practical Test Pyramid"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "node": "element",
+            "tag": "li",
+            "child": [
+              {
+                "node": "element",
+                "tag": "a",
+                "attr": {
+                  "href": "https://www.oreilly.com/library/view/xunit-test-patterns/9780131495050/"
+                },
+                "child": [
+                  {
+                    "node": "text",
+                    "text": "xUnit Test Patterns"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "node": "element",
+            "tag": "li",
+            "child": [
+              {
+                "node": "element",
+                "tag": "a",
+                "attr": {
+                  "href": "https://medium.com/walmartlabs/charting-a-path-to-software-resiliency-38148d956f4a"
+                },
+                "child": [
+                  {
+                    "node": "text",
+                    "text": "Charting a path to software resiliency"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "element",
+            "tag": "strong",
+            "child": [
+              {
+                "node": "text",
+                "text": "If you found this helpful, it’s part of a larger "
+              }
+            ]
+          },
+          {
+            "node": "element",
+            "tag": "a",
+            "attr": {
+              "href": "https://medium.com/search?q=%225%20minute%20devops%22"
+            },
+            "child": [
+              {
+                "node": "element",
+                "tag": "strong",
+                "child": [
+                  {
+                    "node": "text",
+                    "text": "5 Minute DevOps series"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "node": "element",
+            "tag": "strong",
+            "child": [
+              {
+                "node": "text",
+                "text": " I’ve been working on Feedback is always welcome."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "img",
+        "attr": {
+          "src": "https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=bd38fab50564",
+          "width": "1",
+          "height": "1"
+        }
+      },
+      {
+        "node": "element",
+        "tag": "hr"
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "element",
+            "tag": "a",
+            "attr": {
+              "href": "https://medium.com/walmartlabs/5-minute-devops-effective-testing-bd38fab50564"
+            },
+            "child": [
+              {
+                "node": "text",
+                "text": "5 Minute DevOps: Effective Testing"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": " was originally published in "
+          },
+          {
+            "node": "element",
+            "tag": "a",
+            "attr": {
+              "href": "https://medium.com/walmartlabs"
+            },
+            "child": [
+              {
+                "node": "text",
+                "text": "WalmartLabs"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": " on Medium, where people are continuing the conversation by highlighting and responding to this story."
+          }
+        ]
+      }
+    ]
+  }
+}

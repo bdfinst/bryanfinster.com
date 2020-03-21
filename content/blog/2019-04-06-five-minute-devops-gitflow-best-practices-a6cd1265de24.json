@@ -1,0 +1,442 @@
+{
+  "title": "5 Minute DevOps: GitFlow Best Practices",
+  "link": "https://medium.com/itrevolution/five-minute-devops-gitflow-best-practices-a6cd1265de24",
+  "author": "Bryan Finster",
+  "published": "Sat, 06 Apr 2019 11:18:03 GMT",
+  "tags": [
+    "continuous-delivery",
+    "git",
+    "continuous-integration",
+    "devops",
+    "gitflow"
+  ],
+  "content": {
+    "node": "root",
+    "child": [
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "I was asked recently about the best practice for using GitFlow with continuous integration. For those who do not know, this is GitFlow:"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "figure",
+        "child": [
+          {
+            "node": "element",
+            "tag": "img",
+            "attr": {
+              "alt": "",
+              "src": "https://cdn-images-1.medium.com/max/575/1*8-zDz1s5Atux_yNW_mXmfg@2x.png"
+            }
+          },
+          {
+            "node": "element",
+            "tag": "figcaption",
+            "child": [
+              {
+                "node": "text",
+                "text": "Post from 2010: "
+              },
+              {
+                "node": "element",
+                "tag": "a",
+                "attr": {
+                  "href": "https://nvie.com/posts/a-successful-git-branching-model/"
+                },
+                "child": [
+                  {
+                    "node": "text",
+                    "text": "https://nvie.com/posts/a-successful-git-branching-model/"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "There is no CI good practice that includes GitFlow. For continuous integration to meet the definition, these are the good practices:"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "ul",
+        "child": [
+          {
+            "node": "element",
+            "tag": "li",
+            "child": [
+              {
+                "node": "text",
+                "text": "Developers must implement "
+              },
+              {
+                "node": "element",
+                "tag": "strong",
+                "child": [
+                  {
+                    "node": "text",
+                    "text": "all"
+                  }
+                ]
+              },
+              {
+                "node": "text",
+                "text": " tests before they commit code. This is a non-negotiable and I will not work with developers who refuse to test. Professionals deliver working, tested code. Script kiddies don’t test."
+              }
+            ]
+          },
+          {
+            "node": "element",
+            "tag": "li",
+            "child": [
+              {
+                "node": "text",
+                "text": "Stand up CI automation and trigger builds for every pull request so that bad changes can be rejected."
+              }
+            ]
+          },
+          {
+            "node": "element",
+            "tag": "li",
+            "child": [
+              {
+                "node": "text",
+                "text": "Ensure that all tests are executed and linting and static code analysis is done for every PR."
+              }
+            ]
+          },
+          {
+            "node": "element",
+            "tag": "li",
+            "child": [
+              {
+                "node": "text",
+                "text": "Implement CI practices. All developers branch from the trunk, make changes, and submit PRs back to the trunk. The branches are removed in less than 24 hours."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "You’re now doing "
+          },
+          {
+            "node": "element",
+            "tag": "a",
+            "attr": {
+              "href": "https://trunkbaseddevelopment.com"
+            },
+            "child": [
+              {
+                "node": "text",
+                "text": "Trunk Based Development"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": ". Welcome to your CI/CD journey!"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "The complexity of the CI automation will depend on how poorly the application is architected and the size of the development team. Monoliths with poor sub-domain boundaries will require much more complicated test design and test execution will take much longer. Evolve The architecture into independent, loosely coupled sub-domains to improve delivery speed, reduce testing overhead, and improve stability, resilience, and scalability."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "GitFlow does not increase quality or value delivery. It delays quality signal feedback to the developers, incentivizes manual process, and is incredibly wasteful of time and resources. No modern development uses it."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "Some developers have a religion built around GitFlow because it reduces typing (no feature flags needed, no branch by abstraction cleanup, etc.) and they don’t track their levels of re-work, lost changes, or conflict resolution. In 2010, GitFlow felt good. We could keep Master “clean”. That was almost a decade ago. Testing was still mostly manual. We were still on Java 6. NodeJS was barely a thing. Time to modernize. We don’t keep Master clean with add process. We keep it clean with automation."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "Other examples:"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "ul",
+        "child": [
+          {
+            "node": "element",
+            "tag": "li",
+            "child": [
+              {
+                "node": "element",
+                "tag": "a",
+                "attr": {
+                  "href": "https://itrevolution.com/the-amazing-devops-transformation-of-the-hp-laserjet-firmware-team-gary-gruver/"
+                },
+                "child": [
+                  {
+                    "node": "text",
+                    "text": "The Amazing DevOps Transformation Of The HP LaserJet Firmware Team"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "node": "element",
+            "tag": "li",
+            "child": [
+              {
+                "node": "element",
+                "tag": "a",
+                "attr": {
+                  "href": "https://continuousdelivery.com"
+                },
+                "child": [
+                  {
+                    "node": "text",
+                    "text": "What is Continuous Delivery?"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "element",
+            "tag": "strong",
+            "child": [
+              {
+                "node": "text",
+                "text": "Update March 2020"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": ": I asked the author of GitFlow if he could clarify the use cases to stop the GitFlow whack-a-mole and he very helpfully did so, Please thank him."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "style",
+        "child": [
+          {
+            "node": "text",
+            "text": "body[data-twttr-rendered=\"true\"] {background-color: transparent;}.twitter-tweet {margin: auto !important;}"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "blockquote",
+        "attr": {
+          "class": "twitter-tweet",
+          "data-conversation": "none",
+          "data-align": "center",
+          "data-dnt": "true"
+        },
+        "child": [
+          {
+            "node": "element",
+            "tag": "p",
+            "child": [
+              {
+                "node": "element",
+                "tag": "a",
+                "attr": {
+                  "href": "http://twitter.com/BryanFinster",
+                  "target": "_blank",
+                  "title": [
+                    "Twitter",
+                    "profile",
+                    "for",
+                    "@BryanFinster"
+                  ]
+                },
+                "child": [
+                  {
+                    "node": "text",
+                    "text": "@BryanFinster"
+                  }
+                ]
+              },
+              {
+                "node": "text",
+                "text": " You are right, the article could use some nuance, since people have been treating it like a dogma for so long, and adopted it where it&#39;s definitely not a good fit. I just updated the post with a reflection. "
+              },
+              {
+                "node": "element",
+                "tag": "a",
+                "attr": {
+                  "rel": "nofollow",
+                  "href": "https://t.co/pbsp8ksq9j"
+                },
+                "child": [
+                  {
+                    "node": "text",
+                    "text": "https://t.co/pbsp8ksq9j"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "node": "element",
+            "tag": "p",
+            "child": [
+              {
+                "node": "text",
+                "text": "&#x200a;&mdash;&#x200a;"
+              },
+              {
+                "node": "element",
+                "tag": "a",
+                "attr": {
+                  "href": "https://twitter.com/nvie/status/1235524233595359233"
+                },
+                "child": [
+                  {
+                    "node": "text",
+                    "text": "@nvie"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "script",
+        "attr": {
+          "src": "//platform.twitter.com/widgets.js",
+          "charset": "utf-8"
+        },
+        "child": [
+          {
+            "node": "text",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "script",
+        "child": [
+          {
+            "node": "text",
+            "text": "function notifyResize(height) {height = height ? height : document.documentElement.offsetHeight; var resized = false; if (window.donkey && donkey.resize) {donkey.resize(height);resized = true;}if (parent && parent._resizeIframe) {var obj = {iframe: window.frameElement, height: height}; parent._resizeIframe(obj); resized = true;}if (window.location && window.location.hash === \"#amp=1\" && window.parent && window.parent.postMessage) {window.parent.postMessage({sentinel: \"amp\", type: \"embed-size\", height: height}, \"*\");}if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.resize) {window.webkit.messageHandlers.resize.postMessage(height); resized = true;}return resized;}twttr.events.bind('rendered', function (event) {notifyResize();}); twttr.events.bind('resize', function (event) {notifyResize();});"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "script",
+        "child": [
+          {
+            "node": "text",
+            "text": "if (parent && parent._resizeIframe) {var maxWidth = parseInt(window.frameElement.getAttribute(\"width\")); if ( 500  < maxWidth) {window.frameElement.setAttribute(\"width\", \"500\");}}"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "img",
+        "attr": {
+          "src": "https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=a6cd1265de24",
+          "width": "1",
+          "height": "1"
+        }
+      },
+      {
+        "node": "element",
+        "tag": "hr"
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "element",
+            "tag": "a",
+            "attr": {
+              "href": "https://medium.com/itrevolution/five-minute-devops-gitflow-best-practices-a6cd1265de24"
+            },
+            "child": [
+              {
+                "node": "text",
+                "text": "5 Minute DevOps: GitFlow Best Practices"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": " was originally published in "
+          },
+          {
+            "node": "element",
+            "tag": "a",
+            "attr": {
+              "href": "https://medium.com/itrevolution"
+            },
+            "child": [
+              {
+                "node": "text",
+                "text": "IT Revolution"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": " on Medium, where people are continuing the conversation by highlighting and responding to this story."
+          }
+        ]
+      }
+    ]
+  }
+}

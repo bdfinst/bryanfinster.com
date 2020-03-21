@@ -61,7 +61,7 @@ class PostPreview extends Component {
           expander={expand}
           avatar={<Avatar icon={<FontIcon iconClassName="fa fa-calendar" />} />}
           title={`Published on ${moment(postInfo.date).format(
-            config.dateFormat
+            config.dateFormat,
           )}`}
           subtitle={`${postInfo.timeToRead} min read`}
         />

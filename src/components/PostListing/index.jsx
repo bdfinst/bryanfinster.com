@@ -4,7 +4,7 @@ import PostPreview from '../PostPreview'
 class PostListing extends React.Component {
   getPostList() {
     const postList = []
-    this.props.postEdges.forEach(postEdge => {
+    this.props.postEdges.forEach((postEdge) => {
       postList.push({
         path: postEdge.node.fields.slug,
         tags: postEdge.node.frontmatter.tags,
@@ -22,7 +22,7 @@ class PostListing extends React.Component {
     return (
       <div className="md-grid md-grid--no-spacing md-cell--middle">
         <div className="md-grid md-cell--8 mobile-fix">
-          {postList.map(post => (
+          {postList.map((post) => (
             <PostPreview key={post.title} postInfo={post} />
           ))}
         </div>

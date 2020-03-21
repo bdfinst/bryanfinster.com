@@ -17,7 +17,7 @@ class PostInfo extends Component {
         <CardTitle
           avatar={<Avatar icon={<FontIcon iconClassName="fa fa-calendar" />} />}
           title={`Published on ${moment(postNode.fields.date).format(
-            config.dateFormat
+            config.dateFormat,
           )}`}
           subtitle={`${postNode.timeToRead} min read`}
         />

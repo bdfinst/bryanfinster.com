@@ -1,0 +1,320 @@
+{
+  "title": "5 Minute DevOps: Removing Drama from Delivery",
+  "link": "https://medium.com/@bdfinst/5-minute-devops-removing-drama-from-delivery-10b7fa486ea9",
+  "author": "Bryan Finster",
+  "published": "Fri, 05 Jul 2019 12:27:03 GMT",
+  "tags": [
+    "engineering",
+    "continuous-delivery",
+    "devops"
+  ],
+  "content": {
+    "node": "root",
+    "child": [
+      {
+        "node": "element",
+        "tag": "figure",
+        "child": [
+          {
+            "node": "element",
+            "tag": "img",
+            "attr": {
+              "alt": "",
+              "src": "https://cdn-images-1.medium.com/max/1000/1*_C9bzYDswgXSgSJLSrt6bQ.png"
+            }
+          },
+          {
+            "node": "element",
+            "tag": "figcaption",
+            "child": [
+              {
+                "node": "element",
+                "tag": "a",
+                "attr": {
+                  "href": "https://www.sketchport.com/drawing/6706745665650688/none-desired"
+                },
+                "child": [
+                  {
+                    "node": "text",
+                    "text": "© 2014 Zakeenahttps://www.sketchport.com/drawing/6706745665650688/none-desired"
+                  }
+                ]
+              },
+              {
+                "node": "text",
+                "text": ". Licensed under "
+              },
+              {
+                "node": "element",
+                "tag": "a",
+                "attr": {
+                  "href": "http://creativecommons.org/licenses/by/4.0/"
+                },
+                "child": [
+                  {
+                    "node": "text",
+                    "text": "CC-BY"
+                  }
+                ]
+              },
+              {
+                "node": "text",
+                "text": "."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "Has this ever happened to you or have you ever seen a support request like this?"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "blockquote",
+        "child": [
+          {
+            "node": "text",
+            "text": "“We’re trying to deploy a K8S cluster to our server, but it can’t reach our vLAN network. We’ve opened an incident with the NOC but we can’t solve this issue. We’d like to solve this problem by end of today. if it can’t we’ll be behind schedule and won’t release our new system as planned."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "blockquote",
+        "child": [
+          {
+            "node": "text",
+            "text": "I’d really appreciate if someone could help us.”"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "figure",
+        "child": [
+          {
+            "node": "element",
+            "tag": "img",
+            "attr": {
+              "alt": "",
+              "src": "https://cdn-images-1.medium.com/max/800/1*H9xHcJgqy_rAj2mWJwqEHg.jpeg"
+            }
+          },
+          {
+            "node": "element",
+            "tag": "figcaption",
+            "child": [
+              {
+                "node": "text",
+                "text": "By Brady Holt — Own work, CC BY 3.0, "
+              },
+              {
+                "node": "element",
+                "tag": "a",
+                "attr": {
+                  "href": "https://commons.wikimedia.org/w/index.php?curid=11113736"
+                },
+                "child": [
+                  {
+                    "node": "text",
+                    "text": "https://commons.wikimedia.org/w/index.php?curid=11113736"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "h3",
+        "child": [
+          {
+            "node": "text",
+            "text": "Order of Operations"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "2 x 5 + 3 = 16…"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "Doing things in the wrong order leads to the wrong answer."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "Large projects fail or are challenged because we focus on things in the wrong sequence and not constantly verifying the results. One of the goals of continuous delivery is to make sure the order of operations is correct."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "h4",
+        "child": [
+          {
+            "node": "text",
+            "text": "1. Understand the value to be delivered"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "Developers cannot deliver quality if we don’t understand the value and goals. Context matters."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "h4",
+        "child": [
+          {
+            "node": "text",
+            "text": "2. Build and deploy the first feature, “Hello world”."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "Deploy first. If you cannot deploy, then you cannot deliver the expected value and anything you cannot deploy is unfinished work waste. Even if what you build is entirely correct, if no one can use it or it’s delivered late, it’s still wrong. My first deliverable for any new UI or service is a health-check endpoint returning a simple object or a single line of HTML. Typically, lyrics from “Still Alive”."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "h4",
+        "child": [
+          {
+            "node": "text",
+            "text": "3. Build and deploy the next Minimum Viable Feature."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "In a recent discussion, I explained that services should be deployed to production as soon as any non-breaking changes were available. The challenge back was that “the customer can’t use it yet”. That’s true, but we now have more confidence that it’s not going to immediately break anything when it’s complete enough to use."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "Our focus is always stability and hardening the pipeline. We use new features to do that, but we need to keep those features as minimal as possible. Not only does this limit our blast radius "
+          },
+          {
+            "node": "element",
+            "tag": "strong",
+            "child": [
+              {
+                "node": "text",
+                "text": "when"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": " it fails, but it minimizes waste. If the customer asks for something and we deliver towards that goal in small pieces, there comes a point where the customer may be delighted with less than they thought they needed originally or they discover that was the wrong thing to ask for in the first place. In either case, we discover that with the least cost possible."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "h4",
+        "child": [
+          {
+            "node": "text",
+            "text": "4. Adjust"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "It’ll be wrong. We make mistakes in what we ask for, how we define it, and how we implement it. So, we should aim to be minimally wrong. Deploy to production, check against the expected value, and do it again. The faster and smaller we can do this, the more confidence we have in the results."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "h4",
+        "child": [
+          {
+            "node": "text",
+            "text": "5. GOTO 3"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "h3",
+        "child": [
+          {
+            "node": "text",
+            "text": "Picking up the Pieces Sucks"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "It’s too late to help someone when they’ve already driven off the cliff and are now desperate to find a way to get their months of hard work delivered. All we can do is pick up the pieces and help them understand what went wrong. Keep reminding people about the order of operations, because they may race to the deadline and get 16, but 30 delivers value."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "img",
+        "attr": {
+          "src": "https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=10b7fa486ea9",
+          "width": "1",
+          "height": "1"
+        }
+      }
+    ]
+  }
+}

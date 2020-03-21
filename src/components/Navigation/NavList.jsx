@@ -16,7 +16,7 @@ function GetNavList(config) {
   ]
 
   if (config.userLinks) {
-    config.userLinks.forEach(link => {
+    config.userLinks.forEach((link) => {
       NavList.push({
         primaryText: link.label,
         leftIcon: <FontIcon forceSize iconClassName={link.iconClassName} />,

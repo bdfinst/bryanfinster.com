@@ -1,0 +1,485 @@
+{
+  "title": "5 Minute DevOps: What’s a User Story?",
+  "link": "https://medium.com/walmartlabs/5-minute-devops-whats-a-user-story-1e4d99e5b5ad",
+  "author": "Bryan Finster",
+  "published": "Fri, 11 Jan 2019 00:26:31 GMT",
+  "tags": [
+    "agile",
+    "devops",
+    "engineering",
+    "continuous-delivery"
+  ],
+  "content": {
+    "node": "root",
+    "child": [
+      {
+        "node": "element",
+        "tag": "figure",
+        "child": [
+          {
+            "node": "element",
+            "tag": "img",
+            "attr": {
+              "alt": "",
+              "src": "https://cdn-images-1.medium.com/max/1024/1*6JkoIvqkxssqT1_OTMyPtw.jpeg"
+            }
+          },
+          {
+            "node": "element",
+            "tag": "figcaption",
+            "child": [
+              {
+                "node": "element",
+                "tag": "a",
+                "attr": {
+                  "href": "https://www.flickr.com/photos/83633410@N07/7658298768"
+                },
+                "child": [
+                  {
+                    "node": "text",
+                    "text": "https://www.flickr.com/photos/83633410@N07/7658298768"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "What is Pragmatic DevOps? It’s just a catchy way of saying we deliver with Minimum Viable Process using lean techniques to drive waste out of the system. If it helps us deliver and support our product, it’s good. If not, we remove it."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "One of the bigger problems we’ve seen in many companies moving to agile development is the fact that the people leading the change are typically "
+          },
+          {
+            "node": "element",
+            "tag": "strong",
+            "child": [
+              {
+                "node": "text",
+                "text": "not"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": " currently developers. Many took classes on “Agile” to become “Certified”, but the real world examples people need to translate their current processes to delivering with more agility rarely come from books. How many of the signatories of the "
+          },
+          {
+            "node": "element",
+            "tag": "a",
+            "attr": {
+              "href": "https://agilemanifesto.org/"
+            },
+            "child": [
+              {
+                "node": "text",
+                "text": "Manifesto for Agile Software Development"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": " are certified?"
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "Have you heard variations of discussions like this? I have."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "element",
+            "tag": "em",
+            "child": [
+              {
+                "node": "text",
+                "text": "Dev: “What’s a user story”"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "element",
+            "tag": "em",
+            "child": [
+              {
+                "node": "text",
+                "text": "Certified Agile Coach: “It meets INVEST, obviously. Also, it has a persona and a value statement.”"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "element",
+            "tag": "em",
+            "child": [
+              {
+                "node": "text",
+                "text": "Dev: “Invest?”"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "element",
+            "tag": "em",
+            "child": [
+              {
+                "node": "text",
+                "text": "CAC: “Independent, Negotiable, Valuable, Estimable, Small, and Testable”"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "element",
+            "tag": "em",
+            "child": [
+              {
+                "node": "text",
+                "text": "Dev: “OK, so the business won’t use anything until it’s all done, so the entire application is a user story?”"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "element",
+            "tag": "em",
+            "child": [
+              {
+                "node": "text",
+                "text": "CAC: “Well, no. It’s smaller than that, obviously!’"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "element",
+            "tag": "em",
+            "child": [
+              {
+                "node": "text",
+                "text": "Dev: “Well, I can’t negotiate anything smaller and it has no value otherwise so..”"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "And so on, until the contract tuns out and the Certified Coach collects their fee and is starts their next contract. Right after that comes the “story point” conversation."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "The outcome of this is teams sitting in meetings parsing words and coming up with “As a developer, I want a database, so that the application can store data” and then arguing how to estimate it."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "figure",
+        "child": [
+          {
+            "node": "element",
+            "tag": "img",
+            "attr": {
+              "alt": "",
+              "src": "https://cdn-images-1.medium.com/max/1024/1*DKnSr68FwmMfocwZ2T0lHA.jpeg"
+            }
+          },
+          {
+            "node": "element",
+            "tag": "figcaption",
+            "child": [
+              {
+                "node": "element",
+                "tag": "a",
+                "attr": {
+                  "href": "https://www.pexels.com/photo/male-statue-decor-931317/"
+                },
+                "child": [
+                  {
+                    "node": "text",
+                    "text": "https://www.pexels.com/photo/male-statue-decor-931317/"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "As a practitioner of Pragmatic DevOps, testable definitions are required to effectively onboard developers who are new to continuous delivery. To meet the goals of CI/CD and to deliver predictably, we need to deliver tiny batches of work that we can "
+          },
+          {
+            "node": "element",
+            "tag": "strong",
+            "child": [
+              {
+                "node": "text",
+                "text": "demonstrate"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": " and "
+          },
+          {
+            "node": "element",
+            "tag": "strong",
+            "child": [
+              {
+                "node": "text",
+                "text": "get feedback"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": " on. It’s also very important that we are able to effectively communicate using ubiquitous language that all stakeholders understand. In that vein, we use the following definitions when helping teams and external stakeholders understand Features, Stories, and Tasks."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "element",
+            "tag": "strong",
+            "child": [
+              {
+                "node": "text",
+                "text": "Feature:"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": " A complete behavior that implements a new business process and consists of one or more "
+          },
+          {
+            "node": "element",
+            "tag": "strong",
+            "child": [
+              {
+                "node": "text",
+                "text": "user stories"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": ". If your feature is too big, then you risk delaying a change that could add value immediately, so keep the features as small as makes sense."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "element",
+            "tag": "strong",
+            "child": [
+              {
+                "node": "text",
+                "text": "User Story:"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": " The smallest change that will result in behavior change observable by the user and consists of one or more "
+          },
+          {
+            "node": "element",
+            "tag": "strong",
+            "child": [
+              {
+                "node": "text",
+                "text": "tasks"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": ". If the change is not observable, it cannot be demonstrated. If it cannot be demonstrated, there’s no feedback loop and you cannot adjust with agility."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "element",
+            "tag": "strong",
+            "child": [
+              {
+                "node": "text",
+                "text": "Task:"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": " The smallest independently deployable change. Examples: configuration change, new test, new tested function, table change, etc. A task may or may not implement observable change, but it is always independent of other changes. If a task cannot be deployed without another task, then change priorities or learn how to use feature flags."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "Keeping language simple and minimizing the ways definitions can be interpreted is key to effective skills training. We recommend starting a glossary and testing the definitions. If they cause confusion, refactor them."
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "text",
+            "text": "Coming next: "
+          },
+          {
+            "node": "element",
+            "tag": "strong",
+            "child": [
+              {
+                "node": "text",
+                "text": "You Don’t Need Story Points!"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "node": "element",
+        "tag": "img",
+        "attr": {
+          "src": "https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=1e4d99e5b5ad",
+          "width": "1",
+          "height": "1"
+        }
+      },
+      {
+        "node": "element",
+        "tag": "hr"
+      },
+      {
+        "node": "element",
+        "tag": "p",
+        "child": [
+          {
+            "node": "element",
+            "tag": "a",
+            "attr": {
+              "href": "https://medium.com/walmartlabs/5-minute-devops-whats-a-user-story-1e4d99e5b5ad"
+            },
+            "child": [
+              {
+                "node": "text",
+                "text": "5 Minute DevOps: What’s a User Story?"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": " was originally published in "
+          },
+          {
+            "node": "element",
+            "tag": "a",
+            "attr": {
+              "href": "https://medium.com/walmartlabs"
+            },
+            "child": [
+              {
+                "node": "text",
+                "text": "WalmartLabs"
+              }
+            ]
+          },
+          {
+            "node": "text",
+            "text": " on Medium, where people are continuing the conversation by highlighting and responding to this story."
+          }
+        ]
+      }
+    ]
+  }
+}

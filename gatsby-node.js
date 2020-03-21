@@ -66,7 +66,7 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
-    `
+    `,
   )
 
   if (markdownQueryResult.errors) {
@@ -92,7 +92,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   postsEdges.forEach((edge, index) => {
     if (edge.node.frontmatter.tags) {
-      edge.node.frontmatter.tags.forEach(tag => {
+      edge.node.frontmatter.tags.forEach((tag) => {
         tagSet.add(tag)
       })
     }
@@ -119,7 +119,7 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
-  tagSet.forEach(tag => {
+  tagSet.forEach((tag) => {
     createPage({
       path: `/tags/${_.kebabCase(tag)}/`,
       component: tagPage,
@@ -128,7 +128,7 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
-  categorySet.forEach(category => {
+  categorySet.forEach((category) => {
     createPage({
       path: `/categories/${_.kebabCase(category)}/`,
       component: categoryPage,

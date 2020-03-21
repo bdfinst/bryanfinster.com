@@ -10,7 +10,7 @@ class PostTags extends Component {
     return (
       <div className="post-tag-container">
         {tags &&
-          tags.map(tag => (
+          tags.map((tag) => (
             <Link
               key={tag}
               style={{ textDecoration: 'none' }}

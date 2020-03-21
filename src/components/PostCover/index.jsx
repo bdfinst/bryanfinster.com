@@ -43,7 +43,7 @@ class queryWrapper extends Component {
             }
           }
         `}
-        render={data => (
+        render={(data) => (
           <PostCover
             fileEdges={data.allFile.edges}
             postNode={postNode}
