@@ -23,17 +23,21 @@ class SocialLinks extends Component {
     const post = postNode.frontmatter
     const url = urljoin(config.siteUrl, config.pathPrefix, postPath)
     const iconSize = mobile ? 36 : 48
-    const filter = (count) => (count > 0 ? count : '')
-    const renderShareCount = (count) => (
-      <div className="share-count">{filter(count)}</div>
-    )
+    const filter = (count) => {
+      return count > 0 ? count : ''
+    }
+    const renderShareCount = (count) => {
+      return <div className="share-count">{filter(count)}</div>
+    }
 
     return (
       <div className="social-links">
         <RedditShareButton url={url} title={post.title}>
           <RedditIcon round size={iconSize} />
           <RedditShareCount url={url}>
-            {(count) => renderShareCount(count)}
+            {(count) => {
+              return renderShareCount(count)
+            }}
           </RedditShareCount>
         </RedditShareButton>
         <TwitterShareButton url={url} title={post.title}>
@@ -42,7 +46,9 @@ class SocialLinks extends Component {
         <FacebookShareButton url={url} quote={postNode.excerpt}>
           <FacebookIcon round size={iconSize} />
           <FacebookShareCount url={url}>
-            {(count) => renderShareCount(count)}
+            {(count) => {
+              return renderShareCount(count)
+            }}
           </FacebookShareCount>
         </FacebookShareButton>
         <LinkedinShareButton

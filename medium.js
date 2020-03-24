@@ -6,6 +6,7 @@ const { parseString } = require('xml2js')
 const json2md = require('json2md')
 const { html2json } = require('html2json')
 const R = require('ramda')
+const { transformJSONForMarkdown } = require('./src/blogTransform')
 
 const feedURL = 'https://medium.com/feed/@bdfinst'
 const blogPath = 'content/blog/'
@@ -14,7 +15,9 @@ const buildFileName = (blog) => {
   const dateFormat = 'YYYY-MM-DD'
   const title = blog.link[0] || 'MISSING'
   const published =
-    moment(blog.pubDate[0]).format(dateFormat) || moment().format(dateFormat)
+    moment(blog.pubDate[0])
+    .format(dateFormat) || moment()
+    .format(dateFormat)
 
   return `${published}-${title.substring(
     title.lastIndexOf('/') + 1,
@@ -23,16 +26,17 @@ const buildFileName = (blog) => {
 }
 
 const replaceKey = (json, key, newKey) => {
-  return JSON.parse(JSON.stringify(json).replace(key, newKey))
+  return JSON.parse(JSON.stringify(json)
+    .replace(key, newKey))
 }
 
 const structureContentToJson = (content) => {
-  const json = html2json(content)
-  return json
+  const pipe = R.pipe(html2json, extractImage)
+  return pipe(content)
 }
 
 const extractImage = (post) => {
-  const newPost = post
+  const newPost = transformForMarkdown(post)
   return newPost
 }
 
@@ -58,7 +62,7 @@ const convertToBlog = (mediumPost) => {
 }
 
 const parseMediumXML = (xmlString) => {
-  parseString(xmlString, function(err, result) {
+  parseString(xmlString, (err, result) => {
     const { rss = {} } = result
     const { channel = [] } = rss
     const blogPosts = channel[0].item
