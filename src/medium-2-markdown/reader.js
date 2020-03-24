@@ -68,12 +68,12 @@ const generateFrontMatter = (title, subtitle, cover, date, slug, tags) => {
       .replace(/\n/g, '') : '',
     date: date ? moment(date.toString())
       .format(dateFormat) : '',
-    category: '',
+    category: 'devops',
     tags: [],
     slug: slug ? slug.toString() : '',
   }
 
-  frontMatter.tags = tags ? tags : []
+  frontMatter.tags = tags.length > 0 ? tags : ['devops']
   const yml = yaml.safeDump(frontMatter)
   return yml
 }

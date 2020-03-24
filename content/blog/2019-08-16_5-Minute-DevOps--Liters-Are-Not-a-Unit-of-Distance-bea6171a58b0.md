@@ -3,8 +3,9 @@ title: '5 Minute DevOps: Liters Are Not a Unit of Distance'
 cover: 1____VNDqgxjweJBxJnRIqPKoA.png
 description: How do you know you’re doing it correctly? Measure the right way.
 date: '2019-08-16'
-category: ''
-tags: []
+category: devops
+tags:
+  - devops
 slug: /@bdfinst/5-minute-devops-liters-are-not-a-unit-of-distance-bea6171a58b0
 ---
 

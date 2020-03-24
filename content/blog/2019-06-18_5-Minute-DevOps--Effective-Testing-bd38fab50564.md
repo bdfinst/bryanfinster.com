@@ -5,8 +5,9 @@ description: >-
   For anyone wishing to master CI/CD, there are few areas of study more
   important than the effective use of metrics and testing.
 date: '2019-06-18'
-category: ''
-tags: []
+category: devops
+tags:
+  - devops
 slug: /@bdfinst/5-minute-devops-effective-testing-bd38fab50564
 ---
 

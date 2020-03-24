@@ -5,8 +5,9 @@ description: >-
   As organizations attempt to transform, they often focus on tooling or hiring
   “transformation consultants” as a silver bullet. However…
 date: '2020-03-04'
-category: ''
-tags: []
+category: devops
+tags:
+  - devops
 slug: /@bdfinst/5-minute-devops-devops-darwinism-7bfa766f87db
 ---
 

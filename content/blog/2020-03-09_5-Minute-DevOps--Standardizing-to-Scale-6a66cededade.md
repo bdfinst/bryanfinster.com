@@ -5,8 +5,9 @@ description: >-
   Scaling improvement is the siren song of every enterprise. Once we experience
   a team that is able to deliver the outcomes we are looking…
 date: '2020-03-08'
-category: ''
-tags: []
+category: devops
+tags:
+  - devops
 slug: /@bdfinst/5-minute-devops-standardizing-to-scale-6a66cededade
 ---
 

@@ -3,8 +3,9 @@ title: '5 Minute DevOps: Removing Drama from Delivery'
 cover: 1____C9bzYDswgXSgSJLSrt6bQ.png
 description: Doing “Done” wrong.
 date: '2019-07-05'
-category: ''
-tags: []
+category: devops
+tags:
+  - devops
 slug: /@bdfinst/5-minute-devops-removing-drama-from-delivery-10b7fa486ea9
 ---
 

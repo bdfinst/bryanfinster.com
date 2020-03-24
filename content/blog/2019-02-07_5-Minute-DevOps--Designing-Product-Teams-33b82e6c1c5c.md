@@ -5,8 +5,9 @@ description: >-
   What does a product team really looks like? You’ll hear lots of DevOps-y buzz
   words: “T-shaped people”, “cross-functional”, or “Two Pizza…
 date: '2019-02-07'
-category: ''
-tags: []
+category: devops
+tags:
+  - devops
 slug: /@bdfinst/5-minute-devops-designing-product-teams-33b82e6c1c5c
 ---
 

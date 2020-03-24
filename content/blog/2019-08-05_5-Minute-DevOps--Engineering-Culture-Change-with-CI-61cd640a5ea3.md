@@ -3,8 +3,9 @@ title: '5 Minute DevOps: Engineering Culture Change with CI'
 cover: 1__uxKOWwsFMjcNI3QyyRXW__Q.png
 description: Stop doing “Agile” and deliver more value.
 date: '2019-08-05'
-category: ''
-tags: []
+category: devops
+tags:
+  - devops
 slug: /@bdfinst/5-minute-devops-engineering-culture-change-with-ci-61cd640a5ea3
 ---
 

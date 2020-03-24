@@ -3,8 +3,9 @@ title: '5 Minute DevOps: GitFlow Best Practices'
 cover: 1__8__zDz1s5Atux__yNW__mXmfg__2x.png
 description: '      I was asked recently about the best practice for using GitFlow.    '
 date: '2019-04-06'
-category: ''
-tags: []
+category: devops
+tags:
+  - devops
 slug: /@bdfinst/five-minute-devops-gitflow-best-practices-a6cd1265de24
 ---
 

@@ -3,8 +3,9 @@ title: '5 Minute DevOps: Building Team Maturity Using Continuous Delivery'
 cover: 1__bAsLr4kTZa0SJCWKBDaSgg.jpeg
 description: Using Delivery Constraints to Drive Improvement
 date: '2018-07-22'
-category: ''
-tags: []
+category: devops
+tags:
+  - devops
 slug: /@bdfinst/building-team-maturity-using-continuous-delivery-c3a55676a698
 ---
 
