@@ -5,7 +5,7 @@ const config = {
   siteLogo: '/logos/logo-1024.png', // Logo used for SEO and manifest.
   siteUrl: 'https://bryanfinster.com', // Domain of your website without pathPrefix.
   pathPrefix: '', // Prefixes all links.
-  fixedFooter: true, // Whether the footer component is fixed, i.e. always visible
+  fixedFooter: false, // Whether the footer component is fixed, i.e. always visible
   siteDescription: "A blog about improving developers' lives", // Website description used for RSS feeds/meta description tag.
   siteRss: '/rss.xml', // Path to the RSS file.
   siteRssTitle: "Bryan Finster' blog RSS feed", // Title of the RSS feed
