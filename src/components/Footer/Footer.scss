@@ -3,7 +3,7 @@
 .footer {
   justify-content: center;
   align-content: center;
-  background-color: $md-primary-color;
+  background-color: rgba($md-primary-color, .32);
   padding: 10px 5px 5px;
 
   .notice-container {
