@@ -3,7 +3,7 @@ const config = {
   siteTitleShort: 'Bryan Finster', // Short site title for home screen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: 'Bryan Finster', // Alternative site title for SEO.
   siteLogo: '/logos/logo-1024.png', // Logo used for SEO and manifest.
-  siteUrl: 'https://bryanfinster.com', // Domain of your website without pathPrefix.
+  siteUrl: 'bryanfinster.com', // Domain of your website without pathPrefix.
   pathPrefix: '', // Prefixes all links.
   fixedFooter: false, // Whether the footer component is fixed, i.e. always visible
   siteDescription: "A blog about improving developers' lives", // Website description used for RSS feeds/meta description tag.
