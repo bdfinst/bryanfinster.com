@@ -1,6 +1,6 @@
 const config = {
   siteTitle: 'Bryan Finster', // Site title.
-  siteTitleShort: 'Bryan Finster', // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
+  siteTitleShort: 'Bryan Finster', // Short site title for home screen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: 'Bryan Finster', // Alternative site title for SEO.
   siteLogo: '/logos/logo-1024.png', // Logo used for SEO and manifest.
   siteUrl: 'https://bryanfinster.com', // Domain of your website without pathPrefix.
@@ -18,13 +18,13 @@ const config = {
   userEmail: 'bryan.finster@gmail.com', // Email used for RSS feed's author segment
   userTwitter: '@bryanfinster', // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: 'Bentonville, AR', // User location to display in the author segment.
-  userAvatar: 'https://api.adorable.io/avatars/150/test.png', // User avatar to display in the author segment.
+  userAvatar: '/logos/avatar.png', // User avatar to display in the author segment.
   userDescription: 'This is me', // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {
       label: 'GitHub',
-      url: 'https://github.com/Vagr9K/gatsby-material-starter',
+      url: 'https://github.com/bdfinst/bryanfinster.com',
       iconClassName: 'fa fa-github',
     },
     {
@@ -35,7 +35,7 @@ const config = {
     {
       label: 'LinkedIn',
       url: 'https://www.linkedin.com/in/bryan-finster/',
-      iconClassName: 'fa fa-twitter',
+      iconClassName: 'fa fa-linkedin',
     },
     {
       label: 'Email',
