@@ -3,6 +3,6 @@ module.exports = {
   images: true,
   frontMatter: true,
   inputPath: '/Users/bdfinst/Downloads/medium-export/posts',
-  outputPath: 'content/blog/',
-  imagePath: 'static/assets',
+  outputPath: 'content/posts/',
+  imagePath: 'static/media',
 }

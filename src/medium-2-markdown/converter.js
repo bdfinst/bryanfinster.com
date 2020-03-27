@@ -34,7 +34,7 @@ td.addRule('figure', {
     // This check is important as Medium renders embeds (YouTube, etc.) also as figures.
     if (isUrl(imgSrc)) {
       const imgFileName = getImageName(imgSrc)
-      const localImgPath = path.join('img', imgFileName)
+      const localImgPath = path.join('/media', imgFileName)
       element = `![](${localImgPath})`
       images.push({
         src: imgSrc,

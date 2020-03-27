@@ -5,16 +5,6 @@ const url = require('url')
 const moment = require('moment')
 const { getImageName } = require('./utils')
 
-// ---
-// cover: "8.jpg"
-// date: "2017-01-01"
-// category: "tech"
-// tags:
-//     - programming
-//     - stuff
-//     - other
-// ---
-
 const readAll = (filePath, frontMatterConfig) => {
   const contents = fs.readFileSync(filePath)
 
@@ -56,25 +46,38 @@ const readAll = (filePath, frontMatterConfig) => {
   return { html, frontMatter }
 }
 
+// ---
+// title: Perfecting the Art of Perfection
+// date: "2016-09-01T23:46:37.121Z"
+// template: "post"
+// draft: false
+// slug: "perfecting-the-art-of-perfection"
+// category: "Design Inspiration"
+// tags:
+//   - "Handwriting"
+//   - "Learning to write"
+
 const generateFrontMatter = (title, subtitle, cover, date, slug, tags) => {
-  const dateFormat = 'YYYY-MM-DD'
 
   const frontMatter = {
     title: title.toString()
       .replace(/\n/g, ''),
-    cover: getImageName(cover.toString()) || '',
+    socialImage: getImageName(cover.toString()) || '',
+    template: "post",
+    draft: false,
     description: subtitle ?
       subtitle.toString()
       .replace(/\n/g, '') : '',
-    date: date ? moment(date.toString())
-      .format(dateFormat) : '',
+    date: date || '',
     category: 'devops',
     tags: [],
-    slug: slug ? slug.toString() : '',
+    slug: slug ? slug.toString()
+      .replace('/@bdfinst/', '') : '',
   }
 
   frontMatter.tags = tags.length > 0 ? tags : ['devops']
   const yml = yaml.safeDump(frontMatter)
+  console.log(yml)
   return yml
 }
 
