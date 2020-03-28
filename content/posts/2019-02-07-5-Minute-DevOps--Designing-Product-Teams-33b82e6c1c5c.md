@@ -9,7 +9,7 @@ description: >-
 date: '2019-02-07T12:11:28.798Z'
 category: devops
 tags:
-  - devops
+  - culture
 slug: 5-minute-devops-designing-product-teams-33b82e6c1c5c
 ---
 

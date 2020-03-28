@@ -7,7 +7,8 @@ description: Stop doing “Agile” and deliver more value.
 date: '2019-08-05T22:31:18.960Z'
 category: devops
 tags:
-  - devops
+  - culture
+  - improvement
 slug: 5-minute-devops-engineering-culture-change-with-ci-61cd640a5ea3
 ---
 

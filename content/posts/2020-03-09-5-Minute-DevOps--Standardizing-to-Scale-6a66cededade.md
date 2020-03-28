@@ -9,10 +9,9 @@ description: >-
 date: '2020-03-09T02:25:59.446Z'
 category: devops
 tags:
-  - DevOps
-  - Continuous Integration
-  - Scaled Agile
-  - Continuous Improvement
+  - culture
+  - improvement
+  - metrics
 slug: 5-minute-devops-standardizing-to-scale-6a66cededade
 ---
 

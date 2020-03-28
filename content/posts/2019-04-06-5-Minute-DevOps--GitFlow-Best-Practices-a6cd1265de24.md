@@ -7,7 +7,7 @@ description: '      I was asked recently about the best practice for using GitFl
 date: '2019-04-06T11:18:03.202Z'
 category: devops
 tags:
-  - devops
+  - lean
 slug: five-minute-devops-gitflow-best-practices-a6cd1265de24
 ---
 

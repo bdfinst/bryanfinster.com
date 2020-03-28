@@ -9,7 +9,7 @@ description: >-
 date: '2018-04-24T17:23:07.032Z'
 category: devops
 tags:
-  - devops
+  - culture
 slug: happy-teams-deliver-quality-7c13ff9e712b
 ---
 

@@ -9,7 +9,8 @@ description: >-
 date: '2020-03-04T20:01:23.783Z'
 category: devops
 tags:
-  - devops
+  - leadership
+  - culture
 slug: 5-minute-devops-devops-darwinism-7bfa766f87db
 ---
 

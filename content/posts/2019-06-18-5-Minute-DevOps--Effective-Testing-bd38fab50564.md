@@ -9,7 +9,8 @@ description: >-
 date: '2019-06-18T17:42:30.840Z'
 category: devops
 tags:
-  - devops
+  - automation
+  - quality
 slug: 5-minute-devops-effective-testing-bd38fab50564
 ---
 

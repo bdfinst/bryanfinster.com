@@ -7,7 +7,8 @@ description: Doing “Done” wrong.
 date: '2019-07-05T12:27:03.372Z'
 category: devops
 tags:
-  - devops
+  - culture
+  - lean
 slug: 5-minute-devops-removing-drama-from-delivery-10b7fa486ea9
 ---
 

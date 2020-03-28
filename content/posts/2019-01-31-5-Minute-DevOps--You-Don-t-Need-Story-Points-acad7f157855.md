@@ -9,7 +9,7 @@ description: >-
 date: '2019-01-31T17:17:26.805Z'
 category: devops
 tags:
-  - devops
+  - lean
 slug: 5-minute-devops-you-dont-need-story-points-acad7f157855
 ---
 

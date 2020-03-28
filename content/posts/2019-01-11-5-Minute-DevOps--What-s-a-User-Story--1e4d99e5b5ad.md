@@ -9,7 +9,7 @@ description: >-
 date: '2019-01-11T00:26:31.251Z'
 category: devops
 tags:
-  - devops
+  - lean
 slug: 5-minute-devops-whats-a-user-story-1e4d99e5b5ad
 ---
 

@@ -7,7 +7,7 @@ description: Using Delivery Constraints to Drive Improvement
 date: '2018-07-22T18:14:48.528Z'
 category: devops
 tags:
-  - devops
+  - culture
 slug: building-team-maturity-using-continuous-delivery-c3a55676a698
 ---
 
