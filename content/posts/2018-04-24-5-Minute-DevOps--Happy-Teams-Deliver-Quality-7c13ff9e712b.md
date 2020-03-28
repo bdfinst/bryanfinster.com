@@ -5,7 +5,7 @@ template: post
 draft: false
 description: >-
   Delivering new solutions for business problems is fun! The more fun something
-  is, the more motivated you are to do it frequently…
+  is, the more motivated you are to do it frequently...
 date: '2018-04-24T17:23:07.032Z'
 category: culture
 tags:

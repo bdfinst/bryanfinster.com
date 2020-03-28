@@ -4,8 +4,7 @@ socialImage: 1__PcwvGiIfOA0XSJ3d0dZHyQ.png
 template: post
 draft: false
 description: >-
-  In 5 Minute DevOps, I attempted to define user stories in a testable way. Real
-  developers should test, after all. Now that we have a story…
+  We have a long history of attempting to communicate the uncertainty of outcomes to non-technical stakeholders. We speak in delivery probabilities, not certainty. It can be frustrating to those who don’t understand, but software development is not cookie cutter...
 date: '2019-01-31T17:17:26.805Z'
 category: lean
 tags:
@@ -15,8 +14,6 @@ slug: 5-minute-devops-you-dont-need-story-points-acad7f157855
 
 ![By RDBury — Own work, CC BY-SA 3.0, [https://commons.wikimedia.org/w/index.php?curid=15045063](https://commons.wikimedia.org/w/index.php?curid=15045063)](/bryanfinster.com/media/1__PcwvGiIfOA0XSJ3d0dZHyQ.png)
 By RDBury — Own work, CC BY-SA 3.0, [https://commons.wikimedia.org/w/index.php?curid=15045063](https://commons.wikimedia.org/w/index.php?curid=15045063)
-
-In my last [5 Minute DevOps](https://medium.com/walmartlabs/5-minute-devops-whats-a-user-story-1e4d99e5b5ad), I attempted to define user stories in a testable way. Real developers should test, after all. Now that we have a story, how do we communicate when it can ship?
 
 We have a long history of attempting to communicate the uncertainty of outcomes to non-technical stakeholders. We speak in delivery probabilities, not certainty. It can be frustrating to those who don’t understand, but software development is not cookie cutter and managing expectations is key when uncertainty is high.
 

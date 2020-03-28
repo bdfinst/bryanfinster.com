@@ -4,8 +4,7 @@ socialImage: 1__6JkoIvqkxssqT1__OTMyPtw.jpeg
 template: post
 draft: false
 description: >-
-  What is Pragmatic DevOps? It’s just a catchy way of saying we deliver with
-  Minimum Viable Process using lean techniques to drive waste out…
+  One of the bigger problems we’ve seen in many companies moving to agile development is the fact that the people leading the change are typically **not** currently developers. Many took classes on “Agile” to become “Certified”, but the real world examples people need to translate their current processes to delivering with more agility rarely come from books...
 date: '2019-01-11T00:26:31.251Z'
 category: lean
 tags:
@@ -15,8 +14,6 @@ slug: 5-minute-devops-whats-a-user-story-1e4d99e5b5ad
 
 ![[https://www.flickr.com/photos/83633410@N07/7658298768](https://www.flickr.com/photos/83633410@N07/7658298768)](/bryanfinster.com/media/1__6JkoIvqkxssqT1__OTMyPtw.jpeg)
 [https://www.flickr.com/photos/83633410@N07/7658298768](https://www.flickr.com/photos/83633410@N07/7658298768)
-
-What is Pragmatic DevOps? It’s just a catchy way of saying we deliver with Minimum Viable Process using lean techniques to drive waste out of the system. If it helps us deliver and support our product, it’s good. If not, we remove it.
 
 One of the bigger problems we’ve seen in many companies moving to agile development is the fact that the people leading the change are typically **not** currently developers. Many took classes on “Agile” to become “Certified”, but the real world examples people need to translate their current processes to delivering with more agility rarely come from books. How many of the signatories of the [Manifesto for Agile Software Development](https://agilemanifesto.org/) are certified?
 

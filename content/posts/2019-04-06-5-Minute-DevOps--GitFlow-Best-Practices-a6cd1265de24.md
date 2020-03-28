@@ -3,7 +3,8 @@ title: '5 Minute DevOps: GitFlow Best Practices'
 socialImage: 1__8__zDz1s5Atux__yNW__mXmfg__2x.png
 template: post
 draft: false
-description: '      I was asked recently about the best practice for using GitFlow.    '
+description: ->
+  I was asked recently about the best practice for using GitFlow with continuous integration. For those who do not know...
 date: '2019-04-06T11:18:03.202Z'
 category: lean
 tags:

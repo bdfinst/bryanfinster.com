@@ -6,11 +6,11 @@ const currentYear = moment()
 module.exports = {
   url: 'https://bdfinst.github.io/',
   pathPrefix: 'bryanfinster.com/',
-  title: 'Continuous DevOps',
+  title: '5 Minute DevOps',
   subtitle: 'Helping developers sleep better, one constraint at a time.',
   copyright: `©${currentYear} Bryan Finster: All rights reserved.`,
   disqusShortname: '',
-  postsPerPage: 4,
+  postsPerPage: 5,
   googleAnalyticsId: '',
   useKatex: false,
   menu: [
