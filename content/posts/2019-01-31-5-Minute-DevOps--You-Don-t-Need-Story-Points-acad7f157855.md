@@ -13,7 +13,7 @@ tags:
 slug: 5-minute-devops-you-dont-need-story-points-acad7f157855
 ---
 
-![By RDBury — Own work, CC BY-SA 3.0, [https://commons.wikimedia.org/w/index.php?curid=15045063](https://commons.wikimedia.org/w/index.php?curid=15045063)](/media/1__PcwvGiIfOA0XSJ3d0dZHyQ.png)
+![By RDBury — Own work, CC BY-SA 3.0, [https://commons.wikimedia.org/w/index.php?curid=15045063](https://commons.wikimedia.org/w/index.php?curid=15045063)](/bryanfinster.com/media/1__PcwvGiIfOA0XSJ3d0dZHyQ.png)
 By RDBury — Own work, CC BY-SA 3.0, [https://commons.wikimedia.org/w/index.php?curid=15045063](https://commons.wikimedia.org/w/index.php?curid=15045063)
 
 In my last [5 Minute DevOps](https://medium.com/walmartlabs/5-minute-devops-whats-a-user-story-1e4d99e5b5ad), I attempted to define user stories in a testable way. Real developers should test, after all. Now that we have a story, how do we communicate when it can ship?
@@ -24,7 +24,7 @@ T-shirt sizing, ideal days, and story points have all been used in an attempt to
 
 Story points are particularly troublesome. Teams just starting out will equate story points to hours or days. External stakeholders will do the same. Managers will try to “normalize” story points to compare teams’ relative productivity with their velocity, a staggeringly poor metric. In the end, no one sees any real value.
 
-![By ElectroKid (☮ • ✍) — Own work, Public Domain, [https://commons.wikimedia.org/w/index.php?curid=37832785](https://commons.wikimedia.org/w/index.php?curid=37832785)](/media/1__X0YUQgeuax5__dbFXRNk4lg.png)
+![By ElectroKid (☮ • ✍) — Own work, Public Domain, [https://commons.wikimedia.org/w/index.php?curid=37832785](https://commons.wikimedia.org/w/index.php?curid=37832785)](/bryanfinster.com/media/1__X0YUQgeuax5__dbFXRNk4lg.png)
 By ElectroKid (☮ • ✍) — Own work, Public Domain, [https://commons.wikimedia.org/w/index.php?curid=37832785](https://commons.wikimedia.org/w/index.php?curid=37832785)
 
 So, what is a story point really? It’s a statement of relative size and complexity compared to a task the team understands and can estimate. You cannot “normalize” them because no two teams have the same knowledge or experience. The bigger the story point size, the less certain and more complex. Uncertainty also isn’t linear. We use the Fibonacci sequence because it increases with the **square** of the number.

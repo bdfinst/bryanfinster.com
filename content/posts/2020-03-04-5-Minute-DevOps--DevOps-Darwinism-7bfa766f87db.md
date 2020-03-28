@@ -21,7 +21,7 @@ Delivering value better to the end-user is not a problem that can be solved by h
 
 Things aren’t improving because your organization isn’t configured for the improvement you want. What will you fix first?
 
-![By Kamsster — Own work, CC BY-SA 4.0, [https://commons.wikimedia.org/w/index.php?curid=40752037](https://commons.wikimedia.org/w/index.php?curid=40752037)](/media/1__wb60zuGFQWEKghVd__iDSyA.jpeg)
+![By Kamsster — Own work, CC BY-SA 4.0, [https://commons.wikimedia.org/w/index.php?curid=40752037](https://commons.wikimedia.org/w/index.php?curid=40752037)](/bryanfinster.com/media/1__wb60zuGFQWEKghVd__iDSyA.jpeg)
 By Kamsster — Own work, CC BY-SA 4.0, [https://commons.wikimedia.org/w/index.php?curid=40752037](https://commons.wikimedia.org/w/index.php?curid=40752037)
 
 ### Issues that Impact Team Evolution
@@ -79,7 +79,7 @@ A team is a group of individuals who all share a common goal, respect each other
 
 ### Leadership Should Lead
 
-![[https://www.misawa.af.mil/News/Commentaries/Display/Article/1675993/servant-leadership/](https://www.misawa.af.mil/News/Commentaries/Display/Article/1675993/servant-leadership/)](/media/1__83bMUG2uaz239j__BjGii1g.jpeg)
+![[https://www.misawa.af.mil/News/Commentaries/Display/Article/1675993/servant-leadership/](https://www.misawa.af.mil/News/Commentaries/Display/Article/1675993/servant-leadership/)](/bryanfinster.com/media/1__83bMUG2uaz239j__BjGii1g.jpeg)
 [https://www.misawa.af.mil/News/Commentaries/Display/Article/1675993/servant-leadership/](https://www.misawa.af.mil/News/Commentaries/Display/Article/1675993/servant-leadership/)
 
 “All of **you** need to change!” The problem is that the entire organization, including leadership, must change to support the outcomes. When change is focused only on the teams then the best case will be minor local optimization of a few interested teams who happen to be organized correctly. If your goal is to improve the ability of your organization to deliver, it’s not enough to say buzz-words and ask why nothing improves. You must study what is required to help the teams achieve those goals. You need to understand what current issues in the environment of your organization are causing the teams to work the way they are. You need to systematically change that environment to get the outcomes you want. This takes work. Get out in front. Dig in. Lead the change.

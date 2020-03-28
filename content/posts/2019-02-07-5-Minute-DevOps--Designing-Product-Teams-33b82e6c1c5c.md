@@ -13,7 +13,7 @@ tags:
 slug: 5-minute-devops-designing-product-teams-33b82e6c1c5c
 ---
 
-![[http://www.picpedia.org/highway-signs/c/chaos.html](http://www.picpedia.org/highway-signs/c/chaos.html)](/media/1__UKqinwhMXs1TeBaqQ0Mu5w.jpeg)
+![[http://www.picpedia.org/highway-signs/c/chaos.html](http://www.picpedia.org/highway-signs/c/chaos.html)](/bryanfinster.com/media/1__UKqinwhMXs1TeBaqQ0Mu5w.jpeg)
 [http://www.picpedia.org/highway-signs/c/chaos.html](http://www.picpedia.org/highway-signs/c/chaos.html)
 
 What does a product team really looks like? You’ll hear lots of DevOps-y buzz words: “T-shaped people”, “cross-functional”, or “Two Pizza Team”. So, what is a viable product team and what are some common team anti-patterns?
@@ -65,7 +65,7 @@ If the above principles are not true, it’s not a product team. It’s merely a
 
 Having a _cross-functional, co-located, responsible_ team with _ownership_ is a good start, but it’s only part of the problem. To keep deliverables fast, cheap, and high quality, it’s important to minimize inter-team dependencies. Teams need to deliver independently in any sequence. This takes planning before we form a team. What is our desired architecture? Which functional domain will each team be responsible for? Things become more complicated here because, like many other things in application design, “**it depends”**. It also requires technical skills from the team with a focus on API management, Contract Driven Development, and an understanding of effective feature toggles.
 
-![Copyright 2019 Bryan Finster](/media/1__2dFR5DT1UvEc8heRha1X4Q.png)
+![Copyright 2019 Bryan Finster](/bryanfinster.com/media/1__2dFR5DT1UvEc8heRha1X4Q.png)
 Copyright 2019 Bryan Finster
 
 ### Functional Domain
@@ -90,7 +90,7 @@ Product teams deliver quality. They care about their team, their product, and th
 
 Want to grow a team fast? [Increase your delivery cadence.](https://medium.com/@bdfinst/building-team-maturity-using-continuous-delivery-c3a55676a698)
 
-![](/media/0__Piks8Tu6xUYpF4DU.jpg)
+![](/bryanfinster.com/media/0__Piks8Tu6xUYpF4DU.jpg)
 
 **Follow us on** [**Twitter**](https://twitter.com/joinfaun) 🐦 **and** [**Facebook**](https://www.facebook.com/faun.dev/) 👥 **and join our** [**Facebook Group**](https://www.facebook.com/groups/364904580892967/) 💬**.**
 

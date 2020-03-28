@@ -4,8 +4,8 @@ const currentYear = moment()
   .format('YYYY')
 
 module.exports = {
-  url: 'https://bryanfinster.com',
-  pathPrefix: '/',
+  url: 'https://bdfinst.github.io/',
+  pathPrefix: 'bryanfinster.com/',
   title: 'Continuous DevOps',
   subtitle: 'Helping developers sleep better, one constraint at a time.',
   copyright: `©${currentYear} Bryan Finster: All rights reserved.`,

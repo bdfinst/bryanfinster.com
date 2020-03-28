@@ -13,7 +13,7 @@ slug: five-minute-devops-gitflow-best-practices-a6cd1265de24
 
 I was asked recently about the best practice for using GitFlow with continuous integration. For those who do not know, this is GitFlow:
 
-![Post from 2010: [https://nvie.com/posts/a-successful-git-branching-model/](https://nvie.com/posts/a-successful-git-branching-model/)](/media/1__8__zDz1s5Atux__yNW__mXmfg__2x.png)
+![Post from 2010: [https://nvie.com/posts/a-successful-git-branching-model/](https://nvie.com/posts/a-successful-git-branching-model/)](/bryanfinster.com/media/1__8__zDz1s5Atux__yNW__mXmfg__2x.png)
 Post from 2010: [https://nvie.com/posts/a-successful-git-branching-model/](https://nvie.com/posts/a-successful-git-branching-model/)
 
 There is no CI good practice that includes GitFlow. For continuous integration to meet the definition, these are the good practices:

@@ -2,6 +2,7 @@ const TurndownService = require('turndown')
 const path = require('path')
 const isUrl = require('./isUrl')
 const { getImageName } = require('./utils')
+const config = require('../../config')
 
 const config = {
   headingStyle: 'atx',
@@ -34,7 +35,7 @@ td.addRule('figure', {
     // This check is important as Medium renders embeds (YouTube, etc.) also as figures.
     if (isUrl(imgSrc)) {
       const imgFileName = getImageName(imgSrc)
-      const localImgPath = path.join('/media', imgFileName)
+      const localImgPath = path.join(`${config.pathPrefix}/media`, imgFileName)
       element = `![](${localImgPath})`
       images.push({
         src: imgSrc,

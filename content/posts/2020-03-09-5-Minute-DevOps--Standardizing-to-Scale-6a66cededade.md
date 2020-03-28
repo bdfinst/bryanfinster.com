@@ -13,7 +13,7 @@ tags:
 slug: 5-minute-devops-standardizing-to-scale-6a66cededade
 ---
 
-![[https://www.flickr.com/photos/adactio/2856955322](https://www.flickr.com/photos/adactio/2856955322)](/media/1__M6Qvf__fjEvzWocP3dexI4A.jpeg)
+![[https://www.flickr.com/photos/adactio/2856955322](https://www.flickr.com/photos/adactio/2856955322)](/bryanfinster.com/media/1__M6Qvf__fjEvzWocP3dexI4A.jpeg)
 [https://www.flickr.com/photos/adactio/2856955322](https://www.flickr.com/photos/adactio/2856955322)
 
 Scaling improvement is the siren song of every enterprise. Once we have a team that is able to deliver the outcomes we are looking for, the obvious next step is to define those best practices for the rest of the teams. Then scaling is just a shake and bake exercise.

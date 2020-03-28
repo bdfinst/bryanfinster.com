@@ -5,7 +5,7 @@
   "main": "n/a",
   "scripts": {
     "develop": "npm run clean && gatsby develop",
-    "build": "npm run clean && gatsby build",
+    "build": "nvm use && npm run clean && gatsby build",
     "deploy": "npm run clean && gatsby build --prefix-paths && gh-pages -d public",
     "clean": "rimraf .cache public",
     "flow": "flow",
@@ -19,8 +19,8 @@
     "test:coverage": "jest --coverage --config ./jest/jest-config.js",
     "test:watch": "jest --watch --config ./jest/jest-config.js"
   },
-  "repository": "https://github.com/alxshelepenok/gatsby-starter-lumen",
-  "author": "Alexander Shelepenok <alxshelepenok@gmail.com>",
+  "repository": "https://github.com/bdfinst/bryanfinster.com",
+  "author": "Bryan Finster <bryan.finster@gmail.com>",
   "license": "MIT",
   "keywords": [
     "gatsby",

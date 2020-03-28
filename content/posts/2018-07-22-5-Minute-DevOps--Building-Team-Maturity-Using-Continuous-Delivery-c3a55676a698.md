@@ -15,14 +15,14 @@ Accelerating delivery is a key strategic initiative for any company wishing to r
 
 ### **Quarterly (or longer) Delivery**
 
-![By Bundesarchiv, Bild 183–40551–0003 / CC-BY-SA 3.0, CC BY-SA 3.0 de, [https://commons.wikimedia.org/w/index.php?curid=5353021](https://commons.wikimedia.org/w/index.php?curid=5353021)](/media/1__3UC2sdcusz0hdrPrBYS8__Q.jpeg)
+![By Bundesarchiv, Bild 183–40551–0003 / CC-BY-SA 3.0, CC BY-SA 3.0 de, [https://commons.wikimedia.org/w/index.php?curid=5353021](https://commons.wikimedia.org/w/index.php?curid=5353021)](/bryanfinster.com/media/1__3UC2sdcusz0hdrPrBYS8__Q.jpeg)
 By Bundesarchiv, Bild 183–40551–0003 / CC-BY-SA 3.0, CC BY-SA 3.0 de, [https://commons.wikimedia.org/w/index.php?curid=5353021](https://commons.wikimedia.org/w/index.php?curid=5353021)
 
 We can do this with **any** process, even Waterfall or ad hoc. At the end of the quarter we discover how much of that delivery was unneeded, misunderstood, or of such poor quality that we plan for support impact as part of the roadmap. Generally, heroics are needed to recover or we extend the roadmap and explain _“that’s how software development works”_ to our customers. Using “Agile Methodology” becomes a way to update management in two week increments so they can report if we are trending “green”, but there is minimal value being delivered from “Agile”.
 
 ### **Monthly Delivery**
 
-![[https://vintageracecar.com/](https://vintageracecar.com/woods-woods-specializing-in-coachbuilding-radiator-recores-fuel-tanks/)](/media/1__e8s3DoT6GcTku3weF0byug.jpeg)
+![[https://vintageracecar.com/](https://vintageracecar.com/woods-woods-specializing-in-coachbuilding-radiator-recores-fuel-tanks/)](/bryanfinster.com/media/1__e8s3DoT6GcTku3weF0byug.jpeg)
 [https://vintageracecar.com/](https://vintageracecar.com/woods-woods-specializing-in-coachbuilding-radiator-recores-fuel-tanks/)
 
 To gain more trust from our customers, we decide to deliver monthly. As we do this, we discover that our “stories” are actually one or more complete features in “story format” that do not meet [**INVEST**](https://en.wikipedia.org/wiki/INVEST_%28mnemonic%29). We measure [**cycle times**](https://www.isixsigma.com/dictionary/cycle-time/) and focus on reducing those to less than a week. That requires us to focus on the core value of every feature, drive out “gold plating”, and defer features that aren’t the highest priority. We start having more conversations with the customers about their goals, become more knowledgeable about the business, and bring them closer to the team.
@@ -37,7 +37,7 @@ Our code reviews are another pain point. formal code review meetings or requirin
 
 ### **Weekly Delivery**
 
-![By Unknown — nick’s thunderbird parts catalog, Public Domain, [https://commons.wikimedia.org/w/index.php?curid=17572247](https://commons.wikimedia.org/w/index.php?curid=17572247)](/media/1__kgaWGJlVmgBAE1dPn7IwGw.jpeg)
+![By Unknown — nick’s thunderbird parts catalog, Public Domain, [https://commons.wikimedia.org/w/index.php?curid=17572247](https://commons.wikimedia.org/w/index.php?curid=17572247)](/bryanfinster.com/media/1__kgaWGJlVmgBAE1dPn7IwGw.jpeg)
 By Unknown — nick’s thunderbird parts catalog, Public Domain, [https://commons.wikimedia.org/w/index.php?curid=17572247](https://commons.wikimedia.org/w/index.php?curid=17572247)
 
 After getting our cadence down to monthly, we are starting to see some improvement, but we are still not getting timely feedback on features and it takes months to get a new request through the process. Not only does this make us appear unresponsive to business needs, but priorities constantly shift and sprint plans are often disrupted. In addition, production defects are typically weeks old and require extended triage. We decide shorter cycle times might allow us to more cleanly shift as priorities change. We also predict it will take less time to find root cause due to the smaller change size.
@@ -60,7 +60,7 @@ Testing effort is becoming apparent as well. It’s taking too long to find inte
 
 ### **Daily Delivery**
 
-![By Land Rover MENA — Virgin Voyage | Land Rover Celebrates Production of First New Discovery Sport, CC BY 2.0, [https://commons.wikimedia.org/w/index.php?curid=38475164](https://commons.wikimedia.org/w/index.php?curid=38475164)](/media/1__bAsLr4kTZa0SJCWKBDaSgg.jpeg)
+![By Land Rover MENA — Virgin Voyage | Land Rover Celebrates Production of First New Discovery Sport, CC BY 2.0, [https://commons.wikimedia.org/w/index.php?curid=38475164](https://commons.wikimedia.org/w/index.php?curid=38475164)](/bryanfinster.com/media/1__bAsLr4kTZa0SJCWKBDaSgg.jpeg)
 By Land Rover MENA — Virgin Voyage | Land Rover Celebrates Production of First New Discovery Sport, CC BY 2.0, [https://commons.wikimedia.org/w/index.php?curid=38475164](https://commons.wikimedia.org/w/index.php?curid=38475164)
 
 We’ve seen some real improvement moving to weekly delivery. It’s taking much less [**lead time**](https://leanandkanban.wordpress.com/2009/04/18/lead-time-vs-cycle-time/) to get features from idea to production. We’ve even started predicting and measuring value delivered, our first steps to [**hypothesis driven development**](https://www.thoughtworks.com/insights/blog/how-implement-hypothesis-driven-development). We have a test suite that gives us confidence and it’s giving us feedback from the pipeline in less than an hour from the time code reaches the trunk. We still have some extra process required for resolving production issues and our MTTR, the time from a production issue occurring until a fix is applied, is more than 2 hours.

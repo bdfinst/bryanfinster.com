@@ -11,7 +11,7 @@ tags:
 slug: 5-minute-devops-removing-drama-from-delivery-10b7fa486ea9
 ---
 
-![[© 2014 Zakeenahttps://www.sketchport.com/drawing/6706745665650688/none-desired](https://www.sketchport.com/drawing/6706745665650688/none-desired). Licensed under [CC-BY](http://creativecommons.org/licenses/by/4.0/).](/media/1____C9bzYDswgXSgSJLSrt6bQ.png)
+![[© 2014 Zakeenahttps://www.sketchport.com/drawing/6706745665650688/none-desired](https://www.sketchport.com/drawing/6706745665650688/none-desired). Licensed under [CC-BY](http://creativecommons.org/licenses/by/4.0/).](/bryanfinster.com/media/1____C9bzYDswgXSgSJLSrt6bQ.png)
 [© 2014 Zakeenahttps://www.sketchport.com/drawing/6706745665650688/none-desired](https://www.sketchport.com/drawing/6706745665650688/none-desired). Licensed under [CC-BY](http://creativecommons.org/licenses/by/4.0/).
 
 Has this ever happened to you or have you ever seen a support request like this?
@@ -20,7 +20,7 @@ Has this ever happened to you or have you ever seen a support request like this?
 
 > I’d really appreciate if someone could help us.”
 
-![By Brady Holt — Own work, CC BY 3.0, [https://commons.wikimedia.org/w/index.php?curid=11113736](https://commons.wikimedia.org/w/index.php?curid=11113736)](/media/1__H9xHcJgqy__rAj2mWJwqEHg.jpeg)
+![By Brady Holt — Own work, CC BY 3.0, [https://commons.wikimedia.org/w/index.php?curid=11113736](https://commons.wikimedia.org/w/index.php?curid=11113736)](/bryanfinster.com/media/1__H9xHcJgqy__rAj2mWJwqEHg.jpeg)
 By Brady Holt — Own work, CC BY 3.0, [https://commons.wikimedia.org/w/index.php?curid=11113736](https://commons.wikimedia.org/w/index.php?curid=11113736)
 
 ### Order of Operations

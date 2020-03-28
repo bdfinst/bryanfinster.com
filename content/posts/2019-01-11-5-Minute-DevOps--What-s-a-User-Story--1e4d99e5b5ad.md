@@ -13,7 +13,7 @@ tags:
 slug: 5-minute-devops-whats-a-user-story-1e4d99e5b5ad
 ---
 
-![[https://www.flickr.com/photos/83633410@N07/7658298768](https://www.flickr.com/photos/83633410@N07/7658298768)](/media/1__6JkoIvqkxssqT1__OTMyPtw.jpeg)
+![[https://www.flickr.com/photos/83633410@N07/7658298768](https://www.flickr.com/photos/83633410@N07/7658298768)](/bryanfinster.com/media/1__6JkoIvqkxssqT1__OTMyPtw.jpeg)
 [https://www.flickr.com/photos/83633410@N07/7658298768](https://www.flickr.com/photos/83633410@N07/7658298768)
 
 What is Pragmatic DevOps? It’s just a catchy way of saying we deliver with Minimum Viable Process using lean techniques to drive waste out of the system. If it helps us deliver and support our product, it’s good. If not, we remove it.
@@ -40,7 +40,7 @@ And so on, until the contract tuns out and the Certified Coach collects their fe
 
 The outcome of this is teams sitting in meetings parsing words and coming up with “As a developer, I want a database, so that the application can store data” and then arguing how to estimate it.
 
-![[https://www.pexels.com/photo/male-statue-decor-931317/](https://www.pexels.com/photo/male-statue-decor-931317/)](/media/1__DKnSr68FwmMfocwZ2T0lHA.jpeg)
+![[https://www.pexels.com/photo/male-statue-decor-931317/](https://www.pexels.com/photo/male-statue-decor-931317/)](/bryanfinster.com/media/1__DKnSr68FwmMfocwZ2T0lHA.jpeg)
 [https://www.pexels.com/photo/male-statue-decor-931317/](https://www.pexels.com/photo/male-statue-decor-931317/)
 
 As a practitioner of Pragmatic DevOps, testable definitions are required to effectively onboard developers who are new to continuous delivery. To meet the goals of CI/CD and to deliver predictably, we need to deliver tiny batches of work that we can **demonstrate** and **get feedback** on. It’s also very important that we are able to effectively communicate using ubiquitous language that all stakeholders understand. In that vein, we use the following definitions when helping teams and external stakeholders understand Features, Stories, and Tasks.

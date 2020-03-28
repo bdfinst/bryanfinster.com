@@ -13,7 +13,7 @@ tags:
 slug: 5-minute-devops-effective-testing-bd38fab50564
 ---
 
-![[https://pixabay.com/en/developer-programmer-technology-3461405/](https://pixabay.com/en/developer-programmer-technology-3461405/)](/media/1__JI1qdObQxEUJqk9jRH5gfA.png)
+![[https://pixabay.com/en/developer-programmer-technology-3461405/](https://pixabay.com/en/developer-programmer-technology-3461405/)](/bryanfinster.com/media/1__JI1qdObQxEUJqk9jRH5gfA.png)
 [https://pixabay.com/en/developer-programmer-technology-3461405/](https://pixabay.com/en/developer-programmer-technology-3461405/)
 
 ### Protecting the Business

@@ -13,7 +13,7 @@ tags:
 slug: happy-teams-deliver-quality-7c13ff9e712b
 ---
 
-![Walmart DevOps Dojo](/media/1__Pyt1yP2jv8WyM9u__HwzIqA.png)
+![Walmart DevOps Dojo](/bryanfinster.com/media/1__Pyt1yP2jv8WyM9u__HwzIqA.png)
 Walmart DevOps Dojo
 
 _Nathan Nicholson contributed to this post._
@@ -38,14 +38,14 @@ _Mean Time To Innovate_ is how often experiments are run to find better tools an
 
 In 2008, Gary Gruver at HP focused his teams on improving how work was done and the innovation dividends were dramatic.
 
-![[https://itrevolution.com/the-amazing-devops-transformation-of-the-hp-laserjet-firmware-team-gary-gruver/](https://itrevolution.com/the-amazing-devops-transformation-of-the-hp-laserjet-firmware-team-gary-gruver/)](/media/1____XiZ9FgpWokcpq7g036xUQ.png)
+![[https://itrevolution.com/the-amazing-devops-transformation-of-the-hp-laserjet-firmware-team-gary-gruver/](https://itrevolution.com/the-amazing-devops-transformation-of-the-hp-laserjet-firmware-team-gary-gruver/)](/bryanfinster.com/media/1____XiZ9FgpWokcpq7g036xUQ.png)
 [https://itrevolution.com/the-amazing-devops-transformation-of-the-hp-laserjet-firmware-team-gary-gruver/](https://itrevolution.com/the-amazing-devops-transformation-of-the-hp-laserjet-firmware-team-gary-gruver/)
 
 ### Milliopts
 
 An optimistic team can do things a pessimistic team just isn’t capable of. An optimistic team asks “why can’t we?” instead of assuming they cannot. An optimistic team doesn’t require a perfect environment, they only need to know that they have the power to improve imperfection. A team that feels they have true ownership in their product, that their actions can improve their lives and the company’s performance, will be optimistic about the future. They will drive to make things better because they know they can.
 
-![©Bryan Finster 2017](/media/1__pT9l52TIc2zEVuvxPpK3VA.jpeg)
+![©Bryan Finster 2017](/bryanfinster.com/media/1__pT9l52TIc2zEVuvxPpK3VA.jpeg)
 ©Bryan Finster 2017
 
 The _Milliopt_ is a measure of optimism expressed by the team. Is the team asking questions? Is the team challenging direction and proposing alternate solutions? Is the team “swimming upstream” and challenging the status quo? Are they asking “WHY?” These are all good indications of an empowered team who feel optimistic that they can make their world better, and that’s really what drives a high performing team. They can be challenging to work with sometimes, but only order takers are easy to work with. Order takers struggle with accelerating their value delivery.

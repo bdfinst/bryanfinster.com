@@ -11,7 +11,7 @@ tags:
 slug: 5-minute-devops-liters-are-not-a-unit-of-distance-bea6171a58b0
 ---
 
-![](/media/1____VNDqgxjweJBxJnRIqPKoA.png)
+![](/bryanfinster.com/media/1____VNDqgxjweJBxJnRIqPKoA.png)
 
 One of the most common pain points to anyone moving to modern delivery is, “how do we know we are doing it correctly?” I’d suggest setting measurable goals and frequently verifying if what we are doing is approaching those goals. However, people just starting out with too much new to learn will frequently grab metrics they think they understand and use them in ways that details the goals. This is not an exhaustive list, but they come up frequently.
 
@@ -26,7 +26,7 @@ Velocity doesn’t measure productivity. Velocity is a measure of the average ca
 
 > ”Given we have completed **X** story points on average and that we have work that is smaller than **X \* 80%** (or so), then we can predict we’ll probably finish this work in the next iteration unless there are unexpected complications.”
 
-![](/media/1____G9IN__QlcxPkp6AB__IRlKQ.jpeg)
+![](/bryanfinster.com/media/1____G9IN__QlcxPkp6AB__IRlKQ.jpeg)
 
 If you ask a team to increase their velocity, they will. Story points will inflate. Some misguided leaders will attempt to standardize the size of a story point. That’s not possible. All they do is translate story points to time and create a math problem for everyone to solve for every story. If you want to do this, just use time. The problem is still there though. If we measure velocity as the number of estimated hours or days delivered in an iteration, then estimates get inflated to show improvement over time.
 
@@ -34,7 +34,7 @@ Productivity is measured by how frequently we can delivery stable changes that d
 
 ### Agile Maturity Scores
 
-![](/media/1__m__HO8WeLh5VUvchQ46d64w.png)
+![](/bryanfinster.com/media/1__m__HO8WeLh5VUvchQ46d64w.png)
 
 Team Agile Maturity Scores aren’t a thing. That’s a fake metric sold by “Agile” money mills. You don’t observe “maturity” and you never mature. You inspect and adapt. The faster you can deliver, the more you can inspect, and the faster you adapt. There are no defined processes in agile development. There are known good practices that teams should be aware of and adopt as they see fit to improve their ability to deliver. Teams should review and compare their practices to the [principles of the Manifesto](https://agilemanifesto.org/principles.html).
 
@@ -46,7 +46,7 @@ We should set improvement goals over time and educate everyone on known good pra
 
 ### **Initiative Milestones**
 
-![](/media/1__TH4OmxdrOeUSiIqeeWhLRg.png)
+![](/bryanfinster.com/media/1__TH4OmxdrOeUSiIqeeWhLRg.png)
 
 This assumes the initiatives will meet the goals. It’s a blind march to “we did what we said we’d do” without considering feedback on if we should be doing it at all. Instead, we should set product value delivery goals and metrics. “We will reduce the time spent doing X by 50% if we deliver this next feature”. Then reward achieving that. Even more important, reward the behavior of recognizing when that isn’t happening and changing course to a better outcome.
 
@@ -54,7 +54,7 @@ This assumes the initiatives will meet the goals. It’s a blind march to “we 
 
 This is what agile delivery looks like, the continuous delivery of value to the end-user. The faster a product can close this loop, the higher the quality and the lower the total cost of ownership. Helping the team widen their pipeline by removing waste increases their ability to deliver. Planning deliverables for the next year with set milestones makes this ability almost irrelevant. That legacy process removes learning and improving from the plan.
 
-![](/media/1____zuqnLs80ss6PDXceW1DFg.png)
+![](/bryanfinster.com/media/1____zuqnLs80ss6PDXceW1DFg.png)
 
 Measuring correctly is key and metrics must be used wisely or even the right metrics can be destructive. Measure in offsetting groups to prevent gaming. One of the exercises I do is look at metrics and use my software testing brain against them. “What can go wrong? How can I break this? How can I game this to look good?” Then I tell people.
 

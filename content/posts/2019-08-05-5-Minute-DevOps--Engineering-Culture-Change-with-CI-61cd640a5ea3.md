@@ -11,7 +11,7 @@ tags:
 slug: 5-minute-devops-engineering-culture-change-with-ci-61cd640a5ea3
 ---
 
-![By Johannes Vietze — Own work, CC BY-SA 3.0, [https://commons.wikimedia.org/w/index.php?curid=26722308](https://commons.wikimedia.org/w/index.php?curid=26722308)](/media/1__uxKOWwsFMjcNI3QyyRXW__Q.png)
+![By Johannes Vietze — Own work, CC BY-SA 3.0, [https://commons.wikimedia.org/w/index.php?curid=26722308](https://commons.wikimedia.org/w/index.php?curid=26722308)](/bryanfinster.com/media/1__uxKOWwsFMjcNI3QyyRXW__Q.png)
 By Johannes Vietze — Own work, CC BY-SA 3.0, [https://commons.wikimedia.org/w/index.php?curid=26722308](https://commons.wikimedia.org/w/index.php?curid=26722308)
 
 So, you hired an “Agile Transformation” consulting company to advise executive leadership and you’re “Agile“ now. Leadership attended a week-long class on “Agile”, teams took a two day class about Scrum being The Way. The new methodology with story points, daily standup, and sprints now reigns, but outcomes haven’t changed. Next, you talk about the “agile mindset” while Scrum Masters report monthly on how much “velocity” has increased. At the team level, the labels have changed, but the processes are the same. Possibly there is less design, but you don’t design solutions in “Agile”. They just “emerge”, right?
@@ -30,7 +30,7 @@ Continuous integration and continuous delivery have measurable outcomes, they ar
 
 > “We’ve created a DevOps team to implement CI/CD pipelines and manage the releases. We’re DevOps now!”
 
-![](/media/0__mJgJdiv__doCupLgH.jpg)
+![](/bryanfinster.com/media/0__mJgJdiv__doCupLgH.jpg)
 
 How many of you just cringed?
 
