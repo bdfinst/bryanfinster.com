@@ -7,7 +7,7 @@ description: >-
   In 5 Minute DevOps, I attempted to define user stories in a testable way. Real
   developers should test, after all. Now that we have a story…
 date: '2019-01-31T17:17:26.805Z'
-category: devops
+category: lean
 tags:
   - lean
 slug: 5-minute-devops-you-dont-need-story-points-acad7f157855

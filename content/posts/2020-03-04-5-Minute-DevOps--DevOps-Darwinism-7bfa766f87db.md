@@ -7,7 +7,7 @@ description: >-
   As organizations attempt to transform, they often focus on tooling or hiring
   “transformation consultants” as a silver bullet. However…
 date: '2020-03-04T20:01:23.783Z'
-category: devops
+category: leadership
 tags:
   - leadership
   - culture

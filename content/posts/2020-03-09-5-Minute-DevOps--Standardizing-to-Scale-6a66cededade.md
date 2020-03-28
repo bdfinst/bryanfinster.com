@@ -7,7 +7,7 @@ description: >-
   Scaling improvement is the siren song of every enterprise. Once we experience
   a team that is able to deliver the outcomes we are looking…
 date: '2020-03-09T02:25:59.446Z'
-category: devops
+category: leadership
 tags:
   - culture
   - improvement

@@ -5,7 +5,7 @@ template: post
 draft: false
 description: Stop doing “Agile” and deliver more value.
 date: '2019-08-05T22:31:18.960Z'
-category: devops
+category: culture
 tags:
   - culture
   - improvement

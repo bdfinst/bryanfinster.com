@@ -5,7 +5,7 @@ template: post
 draft: false
 description: '      I was asked recently about the best practice for using GitFlow.    '
 date: '2019-04-06T11:18:03.202Z'
-category: devops
+category: lean
 tags:
   - lean
 slug: five-minute-devops-gitflow-best-practices-a6cd1265de24
