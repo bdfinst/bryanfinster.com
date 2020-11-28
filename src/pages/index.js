@@ -2,12 +2,12 @@ import { graphql } from 'gatsby'
 import React from 'react'
 
 import Layout from '../components/Layout'
-import Posts from '../components/Posts'
+import PostList from '../components/PostList'
 
 export default ({ data }) => {
   return (
     <Layout>
-      <Posts data={data.allMarkdownRemark.edges} />
+      <PostList data={data.allMarkdownRemark.edges} />
     </Layout>
   )
 }

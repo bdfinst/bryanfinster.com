@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 import { rhythm } from '../utils/typography'
-import PostTags from '../components/PostTags'
+import PostTags from './PostTags'
 
 const PostTitle = styled.h3`
   margin-bottom: ${rhythm(1 / 4)};
