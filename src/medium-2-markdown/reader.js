@@ -2,7 +2,6 @@ const fs = require('fs')
 const cheerio = require('cheerio')
 const yaml = require('js-yaml')
 const url = require('url')
-const moment = require('moment')
 const { getImageName } = require('./utils')
 
 const readAll = (filePath, frontMatterConfig) => {
@@ -10,38 +9,33 @@ const readAll = (filePath, frontMatterConfig) => {
 
   const $ = cheerio.load(contents)
 
-  const canonical = $('.p-canonical')
-    .attr('href')
-  $('.graf--title')
-    .remove()
-  $('.graf--subtitle')
-    .remove()
-  $('.section-divider')
-    .remove()
+  const canonical = $('.p-canonical').attr('href')
+  $('.graf--title').remove()
+  $('.graf--subtitle').remove()
+  $('.section-divider').remove()
 
-  let html = $('.e-content')
-    .html() || ''
+  let html = $('.e-content').html() || ''
   if (frontMatterConfig !== true) {
-    html = $('.h-entry')
-      .html() || ''
+    html = $('.h-entry').html() || ''
   }
 
-  const title = $('.p-name')
-    .text()
-  const subtitle = $('.p-summary[data-field="subtitle"]')
-    .text()
-  const date = $('.dt-published')
-    .attr('datetime')
-  const slug = canonical ? url.parse(canonical)
-    .path : ''
-  const cover = $('.graf-image[data-is-featured="true"]')
-    .attr('data-image-id')
+  const title = $('.p-name').text()
+  const subtitle = $('.p-summary[data-field="subtitle"]').text()
+  const date = $('.dt-published').attr('datetime')
+  const slug = canonical ? url.parse(canonical).path : ''
+  const cover = $('.graf-image[data-is-featured="true"]').attr('data-image-id')
   const tags = []
 
-  console.log($('.graf-image[data-is-featured="true"]')
-    .attr('data-image-id'))
+  console.log($('.graf-image[data-is-featured="true"]').attr('data-image-id'))
 
-  const frontMatter = generateFrontMatter(title, subtitle, cover, date, slug, tags)
+  const frontMatter = generateFrontMatter(
+    title,
+    subtitle,
+    cover,
+    date,
+    slug,
+    tags,
+  )
 
   return { html, frontMatter }
 }
@@ -58,21 +52,16 @@ const readAll = (filePath, frontMatterConfig) => {
 //   - "Learning to write"
 
 const generateFrontMatter = (title, subtitle, cover, date, slug, tags) => {
-
   const frontMatter = {
-    title: title.toString()
-      .replace(/\n/g, ''),
+    title: title.toString().replace(/\n/g, ''),
     socialImage: getImageName(cover.toString()) || '',
-    template: "post",
+    template: 'post',
     draft: false,
-    description: subtitle ?
-      subtitle.toString()
-      .replace(/\n/g, '') : '',
+    description: subtitle ? subtitle.toString().replace(/\n/g, '') : '',
     date: date || '',
     category: 'devops',
     tags: [],
-    slug: slug ? slug.toString()
-      .replace('/@bdfinst/', '') : '',
+    slug: slug ? slug.toString().replace('/@bdfinst/', '') : '',
   }
 
   frontMatter.tags = tags.length > 0 ? tags : ['devops']

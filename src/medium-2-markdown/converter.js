@@ -2,19 +2,7 @@ const TurndownService = require('turndown')
 const path = require('path')
 const isUrl = require('./isUrl')
 const { getImageName } = require('./utils')
-const config = require('../../config')
-
-const config = {
-  headingStyle: 'atx',
-  hr: '---',
-  bulletListMarker: '*',
-  codeBlockStyle: 'fenced',
-  fence: '```',
-  emDelimiter: '_',
-  strongDelimiter: '**',
-  linkStyle: 'inlined',
-  linkReferenceStyle: 'full',
-}
+const config = require('./config')
 
 const td = new TurndownService(config)
 let images = []
