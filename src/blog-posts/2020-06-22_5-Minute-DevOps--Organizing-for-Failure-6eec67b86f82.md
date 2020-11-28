@@ -5,14 +5,12 @@ description: >-
   There are many lessons we can learn from manufacturing. Failure is one of
   those.
 date: '2020-06-22T21:25:47.390Z'
-categories: [devops]
 tags: 
   - quality
 slug: /@bdfinst/5-minute-devops-organizing-for-failure-6eec67b86f82
 ---
 
 <img src="../media/1__9oW8BN2UsY8i3Pv8krGhjA.png" width="50%"></img>
-undefined
 
 I recently saw a documentary on the history of the Ford Edsel. There were so many lessons on the UX research, design, manufacturing, and marketing of Ford's new brand that apply to developing any product. I suggest everyone look into it. Since I only have 5 minutes we're going to focus on Ford's quality process for the Edsel.
 

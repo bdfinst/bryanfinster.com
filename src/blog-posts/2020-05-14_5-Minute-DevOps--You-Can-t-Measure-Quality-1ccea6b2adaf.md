@@ -3,7 +3,6 @@ title: "5 Minute DevOps: You Can't Measure Quality"
 headerImage: ../media/1__qkX8__CjRPw__JkazHC9pVcw.jpeg
 description: Quality isn't an abstract concept that can be predicted in isolation.
 date: '2020-05-14T17:00:03.197Z'
-categories: devops
 tags: 
     - metrics
     - quality

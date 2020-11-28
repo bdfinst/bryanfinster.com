@@ -6,7 +6,6 @@ draft: false
 description: >-
   One of the bigger problems we've seen in many companies moving to agile development is the fact that the people leading the change are typically **not** currently developers. Many took classes on "Agile" to become "Certified", but the real world examples people need to translate their current processes to delivering with more agility rarely come from books...
 date: '2019-01-11T00:26:31.251Z'
-category: devops
 tags:
   - lean
 slug: 5-minute-devops-whats-a-user-story-1e4d99e5b5ad

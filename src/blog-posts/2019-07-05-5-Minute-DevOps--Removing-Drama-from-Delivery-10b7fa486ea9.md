@@ -5,7 +5,6 @@ template: post
 draft: false
 description: Doing "Done" wrong.
 date: '2019-07-05T12:27:03.372Z'
-category: devops
 tags:
   - culture
   - lean

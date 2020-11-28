@@ -6,7 +6,6 @@ draft: false
 description: >-
   Accelerating delivery is a key strategic initiative for any company wishing to remain relevant with today's rate of change. When teams start the journey from "artisanal development" to continuous delivery, they rarely understand the level of improvement they will achieve...
 date: '2018-07-22T18:14:48.528Z'
-category: devops
 tags:
   - culture
   - improvement

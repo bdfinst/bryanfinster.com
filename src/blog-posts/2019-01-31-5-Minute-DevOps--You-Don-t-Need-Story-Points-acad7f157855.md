@@ -6,7 +6,6 @@ draft: false
 description: >-
   We have a long history of attempting to communicate the uncertainty of outcomes to non-technical stakeholders. We speak in delivery probabilities, not certainty. It can be frustrating to those who don't understand, but software development is not cookie cutter...
 date: '2019-01-31T17:17:26.805Z'
-category: devops
 tags:
   - lean
 slug: 5-minute-devops-you-dont-need-story-points-acad7f157855

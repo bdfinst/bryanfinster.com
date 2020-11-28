@@ -7,7 +7,6 @@ description: >-
   For anyone wishing to master CI/CD, there are few areas of study more
   important than the effective use of metrics and testing.
 date: '2019-06-18T17:42:30.840Z'
-category: devops
 tags:
   - automation
   - quality

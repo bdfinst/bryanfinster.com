@@ -5,7 +5,6 @@ description: >-
   Ah, holiday traditions. Christmas carols, Black Friday, Cyber Monday, fruit
   cake, egg nog, and change feeze. It's that time of year again…
 date: '2020-10-23T12:31:12.216Z'
-categories: [devops]
 tags: 
   - leadership
   - improvement

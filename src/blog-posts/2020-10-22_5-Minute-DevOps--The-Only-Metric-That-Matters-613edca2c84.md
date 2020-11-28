@@ -5,7 +5,6 @@ description: >-
   In general, metrics should always be tracking in offsetting groups. Is it
   possible that there is one that stands alone?
 date: '2020-10-22T11:52:52.063Z'
-categories: [devops]
 tags: 
   - leadership
   - culture
@@ -32,12 +31,10 @@ If you've not seen the Thunderbirds before, you should. They clearly demonstrate
 This is the flight crew. These are the people who get it done. Each of these planes is owned by small teams and all of the teams are here. The airman on the left regular utilities is being evaluated. He joined the team to see how it works so he and they can see if he's a fit. What you're seeing here is the flight crew cheering the two pilots coming out for a practice mission, the same way they do at airshows. You see, they don't go to an airshow and do airshow things and then do something else at home. They are always practicing for the mission. They perform the same tasks the same way every day so they can identify and resolve the unexpected quickly and also always know what the rest of the team will do.
 
 <img src="../media/1__LjNpcixPX5gXC5r__4Jk__vg.jpeg" width="50%"></img>
-undefined
 
 This is the Thunderbird's commanding officer. Notice the names of the ground crew on the aircraft. That is the team that owns that aircraft. They let him use it.
 
 <img src="../media/1__MFUVdb3P1AFtaXWrVmNWMA.jpeg" width="50%"></img>
-undefined
 
 …and it broke.
 
@@ -52,7 +49,6 @@ So what was my takeaway? How does this relate to measuring high performing softw
 For me, there is exactly one measurement that I can look at to get insights into the health of the product and the product team.
 
 <img src="../media/1__EYaFPQ5ReuzpT__3ibP__xag.jpeg" width="50%"></img>
-undefined
 
 ### Pride.
 

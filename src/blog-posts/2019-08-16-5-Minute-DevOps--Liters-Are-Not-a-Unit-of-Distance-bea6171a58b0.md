@@ -5,7 +5,6 @@ template: post
 draft: false
 description: How do you know you're doing it correctly? Measure the right way.
 date: '2019-08-16T22:30:47.136Z'
-category: devops
 tags:
   - metrics
   - leadership

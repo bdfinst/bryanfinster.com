@@ -3,7 +3,6 @@ title: "5 Minute DevOps: Schrödinger's Pipeline"
 headerImage: ../media/1__9k__kVZg__Jsmuxd9RhQDtVw.jpeg
 description: 'Uncertainty belongs in physics, not delivery'
 date: '2020-05-31T12:33:34.604Z'
-categories: [devops]
 tags: 
     - cd
     - automation

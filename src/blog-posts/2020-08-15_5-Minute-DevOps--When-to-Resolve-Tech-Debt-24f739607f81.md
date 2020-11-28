@@ -5,7 +5,6 @@ description: >-
   The problem isn't how to schedule tech debt, it's making it clear what tech
   debt is. After that, when to resolve it should be obvious.
 date: '2020-08-15T18:40:26.641Z'
-categories: [devops]
 tags: 
   - leadership
   - improvement

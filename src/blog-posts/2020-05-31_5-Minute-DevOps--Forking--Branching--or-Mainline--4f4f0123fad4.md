@@ -5,7 +5,6 @@ description: >-
   A frequent conversation I have is about branching patterns. Legacy development
   was all about long-lived branches to develop complete…
 date: '2020-05-31T14:33:53.701Z'
-categories: devops
 tags: 
   - lean
   - source management
@@ -13,7 +12,6 @@ slug: /@bdfinst/5-minute-devops-forking-branching-or-mainline-4f4f0123fad4
 ---
 
 <img src="../media/1__ncGkp3vxKrqdQxye98GNdw.jpeg" width="50%"></img>
-undefined
 
 A frequent conversation I have is about branching patterns. Legacy development was all about long-lived branches to develop complete features followed by code freeze and merge hell. With continuous delivery, this changes. CD requires continuous integration and CI requires some form of [trunk-based development](https://trunkbaseddevelopment.com/) with either mainline development or short feature branches. Which is the best pattern?
 

@@ -6,7 +6,6 @@ draft: false
 description: ->
   I was asked recently about the best practice for using GitFlow with continuous integration. For those who do not know...
 date: '2019-04-06T11:18:03.202Z'
-category: devops
 tags:
   - lean
   - cd
