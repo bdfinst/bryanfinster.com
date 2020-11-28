@@ -61,7 +61,7 @@
     "eslint-plugin-react": "7.19.0",
     "eslint-watch": "6.0.1",
     "js-yaml": "^3.14.0",
-    "medium-2-md": "^0.5.0",
+    "medium-2-md": "^0.5.1",
     "node-fetch": "^2.6.1",
     "rimraf": "^3.0.2",
     "turndown": "^7.0.0"
