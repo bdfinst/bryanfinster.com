@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Five Minute DevOps',
+    title: 'BryanFinster.com',
     siteDescription: 'Thoughts on improving focus, flow, and joy',
     authorName: 'Bryan Finster',
   },

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
+import profileImage from '../images/profileImage'
 import {
   FaHome,
   FaUserSecret,
@@ -36,8 +37,8 @@ const Sidebar = styled.div`
 
   display: flex;
   flex-direction: column;
-  width: 30%;
-  background-color: #193549;
+  width: 20%;
+  background-color: rgb(18, 29, 64);
   color: #dcdcdc;
   justify-content: center;
   align-items: center;
@@ -98,6 +99,7 @@ const MenuWrapper = styled.div`
 
 const SiteTitle = styled.h1`
   display: flex;
+  font-size: 1.8em;
 
   /* Device = Tablets, iPads (portrait) */
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -141,10 +143,9 @@ export default ({ title, authorName }) => {
         <SiteTitle>{title}</SiteTitle>
       </StyledLink>
       <Logo
-        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDEyMDAiPgogIDxwYXRoIGQ9Ik02MDAgMEMyNjguNiAwIDAgMjY4LjYgMCA2MDBzMjY4LjYgNjAwIDYwMCA2MDAgNjAwLTI2OC42IDYwMC02MDBTOTMxLjQgMCA2MDAgMHpNMjY2LjYgOTMzLjNDMTc2LjEgODQyLjggMTMxIDcyNC42IDEyOS42IDYwNkw1OTQgMTA3MC40Yy0xMTguNi0xLjQtMjM2LjgtNDYuNS0zMjcuNC0xMzcuMXptNDM3LjcgMTI2LjFMMTQwLjYgNDk1LjdjNDcuNS0yMTAuMSAyMzUtMzY3LjEgNDU5LjQtMzY3LjEgMTU2LjkgMCAyOTUuNSA3NyAzODEuMiAxOTQuOUw5MTUuNiAzNzlDODQ1LjggMjc5LjUgNzMwLjUgMjE0LjMgNjAwIDIxNC4zYy0xNjcuNyAwLTMxMC4zIDEwNy43LTM2My4zIDI1Ny41bDQ5MS42IDQ5MS42YzEyMy40LTQzLjcgMjE4LTE0OC4yIDI0Ny42LTI3Ny42SDc3MS40VjYwMGgzMDBjMCAyMjQuNS0xNTcgNDExLjktMzY3LjEgNDU5LjR6IiBmaWxsPSIjNjM5Ii8+Cjwvc3ZnPgo="
+        src={profileImage}
         alt={authorName}
       />
-      <NameBoard>{authorName}</NameBoard>
       <MenuWrapper>
         <div>
           <p>

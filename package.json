@@ -20,8 +20,8 @@
     "format": "npm run format:fix && npm run lint:js",
     "format:fix": "prettier --write '**/*.{js,jsx,yml,json,css}'",
     "lint:js": "eslint --cache --ext .js,.jsx . --fix",
-    "lint": "concurrently \"npm run lint:js\" \"npm run format:fix\"",
-    "medium": "node node_modules/medium-2-md convertLocal /Users/bdfinst/Downloads/posts -i"
+    "lint": "concurrently 'npm run lint:js' 'npm run format:fix'",
+    "medium": "node node_modules/medium-2-md convertLocal ~/Downloads/posts -i -f"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.9.4",
