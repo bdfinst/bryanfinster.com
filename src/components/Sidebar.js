@@ -1,16 +1,17 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import styled from 'styled-components'
-import profileImage from '../images/profileImage'
 import {
-  FaHome,
-  FaUserSecret,
-  FaLinkedin,
   FaGithub,
-  FaTwitter,
-  FaMedium,
   FaHashtag,
+  FaHome,
+  FaLinkedin,
+  FaMedium,
+  FaTwitter,
+  FaUserSecret,
 } from 'react-icons/fa'
+import { Link } from 'gatsby'
+import React from 'react'
+import styled from 'styled-components'
+
+import profileImage from '../images/profileImage'
 
 const Sidebar = styled.div`
   /* Device = Tablets, iPads (portrait) */
@@ -117,35 +118,13 @@ const SiteTitle = styled.h1`
   }
 `
 
-const NameBoard = styled.h5`
-  display: flex;
-
-  /* Device = Tablets, iPads (portrait) */
-  @media (min-width: 768px) and (max-width: 1024px) {
-    font-size: 12px;
-  }
-
-  /* Device = Tablets, iPads (landscape) */
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    font-size: 12px;
-  }
-
-  /* Device = Low resolution Tablets, Mobiles (landscape) */
-  @media (min-width: 320px) and (max-width: 767px) {
-    display: none;
-  }
-`
-
 export default ({ title, authorName }) => {
   return (
     <Sidebar>
       <StyledLink to="/">
         <SiteTitle>{title}</SiteTitle>
       </StyledLink>
-      <Logo
-        src={profileImage}
-        alt={authorName}
-      />
+      <Logo src={profileImage} alt={authorName} />
       <MenuWrapper>
         <div>
           <p>

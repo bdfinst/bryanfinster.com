@@ -16,7 +16,7 @@ module.exports = {
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: 'standalone',
-        icon: "src/images/icon.png", // This path is relative to the root of the site.
+        icon: 'src/images/icon.png', // This path is relative to the root of the site.
       },
     },
     {
@@ -45,14 +45,7 @@ module.exports = {
       options: {
         url: 'https://medium.com/feed/@bdfinst',
         name: `MediumBlog`,
-        // Optional
-        // Read parser document: https://github.com/bobby-brennan/rss-parser#readme
-        // parserOption: {
-        //   customFields: {
-        //     item: ['itunes:duration']
-        //   }
-        // }
-      }
+      },
     },
     {
       resolve: 'gatsby-transformer-remark',

@@ -31,8 +31,12 @@ export default ({ data }) => {
               <PostTitle>{node.frontmatter.title} </PostTitle>
             </PostLink>
             <div>
-              <img src={node.frontmatter.headerImage} width="100px" alt="Header"></img>
-              <br/>
+              <img
+                src={node.frontmatter.headerImage}
+                width="100px"
+                alt="Header"
+              ></img>
+              <br />
               {node.frontmatter.description}
             </div>
             <PostTags tags={node.frontmatter.tags} />
