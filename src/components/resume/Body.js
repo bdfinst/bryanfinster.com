@@ -1,9 +1,7 @@
 import { Grid } from 'semantic-ui-react'
 import React from 'react'
 
-import About from './about'
 import Awards from './awards'
-import Contact from './contact'
 import DataCard from './dataCard'
 import Education from './education'
 import Interests from './interests'
@@ -12,16 +10,14 @@ import Profiles from './profiles'
 import Publications from './publications'
 import References from './references'
 import Skills from './skills'
-import Website from './website'
+import Summary from './Summary'
 
 const Content = (props) => {
   const { resume } = props
 
   return (
     <Grid.Row>
-      <Contact contactDetails={resume.basics} />
-      <Website contactDetails={resume.basics} />
-      <About summary={resume.basics.summary} />
+      <Summary summary={resume.basics.summary} />
       <Profiles profilesArr={resume.basics.profiles} />
       <DataCard dataArr={resume.work} name="Work" type="work" />
       <DataCard dataArr={resume.volunteer} name="Volunteer" type="volunteer" />

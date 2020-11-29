@@ -3,8 +3,8 @@ import { Grid } from '@material-ui/core'
 import { graphql } from 'gatsby'
 import React from 'react'
 
-import BasicsHeader from '../components/resume/basicheader'
-import Content from '../components/resume/content'
+import Body from '../components/resume/Body'
+import ContactInfo from '../components/resume/ContactInfo'
 import Layout from '../components/Layout'
 
 const Resume = ({ data }) => {
@@ -16,11 +16,10 @@ const Resume = ({ data }) => {
       <Container fluid>
         <Grid container spacing={3}>
           <Grid item xs={3}>
-            <BasicsHeader basics={basics} />
+            <ContactInfo basics={basics} />
           </Grid>
           <Grid item xs>
-            {/* <Content resume={resume} /> */}
-            WIP
+            <Body resume={resume} />
           </Grid>
         </Grid>
       </Container>
