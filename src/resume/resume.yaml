@@ -1,21 +1,129 @@
 ---
 basics:
-  name: Richard Hendriks
-  label: Programmer
-  image: ''
-  email: richard.hendriks@mail.com
-  phone: "(912) 555-4321"
-  url: http://richardhendricks.example.com
-  summary: Richard hails from Tulsa. He has earned degrees from the University of
-    Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper,
-    he worked for Hooli as a part time software developer. While his work focuses
-    on applied information theory, mostly optimizing lossless compression schema of
-    both the length-limited and adaptive variants, his non-work interests range widely,
-    everything from quantum computing to chaos theory. He could tell you about it,
-    but THAT would NOT be a “length-limited” conversation!
+  name: Bryan Finster
+  label: Developer
+  picture: ''
+  email: me@bryanfinster.com
+  phone: '4794267559'
+  website: bryanfinster.com
+  summary: An experienced software engineer, software architect, pipeline architect,
+    technical leader, product owner, speaker, and influencer with over two decades
+    of experience designing and implementing solutions for large enterprises. Working
+    since 2014 on transforming the world's largest retailer to DevOps and continuous
+    delivery. Working to improve the lives of software engineers everywhere.
   location:
-    address: 2712 Broadway St
-    postalCode: CA 94115
-    city: San Francisco
+    address: 13705 Stoneridge Rd
+    postalCode: '72756'
+    city: Rogers
     countryCode: US
-    region: California
+    region: AR
+  profiles:
+  - network: LinkedIn
+    username: bryan-finster
+    url: https://www.linkedin.com/in/bryan-finster/
+work:
+- company: Walmart
+  location: ''
+  description: ''
+  position: Staff Software Engineer
+  website: walmart.com
+  startDate: 2018-01
+  endDate: ''
+  summary: 'Founder and designer of Walmart’s Dojo. Responsible for defining the techniques
+    for helping over 2000 development teams worldwide learn the principles and practices
+    of continuous delivery using Walmart’s standard delivery platform. Worked in close
+    collaboration with executives and engineering management to align goals and metrics.
+    Developed workshops, presentations, and playbooks to help teams with every aspect
+    of delivery including the testing and coding techniques required for trunk-based
+    continuous integration. Worked with other leads in the CD platform organization
+    to design changes to the platform to reinforce good practices, discourage poor
+    practices, improve security and compliance, and improve the ease of self-service
+    onboarding. '
+  highlights:
+  - Designed the enterprise scaling strategy being used by Walmart and Sam’s Club
+    to allow more rapid improvement by certifying others across the enterprise to
+    have proven ability to improve team outcomes with our metrics based approach.
+  - Worked with key executives to build a broad base of support across the enterprise
+    for common goals and measures.
+  - Developed self-help content for the recurring problems teams face with teamwork,
+    work decomposition, testing, pipeline architecture, and other issues that impact
+    their ability to execute continuous delivery.
+  - Designed and led the development of Heimdall, a “coaching as a service” delivery
+    metrics dashboard. Heimdall combines pipeline metrics and ways of working survey
+    results to gamify improvement and direct teams to targeted improvement playbooks.
+  - Collaborated with other technical leaders across the enterprise to develop the
+    enterprise recommendations for testing patterns, including a standard glossary
+    of testing terms to enable faster sharing between teams.
+  - Created and led an enterprise effort to standardize metrics and develop improved
+    enterprise dashboards in collaboration with all stakeholders using an innersourcing
+    model.
+volunteer:
+- organization: ''
+  position: ''
+  website: ''
+  startDate: ''
+  endDate: ''
+  summary: ''
+  highlights:
+  - ''
+education:
+- institution: ''
+  area: ''
+  studyType: ''
+  startDate: ''
+  endDate: ''
+  gpa: ''
+  courses:
+  - ''
+awards:
+- title: ''
+  date: ''
+  awarder: ''
+  summary: ''
+publications:
+- name: Five Minute DevOps
+  publisher: Medium
+  releaseDate: 2020-11
+  website: https://bdfinst.medium.com/
+  summary: Series of short articles on improving the flow of delivery.
+skills:
+- name: Application Architecture
+  level: Journeyman
+  keywords:
+  - ''
+- name: NodeJS
+  level: Journeyman
+  keywords:
+  - ''
+- name: C
+  level: Journeyman
+  keywords:
+  - ''
+languages:
+- language: English
+  fluency: Native
+interests:
+- name: Process Improvement
+  keywords:
+  - lean
+  - devops
+references:
+- name: Upon request
+  reference: Awesome guy
+projects:
+- name: Walmart
+  description: Global Logistics System
+  highlights:
+  - ''
+  keywords: []
+  startDate: ''
+  endDate: ''
+  website: ''
+  roles: []
+  entity: ''
+  type: ''
+meta:
+  canonical: ''
+  version: ''
+  lastModified: ''
+

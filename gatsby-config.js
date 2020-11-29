@@ -6,7 +6,7 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'GatsbyJS',
         short_name: 'GatsbyJS',
@@ -44,7 +44,7 @@ module.exports = {
       resolve: 'gatsby-source-rss-feed',
       options: {
         url: 'https://medium.com/feed/@bdfinst',
-        name: `MediumBlog`,
+        name: 'MediumBlog',
       },
     },
     {
@@ -61,7 +61,8 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-material-ui',
     'gatsby-plugin-styled-components',
   ],
 }
