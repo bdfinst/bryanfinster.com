@@ -1,29 +1,13 @@
 import { Container } from 'semantic-ui-react'
-import { Grid, Paper } from '@material-ui/core'
+import { Grid } from '@material-ui/core'
 import { graphql } from 'gatsby'
-import { makeStyles } from '@material-ui/core/styles'
 import React from 'react'
 
 import BasicsHeader from '../components/resume/basicheader'
 import Content from '../components/resume/content'
 import Layout from '../components/Layout'
 
-const useStyles = makeStyles((theme) => {
-  return {
-    root: {
-      flexGrow: 1,
-    },
-    paper: {
-      padding: theme.spacing(2),
-      textAlign: 'center',
-      color: theme.palette.text.secondary,
-    },
-  }
-})
-
 const Resume = ({ data }) => {
-  const classes = useStyles()
-
   const resume = data.resumeYaml
   const { basics } = resume
   console.log(resume)
