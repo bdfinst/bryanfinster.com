@@ -21,6 +21,15 @@ basics:
   - network: LinkedIn
     username: bryan-finster
     url: https://www.linkedin.com/in/bryan-finster/
+  - network: Twitter
+    username: '@BryanFinster'
+    url: https://twitter.com/BryanFinster
+  - network: Medium
+    username: '@bdfinst'
+    url: https://bdfinst.medium.com/
+  - network: GitHub
+    username: bdfinst
+    url: https://github.com/bdfinst
 work:
 - company: Walmart
   location: ''

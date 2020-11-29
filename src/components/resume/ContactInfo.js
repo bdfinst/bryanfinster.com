@@ -1,17 +1,18 @@
 import { Card, CardContent, Grid, Link, Typography } from '@material-ui/core'
 import {
   EmailOutlined,
+  GitHub,
   HomeOutlined,
   LanguageOutlined,
+  LinkedIn,
+  ShareOutlined,
+  Twitter,
 } from '@material-ui/icons'
 import { blue } from '@material-ui/core/colors'
 import { makeStyles } from '@material-ui/core/styles'
 import React from 'react'
 
 const useStyles = makeStyles({
-  // root: {
-  //   minWidth: 275,
-  // },
   title: {
     fontSize: 25,
     textAlign: 'center',
@@ -44,8 +45,33 @@ const BasicsHeader = (props) => {
     { icon: LanguageOutlined, text: basics.website, link: basics.website },
   ]
 
+  const buildSocialList = (profiles) => {
+    let list = []
+
+    if (profiles && profiles.length) {
+      list = profiles.map((profile) => {
+        let icon
+        switch (profile.network.toLowerCase()) {
+          case 'linkedin':
+            icon = LinkedIn
+            break
+          case 'github':
+            icon = GitHub
+            break
+          case 'twitter':
+            icon = Twitter
+            break
+          default:
+            icon = ShareOutlined
+            break
+        }
+        return { icon: icon, text: profile.username, link: profile.url }
+      })
+    }
+    return list
+  }
   const showContacts = () => {
-    return contacts.map((data) => {
+    return contacts.concat(buildSocialList(basics.profiles)).map((data) => {
       return (
         <>
           <Grid item xs={2}>

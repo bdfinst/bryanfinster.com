@@ -18,7 +18,6 @@ const Content = (props) => {
   return (
     <Grid.Row>
       <Summary summary={resume.basics.summary} />
-      <Profiles profilesArr={resume.basics.profiles} />
       <DataCard dataArr={resume.work} name="Work" type="work" />
       <Education dataArr={resume.education} name="Education" />
       <Awards dataArr={resume.awards} name="Awards" />

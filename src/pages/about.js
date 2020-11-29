@@ -107,6 +107,11 @@ export const query = graphql`
           city
           region
         }
+        profiles {
+          network
+          url
+          username
+        }
       }
       awards {
         title
