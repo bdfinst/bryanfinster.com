@@ -1,4 +1,5 @@
 import { Card, CardContent, Typography } from '@material-ui/core'
+import { EmailOutlined, HomeOutlined, WebOutlined } from '@material-ui/icons'
 import { makeStyles } from '@material-ui/core/styles'
 import React from 'react'
 
@@ -46,14 +47,22 @@ const BasicsHeader = (props) => {
           color="textSecondary"
           gutterBottom
         >
-          Email: {basics.email}
+          <HomeOutlined />: {basics.location.city}, {basics.location.region}
+        </Typography>
+
+        <Typography
+          className={classes.title}
+          color="textSecondary"
+          gutterBottom
+        >
+          <EmailOutlined />: {basics.email}
         </Typography>
         <Typography
           className={classes.title}
           color="textSecondary"
           gutterBottom
         >
-          Web: {basics.website}
+          <WebOutlined />: {basics.website}
         </Typography>
       </CardContent>
     </Card>

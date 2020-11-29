@@ -120,6 +120,10 @@ export const query = graphql`
         phone
         website
         summary
+        location {
+          city
+          region
+        }
       }
       awards {
         title
