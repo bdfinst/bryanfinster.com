@@ -29,7 +29,7 @@ basics:
     username: bdfinst
     url: https://github.com/bdfinst
 work:
-- company: Walmart
+- company: Walmart Global Technology
   location: ''
   description: ''
   position: Staff Software Engineer
@@ -94,10 +94,12 @@ publications:
   website: https://bdfinst.medium.com/
   summary: Series of short articles on improving the flow of delivery.
 skills:
-- name: Application Architecture
-  level: Journeyman
+- name: DevOps
+  level: Proficient
   keywords:
-  - ''
+  - 'CI'
+  - 'CD'
+  - 'Metrics'
 - name: NodeJS
   level: Journeyman
   keywords:

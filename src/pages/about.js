@@ -1,4 +1,3 @@
-import { Container } from 'semantic-ui-react'
 import { Grid } from '@material-ui/core'
 import { graphql } from 'gatsby'
 import React from 'react'
@@ -13,8 +12,8 @@ const Resume = ({ data }) => {
   console.log(resume)
   return (
     <Layout>
-      <Container fluid>
-        <Grid container spacing={3}>
+      <div style={{ padding: 10 }}>
+        <Grid container spacing={2}>
           <Grid item xs={3}>
             <ContactInfo basics={basics} />
           </Grid>
@@ -22,7 +21,7 @@ const Resume = ({ data }) => {
             <Body resume={resume} />
           </Grid>
         </Grid>
-      </Container>
+      </div>
     </Layout>
   )
 }
@@ -35,12 +34,12 @@ export const query = graphql`
       work {
         company
         location
-        description
         position
         website
         startDate
         endDate
         summary
+        highlights
       }
       volunteer {
         organization
@@ -53,6 +52,7 @@ export const query = graphql`
       skills {
         name
         level
+        keywords
       }
       references {
         name
