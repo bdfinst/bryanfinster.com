@@ -6,11 +6,9 @@ basics:
   email: me@bryanfinster.com
   phone: '4794267559'
   website: bryanfinster.com
-  summary: An experienced software engineer, software architect, pipeline architect,
-    technical leader, product owner, speaker, and influencer with over two decades
-    of experience designing and implementing solutions for large enterprises. Working
-    since 2014 on transforming the world's largest retailer to DevOps and continuous
-    delivery. Working to improve the lives of software engineers everywhere.
+  summary: An experienced software engineer, application architect, pipeline architect,
+    team leader, product owner, speaker, and DevOp evangelist with over two decades
+    of experience designing and implementing solutions for large enterprises.
   location:
     address: 13705 Stoneridge Rd
     postalCode: '72756'

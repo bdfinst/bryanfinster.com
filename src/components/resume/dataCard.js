@@ -1,12 +1,7 @@
-import {
-  Container,
-  Grid,
-  Header,
-  Icon,
-  Item,
-  Label,
-  List,
-} from 'semantic-ui-react'
+import { Card, CardContent, Grid, Link, Typography } from '@material-ui/core'
+import { Container, Header, Icon, Item, Label, List } from 'semantic-ui-react'
+import { blue } from '@material-ui/core/colors'
+import { makeStyles } from '@material-ui/core/styles'
 import React from 'react'
 
 import SectionLabel from './sectionLabel'
