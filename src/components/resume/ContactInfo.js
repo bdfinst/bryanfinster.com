@@ -6,7 +6,6 @@ import {
 } from '@material-ui/icons'
 import { blue } from '@material-ui/core/colors'
 import { makeStyles } from '@material-ui/core/styles'
-import { useTheme } from '@material-ui/core/styles'
 import React from 'react'
 
 const useStyles = makeStyles({
@@ -33,7 +32,43 @@ const BasicsHeader = (props) => {
   const { basics } = props
   const classes = useStyles()
 
-  const emailLink = `mailto: ${basics.email}`
+  const address = `${basics.location.city}, ${basics.location.region}`
+
+  const contacts = [
+    { icon: HomeOutlined, text: address },
+    {
+      icon: EmailOutlined,
+      text: basics.email,
+      link: `mailto: ${basics.email}`,
+    },
+    { icon: LanguageOutlined, text: basics.website, link: basics.website },
+  ]
+
+  const showContacts = () => {
+    return contacts.map((data) => {
+      return (
+        <>
+          <Grid item xs={2}>
+            <data.icon className={classes.icon} />
+          </Grid>
+          <Grid item xs={10}>
+            <Typography
+              className={classes.info}
+              color="textSecondary"
+              gutterBottom
+            >
+              {data.link ? (
+                <Link href={data.link}>{data.text}</Link>
+              ) : (
+                <>{data.text}</>
+              )}
+            </Typography>
+          </Grid>
+        </>
+      )
+    })
+  }
+
   return (
     <Card className={classes.root}>
       <CardContent>
@@ -49,42 +84,7 @@ const BasicsHeader = (props) => {
         </Typography>
 
         <Grid container direction="row" justify="center" alignItems="center">
-          <Grid item xs={2}>
-            <HomeOutlined className={classes.icon} />
-          </Grid>
-          <Grid item xs={10}>
-            <Typography
-              className={classes.info}
-              color="textSecondary"
-              gutterBottom
-            >
-              {basics.location.city}, {basics.location.region}
-            </Typography>
-          </Grid>
-          <Grid item xs={2}>
-            <EmailOutlined className={classes.icon} />
-          </Grid>
-          <Grid item xs={10}>
-            <Typography
-              className={classes.info}
-              color="textSecondary"
-              gutterBottom
-            >
-              <Link href={emailLink}>{basics.email}</Link>
-            </Typography>
-          </Grid>
-          <Grid item xs={2}>
-            <LanguageOutlined className={classes.icon} />
-          </Grid>
-          <Grid item xs={10}>
-            <Typography
-              className={classes.info}
-              color="textSecondary"
-              gutterBottom
-            >
-              <Link href={basics.website}>{basics.website}</Link>
-            </Typography>
-          </Grid>
+          {showContacts()}
         </Grid>
       </CardContent>
     </Card>
