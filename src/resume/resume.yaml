@@ -97,17 +97,19 @@ skills:
 - name: DevOps
   level: Proficient
   keywords:
-  - 'CI'
-  - 'CD'
+  - 'Continuous Delivery'
+  - 'Continuous Integration'
   - 'Metrics'
-- name: NodeJS
-  level: Journeyman
+  - 'Application Architecture'
+  - 'Test Architecture'
+  - 'Lean Process'
+  - 'Team Structure'
+  - 'Culture'
+- name: Web Development
+  level: Proficient
   keywords:
-  - ''
-- name: C
-  level: Journeyman
-  keywords:
-  - ''
+  - NodeJS
+  - ReactJS
 languages:
 - language: English
   fluency: Native

@@ -64,15 +64,20 @@ export default (props) => {
     return dataArr.map((data) => {
       return (
         <>
-          <Grid item xs={6}>
-            <Typography className={classes.skill}>
-              {data.name} {data.keywords.length}
-            </Typography>
+          <Grid item xs={4}>
+            <Typography className={classes.skill}>{data.name}</Typography>
 
             {data.keywords && data.keywords.length > 0 ? (
               data.keywords.map((keyword) => {
                 const color = colors[Math.floor(Math.random() * colors.length)]
-                return <Chip label={keyword} color={color} variant="outlined" />
+                return (
+                  <Chip
+                    label={keyword}
+                    variant="outlined"
+                    color="primary"
+                    size="small"
+                  />
+                )
               })
             ) : (
               <div />
@@ -96,7 +101,7 @@ export default (props) => {
           direction="row"
           justify="center"
           alignItems="center"
-          spacing={1}
+          spacing={2}
         >
           {renderData()}
         </Grid>
