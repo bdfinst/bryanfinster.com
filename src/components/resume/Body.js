@@ -6,7 +6,7 @@ import Education from './education'
 import Experience from './Experience'
 import Interests from './interests'
 import Languages from './languages'
-import Publications from './publications'
+import PublishedWorks from './PublishedWorks'
 import SkillList from './SkillList'
 import Summary from './Summary'
 
@@ -18,10 +18,10 @@ const Content = (props) => {
       <Summary summary={resume.basics.summary} />
       <Experience dataArr={resume.work} name="Work" type="work" />
       <SkillList dataArr={resume.skills} name="Skills" />
+      <PublishedWorks dataArr={resume.publications} name="Publications" />
 
       {/* <Education dataArr={resume.education} name="Education" />
       <Awards dataArr={resume.awards} name="Awards" />
-      <Publications dataArr={resume.publications} name="Publications" />
       <Languages dataArr={resume.languages} name="Languages" />
       <Interests dataArr={resume.interests} name="Interests" /> */}
     </Container>

@@ -39,6 +39,7 @@ export const query = graphql`
         startDate
         endDate
         summary
+        description
         highlights
       }
       volunteer {
