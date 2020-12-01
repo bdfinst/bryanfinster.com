@@ -5,7 +5,6 @@ import React from 'react'
 const useStyles = makeStyles((theme) => {
   return {
     root: {
-      elevation: 0,
     },
     header: {
       fontSize: 25,
@@ -19,7 +18,7 @@ export default ({ title, children }) => {
   const classes = useStyles()
 
   return (
-    <Card className={classes.root} elevation={0}>
+    <Card className={classes.root} elevation={0} space={2}>
       {title ? (
         <CardHeader title={title} className={classes.header} />
       ) : (

@@ -1,7 +1,7 @@
 ---
 basics:
   name: Bryan Finster
-  label: Developer
+  label: Value Stream Architect
   picture: ''
   email: me@bryanfinster.com
   phone: '4794267559'
@@ -36,36 +36,37 @@ work:
   website: walmart.com
   startDate: '2018-01'
   endDate: ''
-  summary: 'Founded the Walmart DevOps Dojo. Responsible for defining
-    the techniques for helping product teams worldwide learn the principles
-    and practices of continuous delivery. Developed workshops, presentations, and
-    playbooks to help teams with every aspect of delivery including teamwork,
-    agile practices, evolutionary coding, test design, evolutionary database, and
-    pipeline architecture. Worked with other CD Platform leads to design changes to
-    the platform to reinforce good practices, discourage poor practices, improve
-    security and compliance, and improve developer experience.'
+  summary: 'Founded the Walmart DevOps Dojo. Responsible for defining the techniques for helping product
+    teams worldwide learn the principles and practices of continuous delivery. Developed workshops, presentations,
+    and playbooks to help teams with every aspect of improving the flow of delivery from idea to production
+    and operations. Worked with other CD Platform leads to design changes to the platform to reinforce good
+    practices, discourage poor practices, improve security and compliance, and improve developer experience.'
   highlights:
   - Lead the cross-organizational effort to standardize delivery metrics definitions
     and usage to provide teams with the insights needed to identify and remove
-    delivery constraints.
-  - Member of the core team that standardized testing pattern definitions and
-    recommend testing practices.
-  - Developed self-help playbooks for the common problems teams face with teamwork,
-    work decomposition, testing, pipeline architecture, and other issues that impact
-    their ability to execute continuous delivery.
-  - Designed an innovative self-service technical coaching tool that combines
-    delivery metrics and ways of working survey results with gamification to
-    guide teams to improvement playbooks.
-  - Designed the current enterprise scaling strategy to allow more rapid improvement
-    by certifying senior engineers who have demonstrated through improved delivery
-    metrics to have improved team outcomes.
+    delivery constraints. This resulted in reduced duplication of effort and better understanding at the enterprise
+    level of what and how to measure delivery performance.
+  - Core contributor to the team that standardized testing pattern definitions and
+    recommend testing practices for the enterprise. This accelerated the knowledge sharing required to improve testing
+    across the enterprise.
+  - Developed self-help playbooks for the common problems teams face with teamwork, work decomposition, testing
+    pipeline architecture, and other issues that impact their ability to execute continuous delivery. The playbooks
+    became an important force multiplier that allowed the Dojo team to focus on more difficult problems while the common
+    problems we resolved in a self-service manner.
+  - Designed an innovative self-service technical coaching tool that combines delivery metrics and ways of working
+    survey results with gamification to guide teams to better solutions. This allowed teams to find solutions to
+    problems they didn't understand they had and reduced the workload for the Dojo team.
+  - Designed the CD enterprise scaling strategy to allow more rapid improvement by certifying senior engineers who
+    have demonstrated through improved delivery metrics to have improved team outcomes. This horizontally scaled the
+    ability to improve the flow of value in multiple organizations without an increase in Platform overhead.
 - company: Walmart Technology
   startDate: '8-2017'
   endDate: '1-2018'
   description: Delivery Enablement Insights
   position: Product Owner
   website: walmart.com
-  summary: 'Responsible for leading the development of extensions for CapitalOne’s Hygieia dashboard to meet Walmart’s goal of guiding teams to CD good practices.'
+  summary: 'Product owner for Global Platform’s delivery metrics solution using CapitalOne’s Hygieia DevOps dashboard
+    with custom visualizations and automation to meet Walmart’s goal of guiding teams to CD good practices.'
   highlights:
   - Brought Walmart into partnership with CapitalOne and other large enterprise contributors to Hygieia to establish the Hygieia open source consortium.
   - Developed the scoring standards for each instrumented development activity to encourage the behaviors that align with our enterprise goals.
@@ -77,12 +78,14 @@ work:
   description: Logistics Systems Platform Team
   position: Systems Architect
   website: walmart.com
-  summary: 'Responsible for discovering the techniques and behaviors teams need to learn to migrate to continuous delivery workflows. Collaborated closely with the Logistics platform team to grow tools and processes together. Worked with other lead developers to define the product domains for the NextGen warehouse management system and move teams from a project to a product model.'
+  summary: 'Tiger team member responsible for establishing the techniques and behaviors required for teams to
+    migrate to continuous delivery workflows. Collaborated with the Logistics platform team to grow tools and
+    processes together to ensure each reinforced the goals of CD.'
   highlights:
-  - Led the effort to define product domains and product team alignment to sub-domains for the NextGen WMS. This resulted in teams that could collaborate through interfaces and deliver independently.
+  - Defined product domains and product team alignment to sub-domains for the NextGen WMS. This resulted in teams that could collaborate through interfaces and deliver independently.
   - Defined the CD capability dependency tree to help inform the path for teams piloting continuous delivery. This was used to inform our roadmap for the CD core team’s behavior and automation efforts.
-  - Created the first testing terms and patterns guide to help teams learn to test.
-  - Led the first team focusing on CD to uncover the behaviors, practices, and skills needed. This resulted in growing a typical team from quarterly or less delivery to nearly one delivery per day per developer over the course of 9 months.
+  - Created the testing terms glossary and patterns guide to help teams learn to test and to use a common language.
+  - Led the first team focusing on continuous delivery to find good techniques for upskilling teams. This resulted in growing a typical team from quarterly delivery to nearly one delivery per day per developer over the course of 9 months.
 - company: Walmart Technology
   startDate: '2013'
   endDate: '2014'
@@ -91,8 +94,12 @@ work:
   website: walmart.com
   summary: 'Responsible for integrating over 400 feature branches for the quarterly delivery of Walmart’s global warehouse management system. Given responsibility for developing better processes that would make the team unnecessary.'
   highlights:
-  - Automated the source branching process to reduce the time to branch more than 800 SVN repositories and create the Ant Hill Pro build pipelines from 48 hours to 90 minutes. This saved over 96 hours of effort for each feature branch for 400 development teams and made branching a self service activity for those teams.
-  - Changed the branching working model for the area to reduce the number of semi-permanent branches from more than 400 to 2. This enabled the dissolution of the source management team.
+  - Automated the branching process to branch more than 800 SVN repositories and create Ant Hill Pro build
+    configurations. This reduced the lead time for branch creation from 48 hours to 90 minutes, made it a self-service
+    activity instead of controlled by the Source team, and saved over 96 hours of effort for each feature branch for 400
+    development teams.
+  - Changed the branching model for the area to reduce the number of long-lived branches from more than
+    400 to 2. This enabled the dissolution of the source management team.
 - company: Walmart Technology
   startDate: '2011'
   endDate: '2013'
@@ -106,29 +113,31 @@ work:
   description: Logistics Systems Design Team
   position: Systems Analyst
   website: walmart.com
-  summary: Part of a team of senior developers responsible for defining the technology, architecture, and data model for our Next Generation warehouse management system.
+  summary: Part of a team of senior developers responsible for defining the technology, architecture, and data
+    model for our Next Generation warehouse management system.
 - company: Walmart Technology
   startDate: '2006'
   endDate: '2009'
   description: Global WMS Project
-  position: Team Lead
+  position: Systems Analyst
   website: walmart.com
   summary: 'One of four Walmart engineers leading hundreds of contract developers in a project to merge four different
-  warehouse management systems into a single set of global capabilities, including mapping data models, defining
-  development standards and collaborating with global business stakeholders to define business rules for common modules.'
+    warehouse management systems into a single set of global capabilities.'
 - company: Walmart Technology
   startDate: '2001'
   endDate: '2006'
   description: International Grocery Distribution System
-  position: Team Lead
+  position: Sr. Programmer Analyst
   website: walmart.com
   summary: 'Technical lead for the team responsible for delivering warehouse management solutions to Walmart’s grocery
   distribution centers in the UK, Mexico, and Japan.'
   highlights:
-  - Implemented the first voice order filling system for ASDA Stores in the UK. This enabled faster order filling and also enable reading impared associated to perform more skilled work.
-  - Implemented the first application logging for the system to enable much faster issue resolution and performance enhancements.
-  - Implemented the first automate source formatting for Informix 4GL thus standardizing code style and reducing cognitive load for changes for a team of 15.
-  - Implemented the first automated version leveling alerts to level 400 applications across over 30 distribution centers.
+  - Implemented voice order filling for ASDA Stores in the UK. This enabled faster, more accurate order filling. It also
+    enabled reading impaired associates to perform more skilled work and to be promoted.
+  - Implemented the first application logging for the system to enable faster issue resolution and monitor application
+    performance.
+  - Developed automated source formatting for Informix 4GL to standardize code style and reduce cognitive load.
+  - Implemented the first automated version leveling alerts to level 400 applications for over 30 distribution centers.
 - company: EXE Technologies, inc.
   startDate: '1996'
   endDate: '2001'

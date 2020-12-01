@@ -43,7 +43,7 @@ const Resume = ({ data }) => {
   return (
     <Layout>
       <ThemeProvider theme={theme}>
-        <div style={{ padding: 10 }}>
+        <div style={{ padding: 10, maxWidth: 1000}}>
           <Grid container spacing={1}>
             <Grid item xs={12}>
               <ContactInfo basics={basics} />

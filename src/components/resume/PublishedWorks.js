@@ -98,7 +98,7 @@ export default (props) => {
   if (!dataArr || dataArr.length === 0) return <div />
 
   return (
-    <Card title="Published Works">
+    <Card title="Publications">
       <CardContent>
         <Grid
           container

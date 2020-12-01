@@ -1,4 +1,4 @@
-import { Grid, Typography } from '@material-ui/core'
+import { Grid, Typography,Divider } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import React from 'react'
 
@@ -15,11 +15,13 @@ const useStyles = makeStyles((theme) => {
     text: {
       fontSize: 14,
       textAlign: 'justified',
-      color: 'textprimary',
+      color: theme.palette.secondary.main,
     },
     entity: {
       fontSize: 20,
       textAlign: 'left',
+      color: theme.palette.primary.main,
+
     },
     date: {
       fontSize: 15,
@@ -103,6 +105,7 @@ export default (props) => {
           >
             {showHighlights(data.highlights)}
           </Grid>
+          <br/><Divider variant='middle'/><br/>
         </>
       )
     })

@@ -75,7 +75,7 @@ export default (props) => {
       .map((data, index) => {
         return (
           <>
-            <Grid item xs>
+            <Grid item>
               <Chip
                 label={data.text}
                 variant="outlined"
@@ -106,7 +106,7 @@ export default (props) => {
         <Grid
           container
           direction="row"
-          justify="center"
+          justify='center'
           alignItems="center"
           spacing={1}
         >
