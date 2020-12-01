@@ -1,36 +1,29 @@
-import { Card, CardContent, CardHeader, Typography } from '@material-ui/core'
+import { CardHeader, Typography } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import React from 'react'
 
+import Card from '../common/Card'
+import CardContent from '../common/CardContent'
+
 const useStyles = makeStyles({
-  // root: {
-  //   minWidth: 275,
-  // },
-  title: {
-    fontSize: 25,
-    textAlign: 'center',
-    color: 'blue',
-  },
   text: {
     fontSize: 14,
     textAlign: 'justified',
+    color: 'textprimary',
   },
 })
 
-const About = (props) => {
+export default (props) => {
   const { summary } = props
   const classes = useStyles()
 
   return (
-    <Card>
-      <CardHeader title="Summary" className={classes.title} />
+    <Card title="Summary">
       <CardContent>
-        <Typography className={classes.text} color="textSecondary" gutterBottom>
+        <Typography className={classes.text} gutterBottom>
           {summary}
         </Typography>
       </CardContent>
     </Card>
   )
 }
-
-export default About

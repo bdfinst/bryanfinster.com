@@ -1,27 +1,27 @@
 import { Container } from '@material-ui/core'
-import { Grid } from 'semantic-ui-react'
 import React from 'react'
 
 import Awards from './awards'
-import DataCard from './dataCard'
 import Education from './education'
+import Experience from './Experience'
 import Interests from './interests'
 import Languages from './languages'
-import Publications from './publications'
-import Skills from './skills'
+import PublishedWorks from './PublishedWorks'
+import SkillList from './SkillList'
 import Summary from './Summary'
 
 const Content = (props) => {
   const { resume } = props
 
   return (
-    <Container>
+    <Container disableGutters="true">
       <Summary summary={resume.basics.summary} />
-      {/* <DataCard dataArr={resume.work} name="Work" type="work" />
-      <Education dataArr={resume.education} name="Education" />
+      <Experience dataArr={resume.work} name="Work" type="work" />
+      {/* <SkillList dataArr={resume.skills} name="Skills" /> */}
+      <PublishedWorks dataArr={resume.publications} name="Publications" />
+
+      {/* <Education dataArr={resume.education} name="Education" />
       <Awards dataArr={resume.awards} name="Awards" />
-      <Publications dataArr={resume.publications} name="Publications" />
-      <Skills dataArr={resume.skills} name="Skills" />
       <Languages dataArr={resume.languages} name="Languages" />
       <Interests dataArr={resume.interests} name="Interests" /> */}
     </Container>

@@ -16,7 +16,6 @@ const Content = styled.div`
   flex: 1;
   overflow: scroll;
   padding: 20px;
-  color: #7e7e7e;
 `
 
 const Query = graphql`

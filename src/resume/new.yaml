@@ -1,67 +1,6 @@
----
-basics:
-  name: Bryan Finster
-  label: Developer
-  picture: ''
-  email: me@bryanfinster.com
-  phone: '4794267559'
-  website: bryanfinster.com
-  summary: An experienced software engineer, application architect, pipeline architect,
-    team leader, product owner, speaker, and DevOps evangelist with over two decades
-    of experience designing and implementing solutions for large enterprises.
-  location:
-    address: 13705 Stoneridge Rd
-    postalCode: '72756'
-    city: Rogers
-    countryCode: US
-    region: AR
-  profiles:
-  - network: LinkedIn
-    username: bryan-finster
-    url: https://www.linkedin.com/in/bryan-finster/
-  - network: Twitter
-    username: '@BryanFinster'
-    url: https://twitter.com/BryanFinster
-  - network: Medium
-    username: 'bdfinst.medium.com'
-    url: https://bdfinst.medium.com/
-  - network: GitHub
-    username: bdfinst
-    url: https://github.com/bdfinst
-work:
 - company: Walmart Technology
-  location: ''
-  description: 'Developer Advocacy - DevOps Dojo'
-  position: Product Owner, Lead Value Stream Architect
-  website: walmart.com
-  startDate: '2018-01'
-  endDate: ''
-  summary: 'Founded the Walmart DevOps Dojo. Responsible for defining
-    the techniques for helping product teams worldwide learn the principles
-    and practices of continuous delivery. Developed workshops, presentations, and
-    playbooks to help teams with every aspect of delivery including teamwork,
-    agile practices, evolutionary coding, test design, evolutionary database, and
-    pipeline architecture. Worked with other CD Platform leads to design changes to
-    the platform to reinforce good practices, discourage poor practices, improve
-    security and compliance, and improve developer experience.'
-  highlights:
-  - Lead the cross-organizational effort to standardize delivery metrics definitions
-    and usage to provide teams with the insights needed to identify and remove
-    delivery constraints.
-  - Member of the core team that standardized testing pattern definitions and
-    recommend testing practices.
-  - Developed self-help playbooks for the common problems teams face with teamwork,
-    work decomposition, testing, pipeline architecture, and other issues that impact
-    their ability to execute continuous delivery.
-  - Designed an innovative self-service technical coaching tool that combines
-    delivery metrics and ways of working survey results with gamification to
-    guide teams to improvement playbooks.
-  - Designed the current enterprise scaling strategy to allow more rapid improvement
-    by certifying senior engineers who have demonstrated through improved delivery
-    metrics to have improved team outcomes.
-- company: Walmart Technology
-  startDate: '8-2017'
-  endDate: '1-2018'
+  startDate: 8/2017
+  endDate: 1/2018
   description: Delivery Enablement Insights
   position: Product Owner
   website: walmart.com
@@ -72,8 +11,8 @@ work:
   - Worked with platform customers to build team and leadership chain dashboards to aggregate pipeline data and improve the gamification to give a better picture of how teams work.
   - Expanded the user base of Hygieia from less than 20% of teams to more than 80% of teams in less than 6 months with automated metric platform onboarding, resulting in more frequent requests for information on how to improve scores and the need to establish a DevOps Dojo.
 - company: Walmart Technology
-  startDate: '2014'
-  endDate: '2017'
+  startDate: 2014
+  endDate: 2017
   description: Logistics Systems Platform Team
   position: Systems Architect
   website: walmart.com
@@ -84,8 +23,8 @@ work:
   - Created the first testing terms and patterns guide to help teams learn to test.
   - Led the first team focusing on CD to uncover the behaviors, practices, and skills needed. This resulted in growing a typical team from quarterly or less delivery to nearly one delivery per day per developer over the course of 9 months.
 - company: Walmart Technology
-  startDate: '2013'
-  endDate: '2014'
+  startDate: 2013
+  endDate: 2014
   description: Logistics Systems Source Management Team
   position: Systems Architect
   website: walmart.com
@@ -94,22 +33,22 @@ work:
   - Automated the source branching process to reduce the time to branch more than 800 SVN repositories and create the Ant Hill Pro build pipelines from 48 hours to 90 minutes. This saved over 96 hours of effort for each feature branch for 400 development teams and made branching a self service activity for those teams.
   - Changed the branching working model for the area to reduce the number of semi-permanent branches from more than 400 to 2. This enabled the dissolution of the source management team.
 - company: Walmart Technology
-  startDate: '2011'
-  endDate: '2013'
+  startDate: 2011
+  endDate: 2013
   description: Global eCommerce Project
   position: Systems Analyst
   website: walmart.com
   summary: Team lead one of the teams implementing the changes required to enable the global WMS to handle end user order filling in addition to store order filling in the same facility. This allowed Walmart to reduce its warehouse footprint while increasing sales.
 - company: Walmart Technology
-  startDate: '2009'
-  endDate: '2011'
+  startDate: 2009
+  endDate: 2011
   description: Logistics Systems Design Team
   position: Systems Analyst
   website: walmart.com
   summary: Part of a team of senior developers responsible for defining the technology, architecture, and data model for our Next Generation warehouse management system.
 - company: Walmart Technology
-  startDate: '2006'
-  endDate: '2009'
+  startDate: 2006
+  endDate: 2009
   description: Global WMS Project
   position: Team Lead
   website: walmart.com
@@ -117,8 +56,8 @@ work:
   warehouse management systems into a single set of global capabilities, including mapping data models, defining
   development standards and collaborating with global business stakeholders to define business rules for common modules.'
 - company: Walmart Technology
-  startDate: '2001'
-  endDate: '2006'
+  startDate: 2001
+  endDate: 2006
   description: International Grocery Distribution System
   position: Team Lead
   website: walmart.com
@@ -130,112 +69,10 @@ work:
   - Implemented the first automate source formatting for Informix 4GL thus standardizing code style and reducing cognitive load for changes for a team of 15.
   - Implemented the first automated version leveling alerts to level 400 applications across over 30 distribution centers.
 - company: EXE Technologies, inc.
-  startDate: '1996'
-  endDate: '2001'
+  startDate: 1996
+  endDate: 2001
   description: Customer Customizations
   position: Senior Programmer
   website:
   summary: 'Worked on customer accounts to customize EXE’s warehouse management system to meet their distribution needs.'
-volunteer:
-- organization: ''
-  position: ''
-  website: ''
-  startDate: ''
-  endDate: ''
-  summary: ''
-  highlights:
-  - ''
-education:
-- institution: ''
-  area: ''
-  studyType: ''
-  startDate: ''
-  endDate: ''
-  gpa: ''
-  courses:
-  - ''
-awards:
-- title: ''
-  date: ''
-  awarder: ''
-  summary: ''
-publications:
-- name: 5 Minute DevOps
-  publisher: bryanfinster.com
-  releaseDate: Ongoing
-  website: https://bryanfinster.com
-  summary: Short articles on improving teamwork, testing, workflow, leadership, metrics, and all other things DevOps
-- name: The Dojo Consortium
-  publisher: IT Revolution
-  event: DevOps Enterprise Summit
-  releaseDate: 2019-10
-  website: https://www.youtube.com/watch?v=qcJp0CoDkSU
-  summary: How large enterprises collaborate to improve delivery outcomes.
-- name: Contract Driven Development
-  publisher: Canton Coders
-  releaseDate: 2020-08
-  website: https://www.youtube.com/watch?v=mwNgMDbr4gw
-  summary: Using CDD and contract testing to decouple teams
-- name: The Synergy of Mobbing and Continuous Delivery
-  publisher: Mob Mentality Show
-  event: Podcast
-  releaseDate: 2020-06
-  website: https://www.youtube.com/watch?v=K2UBYNx01PM
-  summary: How mob programming can enhance continuous delivery
-- name: Scaling Continuous Delivery at Walmart
-  publisher: IT Revolution
-  event: DevOps Enterprise Summit
-  releaseDate: 2018-10
-  website: https://www.youtube.com/watch?v=7achOwp70q8
-  summary: The multi-faceted approach to enterprise transformation.
-- name: Continuous Delivery - Solving the Talent Problem
-  publisher: IT Revolution
-  event: DevOps Enterprise Summit
-  releaseDate: 2017-11
-  website: https://www.youtube.com/watch?v=MHK16QNVXXU&t=5s
-  summary: Using continuous delivery to grow the talent you have
-skills:
-- name: DevOps
-  level: Proficient
-  keywords:
-  - 'Continuous Delivery'
-  - 'Continuous Integration'
-  - 'Metrics'
-  - 'Application Architecture'
-  - 'Test Architecture'
-  - 'Lean Process'
-  - 'Team Structure'
-  - 'Culture'
-- name: Web Development
-  level: Proficient
-  keywords:
-  - NodeJS
-  - ReactJS
-languages:
-- language: English
-  fluency: Native
-interests:
-- name: Process Improvement
-  keywords:
-  - lean
-  - devops
-references:
-- name: Upon request
-  reference: Awesome guy
-projects:
-- name: Walmart
-  description: Global Logistics System
-  highlights:
-  - ''
-  keywords: []
-  startDate: ''
-  endDate: ''
-  website: ''
-  roles: []
-  entity: ''
-  type: ''
-meta:
-  canonical: ''
-  version: ''
-  lastModified: ''
 
