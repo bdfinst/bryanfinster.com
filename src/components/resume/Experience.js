@@ -1,44 +1,35 @@
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  Grid,
-  Typography,
-} from '@material-ui/core'
+import { Grid, Typography } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import React from 'react'
 
-const useStyles = makeStyles({
-  // root: {
-  //   minWidth: 275,
-  // },
-  title: {
-    fontSize: 25,
-    textAlign: 'center',
-    color: 'blue',
-  },
-  subTitle: {
-    fontSize: 18,
-    textAlign: 'center',
-    color: 'blue',
-  },
-  text: {
-    fontSize: 14,
-    textAlign: 'justified',
-    color: 'textSecondary',
-  },
-  entity: {
-    fontSize: 20,
-    textAlign: 'left',
-  },
-  date: {
-    fontSize: 15,
-    textAlign: 'right',
-  },
-  position: {
-    fontSize: 12,
-    textAlign: 'left',
-  },
+import Card from '../common/Card'
+import CardContent from '../common/CardContent'
+
+const useStyles = makeStyles((theme) => {
+  return {
+    subTitle: {
+      fontSize: 18,
+      textAlign: 'center',
+      color: theme.palette.primary.main,
+    },
+    text: {
+      fontSize: 14,
+      textAlign: 'justified',
+      color: 'textprimary',
+    },
+    entity: {
+      fontSize: 20,
+      textAlign: 'left',
+    },
+    date: {
+      fontSize: 15,
+      textAlign: 'right',
+    },
+    position: {
+      fontSize: 12,
+      textAlign: 'left',
+    },
+  }
 })
 
 export default (props) => {
@@ -122,8 +113,7 @@ export default (props) => {
   if (!dataArr || dataArr.length === 0) return <div />
 
   return (
-    <Card>
-      <CardHeader title="Experience" className={classes.title} />
+    <Card title="Experience">
       <CardContent>{renderData()}</CardContent>
     </Card>
   )

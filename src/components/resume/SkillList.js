@@ -1,20 +1,11 @@
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  Chip,
-  Grid,
-  Typography,
-} from '@material-ui/core'
+import { Chip, Grid, Typography } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import React from 'react'
 
+import Card from '../common/Card'
+import CardContent from '../common/CardContent'
+
 const useStyles = makeStyles({
-  title: {
-    fontSize: 25,
-    textAlign: 'center',
-    color: 'blue',
-  },
   skill: {
     fontSize: 15,
     textAlign: 'center',
@@ -93,8 +84,7 @@ export default (props) => {
   if (!dataArr || dataArr.length === 0) return <div />
 
   return (
-    <Card>
-      <CardHeader title="Skills" className={classes.title} />
+    <Card title="Skills">
       <CardContent>
         <Grid
           container

@@ -1,4 +1,6 @@
 import { Grid } from '@material-ui/core'
+import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+import { blueGrey, lightBlue } from '@material-ui/core/colors'
 import { graphql } from 'gatsby'
 import React from 'react'
 
@@ -6,22 +8,52 @@ import Body from '../components/resume/Body'
 import ContactInfo from '../components/resume/ContactInfo'
 import Layout from '../components/Layout'
 
+const theme = createMuiTheme({
+  props: {
+    // Name of the component ⚛️
+    MuiTypography: {
+      color: '#ffffff',
+    },
+  },
+  palette: {
+    primary: {
+      light: lightBlue[500],
+      main: lightBlue[900],
+      dark: lightBlue,
+      contrastText: '#ffffff',
+    },
+    secondary: {
+      light: blueGrey[500],
+      main: blueGrey[900],
+      dark: blueGrey,
+      contrastText: '#ffffff',
+    },
+  },
+  overrides: {
+    MuiPaper: {
+      elevation: 0,
+    },
+  },
+})
+
 const Resume = ({ data }) => {
   const resume = data.resumeYaml
   const { basics } = resume
   console.log(resume)
   return (
     <Layout>
-      <div style={{ padding: 10 }}>
-        <Grid container spacing={2}>
-          <Grid item xs={3}>
-            <ContactInfo basics={basics} />
+      <ThemeProvider theme={theme}>
+        <div style={{ padding: 10 }}>
+          <Grid container spacing={1}>
+            <Grid item xs={12}>
+              <ContactInfo basics={basics} />
+            </Grid>
+            <Grid item xs={12}>
+              <Body resume={resume} />
+            </Grid>
           </Grid>
-          <Grid item xs>
-            <Body resume={resume} />
-          </Grid>
-        </Grid>
-      </div>
+        </div>
+      </ThemeProvider>
     </Layout>
   )
 }
@@ -65,6 +97,7 @@ export const query = graphql`
         releaseDate
         website
         summary
+        event
       }
       projects {
         name
