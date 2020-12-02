@@ -206,6 +206,12 @@ publications:
   releaseDate: Ongoing
   website: https://bdfinst.medium.com
   summary: Short articles on improving teamwork, testing, workflow, leadership, metrics, and all other things DevOps
+- name: Why Can't We CD?
+  publisher: AllDayDevOps
+  event: DevOps Enterprise Summit
+  releaseDate: 2020-10
+  website: https://content.sonatype.com/2020addo-cicd/addo2020-cicd-bfinster
+  summary: The common problems preventing teams from delivering daily.
 - name: The Dojo Consortium
   publisher: IT Revolution
   event: DevOps Enterprise Summit
@@ -235,12 +241,7 @@ publications:
   releaseDate: 2017-11
   website: https://www.youtube.com/watch?v=MHK16QNVXXU&t=5s
   summary: Using continuous delivery to grow the talent you have
-- name: Why Can't We CD?
-  publisher: AllDayDevOps
-  event: DevOps Enterprise Summit
-  releaseDate: 2020-10
-  website: https://content.sonatype.com/2020addo-cicd/addo2020-cicd-bfinster
-  summary: The common problems preventing teams from delivering daily.
+
 skills:
 - name: DevOps
   level: Proficient

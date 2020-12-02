@@ -1,17 +1,17 @@
-import { CardHeader, Typography } from '@material-ui/core'
+import { Typography } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import React from 'react'
 
 import Card from '../common/Card'
 import CardContent from '../common/CardContent'
 
-const useStyles = makeStyles({
-  text: {
+const useStyles = makeStyles(theme=>{
+  return {text: {
     fontSize: 14,
     textAlign: 'justified',
-    color: 'textprimary',
+    color: theme.palette.primary.dark,
   },
-})
+}})
 
 export default (props) => {
   const { summary } = props
