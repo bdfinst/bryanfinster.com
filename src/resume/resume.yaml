@@ -64,8 +64,8 @@ work:
     by certifying senior engineers who have demonstrated the ability to help team measurably
     improve delivery outcomes.
 - company: Walmart Technology
-  startDate: '8-2017'
-  endDate: '1-2018'
+  startDate: '2017-09'
+  endDate: '2018-01'
   description: Delivery Enablement Insights
   position: Product Owner
   website: walmart.com
@@ -152,12 +152,38 @@ work:
   website:
   summary: 'Worked on customer accounts to customize EXE’s warehouse management system to meet their distribution needs.'
 volunteer:
-- organization: ''
-  position: ''
+- organization: 'Enterprise Dojo Consortium'
+  position: 'Member'
   website: ''
-  startDate: ''
+  startDate: '2018'
+  endDate: ''
+  summary: 'A community of leaders from 50+ Fortune 500 companies and government agencies who collaborate on improving
+  organizational outcomes.'
+  highlights:
+  - ''
+- organization: 'Northwest Arkansas Tech Summit'
+  position: 'DevOps Track Lead'
+  website: 'https://www.nwatechsummit.com/'
+  startDate: '2020'
   endDate: ''
   summary: ''
+  highlights:
+  - ''
+- organization: 'DevOps Online Summit'
+  position: 'DevOps Patterns / Antipatterns Track Lead'
+  website: 'https://devopsonlinesummit.com/'
+  startDate: '2020'
+  endDate: ''
+  summary: ''
+  highlights:
+  - ''
+- organization: 'DevOps Institute'
+  position: 'Ambassador'
+  website: 'https://devopsinstitute.com/'
+  startDate: '2020'
+  endDate: ''
+  summary: 'DevOps Institute is dedicated to the mission of advocating and training better ways of working that improve
+  business outcomes and the lives of those delivering them.'
   highlights:
   - ''
 education:
@@ -176,9 +202,9 @@ awards:
   summary: ''
 publications:
 - name: 5 Minute DevOps
-  publisher: bryanfinster.com
+  publisher: Medium.com
   releaseDate: Ongoing
-  website: https://bryanfinster.com
+  website: https://bdfinst.medium.com
   summary: Short articles on improving teamwork, testing, workflow, leadership, metrics, and all other things DevOps
 - name: The Dojo Consortium
   publisher: IT Revolution
@@ -209,6 +235,12 @@ publications:
   releaseDate: 2017-11
   website: https://www.youtube.com/watch?v=MHK16QNVXXU&t=5s
   summary: Using continuous delivery to grow the talent you have
+- name: Why Can't We CD?
+  publisher: AllDayDevOps
+  event: DevOps Enterprise Summit
+  releaseDate: 2020-10
+  website: https://content.sonatype.com/2020addo-cicd/addo2020-cicd-bfinster
+  summary: The common problems preventing teams from delivering daily.
 skills:
 - name: DevOps
   level: Proficient
@@ -226,6 +258,16 @@ skills:
   keywords:
   - NodeJS
   - ReactJS
+- name: ESQL/C
+  level: Proficient
+  keywords:
+  - C
+  - Informix
+- name: Database
+  level: Proficient
+  keywords:
+  - SQL
+  - NoSQL
 languages:
 - language: English
   fluency: Native

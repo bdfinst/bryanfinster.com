@@ -1,6 +1,9 @@
-import { Card, CardContent, Divider, Grid, Typography } from '@material-ui/core'
+import {  Divider, Grid, Typography } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import React from 'react'
+import Card from '../common/Card'
+import CardContent from '../common/CardContent'
+
 
 const useStyles = makeStyles({
   // root: {
@@ -61,8 +64,7 @@ export default (props) => {
       <></>
     )
   }
-  const renderData = () => {
-    const { dataArr, type } = props
+  const renderData = (dataArr, type) => {
 
     return dataArr.map((data) => {
       let endDate = ' - Current'
@@ -80,19 +82,19 @@ export default (props) => {
       return (
         <>
           <Grid container spacing={1}>
-            <Grid item xs={6}>
-              <Typography className={classes.entity}>{entityName}</Typography>
+            <Grid item xs={9}>
+              <Typography className={classes.entity}>{entityName} - {data.position}</Typography>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={3}>
               <Typography className={classes.date}>
                 {data.startDate} {endDate}
               </Typography>
             </Grid>
-            <Grid item xs>
+            {/* <Grid item xs>
               <Typography className={classes.position}>
                 {data.position}
               </Typography>
-            </Grid>
+            </Grid> */}
             <Grid item xs={12}>
               <Typography className={classes.text}>{data.summary}</Typography>
             </Grid>
@@ -119,8 +121,8 @@ export default (props) => {
   if (!dataArr || dataArr.length === 0) return <div />
 
   return (
-    <Card title="Experience">
-      <CardContent>{renderData()}</CardContent>
+    <Card title={name}>
+      <CardContent>{renderData(dataArr, type)}</CardContent>
     </Card>
   )
 }
