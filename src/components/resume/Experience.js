@@ -1,9 +1,8 @@
-import {  Divider, Grid, Typography } from '@material-ui/core'
+import { Divider, Grid, Typography } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import React from 'react'
 import Card from '../common/Card'
 import CardContent from '../common/CardContent'
-
 
 const useStyles = makeStyles({
   // root: {
@@ -65,7 +64,6 @@ export default (props) => {
     )
   }
   const renderData = (dataArr, type) => {
-
     return dataArr.map((data) => {
       let endDate = ' - Current'
       let entityName = ''
@@ -83,7 +81,9 @@ export default (props) => {
         <>
           <Grid container spacing={1}>
             <Grid item xs={9}>
-              <Typography className={classes.entity}>{entityName} - {data.position}</Typography>
+              <Typography className={classes.entity}>
+                {entityName} - {data.position}
+              </Typography>
             </Grid>
             <Grid item xs={3}>
               <Typography className={classes.date}>

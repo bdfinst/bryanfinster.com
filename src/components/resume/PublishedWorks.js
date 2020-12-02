@@ -1,9 +1,4 @@
-import {
-
-  Grid,
-  Link,
-  Typography,
-} from '@material-ui/core'
+import { Grid, Link, Typography } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import React from 'react'
 
@@ -45,7 +40,6 @@ export default (props) => {
 
   const renderData = () => {
     const { dataArr, type } = props
-
 
     return dataArr
       .sort((dataA, dataB) => {

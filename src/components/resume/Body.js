@@ -17,9 +17,13 @@ const Content = (props) => {
     <Container disableGutters="true">
       <Summary summary={resume.basics.summary} />
       <Experience dataArr={resume.work} name="Experience" type="work" />
-      <Experience dataArr={resume.volunteer} name="Volunteer Organizations" type="volunteer" />
-      {/* <SkillList dataArr={resume.skills} name="Skills" /> */}
       <PublishedWorks dataArr={resume.publications} name="Publications" />
+      <Experience
+        dataArr={resume.volunteer}
+        name="Volunteer Organizations"
+        type="volunteer"
+      />
+      <SkillList dataArr={resume.skills} name="Skills" />
 
       {/* <Education dataArr={resume.education} name="Education" />
       <Awards dataArr={resume.awards} name="Awards" />

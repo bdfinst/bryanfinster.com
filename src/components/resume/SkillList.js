@@ -1,19 +1,18 @@
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  Chip,
-  Grid,
-  Typography,
-} from '@material-ui/core'
+import { Chip, Grid, Typography } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import React from 'react'
 
+import Card from '../common/Card'
+import CardContent from '../common/CardContent'
+
 const useStyles = makeStyles({
-  title: {
-    fontSize: 25,
-    textAlign: 'center',
-    color: 'blue',
+  root: {
+    display: 'flex',
+    justifyContent: 'center',
+    flexWrap: 'wrap',
+    '& > *': {
+      margin: theme.spacing(0.5),
+    },
   },
   skill: {
     fontSize: 15,
@@ -65,23 +64,26 @@ export default (props) => {
       return (
         <>
           <Grid item xs={4}>
+            <div className={classes.root}>
             <Typography className={classes.skill}>{data.name}</Typography>
 
-            {data.keywords && data.keywords.length > 0 ? (
-              data.keywords.map((keyword) => {
-                const color = colors[Math.floor(Math.random() * colors.length)]
-                return (
-                  <Chip
-                    label={keyword}
-                    variant="outlined"
-                    color="primary"
-                    size="small"
-                  />
-                )
-              })
-            ) : (
-              <div />
-            )}
+              {data.keywords && data.keywords.length > 0 ? (
+                data.keywords.map((keyword) => {
+                  const color =
+                    colors[Math.floor(Math.random() * colors.length)]
+                  return (
+                    <Chip
+                      label={keyword}
+                      variant="outlined"
+                      color="primary"
+                      size="small"
+                    />
+                  )
+                })
+              ) : (
+                <div />
+              )}
+            </div>
           </Grid>
         </>
       )
@@ -98,8 +100,8 @@ export default (props) => {
         <Grid
           container
           direction="row"
-          justify="center"
-          alignItems="center"
+          justify="flex-start"
+          alignItems="flex-start"
           spacing={2}
         >
           {renderData()}
