@@ -1,14 +1,14 @@
 ---
 basics:
   name: Bryan Finster
-  label: Value Stream Architect
+  label: Developer
   picture: ''
   email: me@bryanfinster.com
-  phone: '4794267559'
+  phone: '479.426.7559'
   website: bryanfinster.com
-  summary: An experienced software engineer, application architect, pipeline architect,
-    team leader, product owner, speaker, and DevOps evangelist with over two decades
-    of experience designing and implementing solutions for large enterprises.
+  summary: An experienced software engineer, application architect, team leader, technical
+    coach, product owner, DevOps practitioner, speaker, and evangelist with over two decades
+    of designing and implementing solutions for large enterprises.
   location:
     address: 13705 Stoneridge Rd
     postalCode: '72756'
@@ -31,34 +31,37 @@ basics:
 work:
 - company: Walmart Technology
   location: ''
-  description: 'Developer Advocacy - DevOps Dojo'
-  position: Product Owner, Lead Value Stream Architect
+  description: 'Developer Productivity - DevOps Dojo'
+  position: Product Owner, Architect
   website: walmart.com
   startDate: '2018-01'
   endDate: ''
-  summary: 'Founded the Walmart DevOps Dojo. Responsible for defining the techniques for helping product
-    teams worldwide learn the principles and practices of continuous delivery. Developed workshops, presentations,
-    and playbooks to help teams with every aspect of improving the flow of delivery from idea to production
-    and operations. Worked with other CD Platform leads to design changes to the platform to reinforce good
-    practices, discourage poor practices, improve security and compliance, and improve developer experience.'
+  summary: 'Founded the Walmart DevOps Dojo. Responsible for defining
+    the techniques for helping product teams worldwide learn the principles
+    and practices of continuous delivery. Developed training and presentations to help
+    teams with every aspect of delivery, from idea to production. Worked with Platform
+    leadership to design changes to the platform to reinforce good practices, improve
+    security and compliance, and improve the developer experience.'
   highlights:
-  - Lead the cross-organizational effort to standardize delivery metrics definitions
-    and usage to provide teams with the insights needed to identify and remove
-    delivery constraints. This resulted in reduced duplication of effort and better understanding at the enterprise
-    level of what and how to measure delivery performance.
-  - Core contributor to the team that standardized testing pattern definitions and
-    recommend testing practices for the enterprise. This accelerated the knowledge sharing required to improve testing
-    across the enterprise.
-  - Developed self-help playbooks for the common problems teams face with teamwork, work decomposition, testing
-    pipeline architecture, and other issues that impact their ability to execute continuous delivery. The playbooks
-    became an important force multiplier that allowed the Dojo team to focus on more difficult problems while the common
-    problems we resolved in a self-service manner.
-  - Designed an innovative self-service technical coaching tool that combines delivery metrics and ways of working
-    survey results with gamification to guide teams to better solutions. This allowed teams to find solutions to
-    problems they didn't understand they had and reduced the workload for the Dojo team.
-  - Designed the CD enterprise scaling strategy to allow more rapid improvement by certifying senior engineers who
-    have demonstrated through improved delivery metrics to have improved team outcomes. This horizontally scaled the
-    ability to improve the flow of value in multiple organizations without an increase in Platform overhead.
+  - Lead the cross-organizational effort to standardize enterprise delivery metrics which
+    resulted in a common approach to effectively measure efficiency, effectiveness, and
+    sustainability of software delivery for the enterprise.
+  - Helped standardize testing pattern definitions and good practices. This enabled the
+    scaling of testing knowledge and techniques globally.
+  - Built and supported enterprise communities of interest to improve cross-organizational
+    sharing of techniques for all aspects of development. This resulted in a horizontal scaling
+    of knowledge and effectively grew the capabilities of the Dojo team.
+  - Developed self-help playbooks for the common issues teams face when migrating to a
+    continuous delivery development flow. These playbooks were a force multiplier that allowed
+    the Dojo team to focus on helping with more complicated problems while providing actionable
+    improvement journeys for teams starting the journey.
+  - Designed a "Coaching as a Service" tool that combined pipeline delivery metrics and
+    "ways of working" survey results to guide teams to improvement playbooks. This became an
+    important tool to help teams find solutions to problem they didn't know they had without
+    the expense of direct observation by the dojo team.
+  - Designed the current enterprise scaling strategy to allow more rapid improvement
+    by certifying senior engineers who have demonstrated the ability to help team measurably
+    improve delivery outcomes.
 - company: Walmart Technology
   startDate: '8-2017'
   endDate: '1-2018'
