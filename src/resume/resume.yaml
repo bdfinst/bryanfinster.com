@@ -68,79 +68,81 @@ work:
   description: Delivery Enablement Insights
   position: Product Owner
   website: walmart.com
-  summary: 'Product owner for Global Platform’s delivery metrics solution using CapitalOne’s Hygieia DevOps dashboard
-    with custom visualizations and automation to meet Walmart’s goal of guiding teams to CD good practices.'
+  summary: 'Product owner for Global Platform’s delivery metrics solution using CapitalOne’s Hygieia DevOps dashboard.
+  with custom visualizations and automation to meet Walmart’s goal of guiding teams to CD good practices. '
   highlights:
-  - Brought Walmart into partnership with CapitalOne and other large enterprise contributors to Hygieia to establish the Hygieia open source consortium.
-  - Developed the scoring standards for each instrumented development activity to encourage the behaviors that align with our enterprise goals.
-  - Worked with platform customers to build team and leadership chain dashboards to aggregate pipeline data and improve the gamification to give a better picture of how teams work.
-  - Expanded the user base of Hygieia from less than 20% of teams to more than 80% of teams in less than 6 months with automated metric platform onboarding, resulting in more frequent requests for information on how to improve scores and the need to establish a DevOps Dojo.
+  - Scoring teams based on good practices for continuous delivery resulted in immediate
+    requests for information on how to execute better. This resulted in enough demand from
+    early adopter teams that I was asked to build an enterprise Dojo to meet the need.
+  - Worked with platform customers to build team, product, and leadership dashboards to
+    aggregate pipeline data. This allowed improved observability to development flow for all
+    levels of the organization and increased requests for tips to improve.
+  - Expanded the user base of Hygieia from less than 20% of teams to more than 80% of teams
+    in less than 6 months with automated dashboard onboarding.
 - company: Walmart Technology
   startDate: '2014'
   endDate: '2017'
   description: Logistics Systems Platform Team
   position: Systems Architect
   website: walmart.com
-  summary: 'Tiger team member responsible for establishing the techniques and behaviors required for teams to
-    migrate to continuous delivery workflows. Collaborated with the Logistics platform team to grow tools and
-    processes together to ensure each reinforced the goals of CD.'
+  summary: 'Member of the core team responsible for exploring the tools, techniques, and
+    behaviors required to execute continuous delivery workflows. '
   highlights:
-  - Defined product domains and product team alignment to sub-domains for the NextGen WMS. This resulted in teams that could collaborate through interfaces and deliver independently.
-  - Defined the CD capability dependency tree to help inform the path for teams piloting continuous delivery. This was used to inform our roadmap for the CD core team’s behavior and automation efforts.
-  - Created the testing terms glossary and patterns guide to help teams learn to test and to use a common language.
-  - Led the first team focusing on continuous delivery to find good techniques for upskilling teams. This resulted in growing a typical team from quarterly delivery to nearly one delivery per day per developer over the course of 9 months.
+  - Defined product domains and product team structure for the NextGen WMS. This resulted
+    in loosly coupled, cross-functional teams that could deliver independently and on-demand.
+  - Led the first team focusing on continuous delivery to find good techniques for upskilling
+    teams. This resulted in growing a normal team from 1 delivery per quarter to a sustainable
+    flow of multiple deliveries per day with a peak of 12 per day from team of 13 engineers.
 - company: Walmart Technology
   startDate: '2013'
   endDate: '2014'
   description: Logistics Systems Source Management Team
   position: Systems Architect
   website: walmart.com
-  summary: 'Responsible for integrating over 400 feature branches for the quarterly delivery of Walmart’s global warehouse management system. Given responsibility for developing better processes that would make the team unnecessary.'
+  summary: 'Responsible for integrating over 400 feature branches for the quarterly release of
+    Walmart’s global warehouse management system with the mandate to develop better processes
+    that would make the team unnecessary.'
   highlights:
-  - Automated the branching process to branch more than 800 SVN repositories and create Ant Hill Pro build
-    configurations. This reduced the lead time for branch creation from 48 hours to 90 minutes, made it a self-service
-    activity instead of controlled by the Source team, and saved over 96 hours of effort for each feature branch for 400
-    development teams.
-  - Changed the branching model for the area to reduce the number of long-lived branches from more than
-    400 to 2. This enabled the dissolution of the source management team.
+  - Automated the branching and build configuration process for more than 800 SVN repositories.
+    This reduced the lead time for branch creation from 48 hours to 90 minutes, made it a
+    self-service activity instead of controlled by the Source team, and saved over 96 hours
+    of manual effort for each feature branch for 400 development teams.
+  - Changed the branching model for the area to reduce the number of long-lived branches from
+    more than 400 to 2. This greatly simplified code integration and enabled the source
+    management team to be obsoleted.
 - company: Walmart Technology
   startDate: '2011'
   endDate: '2013'
   description: Global eCommerce Project
   position: Systems Analyst
   website: walmart.com
-  summary: Team lead one of the teams implementing the changes required to enable the global WMS to handle end user order filling in addition to store order filling in the same facility. This allowed Walmart to reduce its warehouse footprint while increasing sales.
-- company: Walmart Technology
-  startDate: '2009'
-  endDate: '2011'
-  description: Logistics Systems Design Team
-  position: Systems Analyst
-  website: walmart.com
-  summary: Part of a team of senior developers responsible for defining the technology, architecture, and data
-    model for our Next Generation warehouse management system.
+  summary: Led one of the teams implementing changes required to enable Walmart DC's to handle eCommerce order filling in addition to store order filling in the same facility. This allowed Walmart to reduce its warehouse footprint while increasing sales.
 - company: Walmart Technology
   startDate: '2006'
-  endDate: '2009'
+  endDate: '2011'
   description: Global WMS Project
   position: Systems Analyst
   website: walmart.com
-  summary: 'One of four Walmart engineers leading hundreds of contract developers in a project to merge four different
-    warehouse management systems into a single set of global capabilities.'
+  summary: 'One of the team leads on the a project to merge four different warehouse management
+    systems into a single set of global capabilities. This resulted in a common system that
+    could be used in nearly every GM and grocery DC worldwide.'
 - company: Walmart Technology
   startDate: '2001'
   endDate: '2006'
   description: International Grocery Distribution System
   position: Sr. Programmer Analyst
   website: walmart.com
-  summary: 'Technical lead for the team responsible for delivering warehouse management solutions to Walmart’s grocery
-  distribution centers in the UK, Mexico, and Japan.'
+  summary: 'Technical lead for the team responsible for delivering warehouse management
+    solutions to Walmart’s grocery distribution centers in the UK, Mexico, and Japan.'
   highlights:
-  - Implemented voice order filling for ASDA Stores in the UK. This enabled faster, more accurate order filling. It also
-    enabled reading impaired associates to perform more skilled work and to be promoted.
-  - Implemented the first application logging for the system to enable faster issue resolution and monitor application
-    performance.
-  - Developed automated source formatting for Informix 4GL to standardize code style and reduce cognitive load.
-  - Implemented the first automated version leveling alerts to level 400 applications for over 30 distribution centers.
+  - Implemented voice order filling for ASDA Stores in the UK. This enabled faster, more
+    accurate order filling. It also allowed reading impaired associates to be promoted into more
+    skilled positions.
+  - Implemented the first application logging and source formatting solutions for the system.
+    This enabled faster issue resolution, application performance monitoring, and reduced
+    technical debt and was adopted by other teams.
+  - Implemented automated version leveling to ensure all distribution centers were running the
+    same versions of WMS applications.
 - company: EXE Technologies, inc.
   startDate: '1996'
   endDate: '2001'
