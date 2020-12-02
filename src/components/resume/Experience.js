@@ -4,7 +4,8 @@ import React from 'react'
 import Card from '../common/Card'
 import CardContent from '../common/CardContent'
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme=>{
+  return {
   // root: {
   //   minWidth: 275,
   // },
@@ -16,16 +17,18 @@ const useStyles = makeStyles({
   subTitle: {
     fontSize: 18,
     textAlign: 'center',
-    color: 'blue',
+    color: theme.palette.primary.main,
   },
   text: {
     fontSize: 14,
     textAlign: 'justified',
-    color: 'textSecondary',
+    color: theme.palette.secondary.main,
   },
   entity: {
-    fontSize: 20,
+    fontSize: 18,
     textAlign: 'left',
+    color: theme.palette.primary.main,
+
   },
   date: {
     fontSize: 15,
@@ -35,7 +38,7 @@ const useStyles = makeStyles({
     fontSize: 12,
     textAlign: 'left',
   },
-})
+}})
 
 export default (props) => {
   const classes = useStyles()
