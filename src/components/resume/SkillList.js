@@ -93,8 +93,7 @@ export default (props) => {
   if (!dataArr || dataArr.length === 0) return <div />
 
   return (
-    <Card>
-      <CardHeader title="Skills" className={classes.title} />
+    <Card title="Skills">
       <CardContent>
         <Grid
           container

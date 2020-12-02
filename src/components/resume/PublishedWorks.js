@@ -79,6 +79,59 @@ export default (props) => {
         </>
       )
     })
+    return dataArr
+      .sort((dataA, dataB) => {
+        return dataA.releaseDate < dataB.releaseDate
+      })
+      .map((data) => {
+        return (
+          <>
+            <Grid item xs={6}>
+              <Card>
+                <CardContent>
+                  <Grid container>
+                    <Grid item xs={12}>
+                      <Typography className={classes.subtitle}>
+                        <Link href={data.website}>{data.name}</Link>
+                      </Typography>
+                    </Grid>
+
+                    <Grid container>
+                      <Grid item xs={6}>
+                        <Typography className={classes.text} align="left">
+                          {data.publisher}
+                        </Typography>
+                      </Grid>
+
+                      <Grid item xs={6}>
+                        <Typography className={classes.text} align="right">
+                          {data.releaseDate}
+                        </Typography>
+                      </Grid>
+                    </Grid>
+
+                    {data.event ? (
+                      <Grid item xs={6}>
+                        <Typography className={classes.text}>
+                          {data.event}
+                        </Typography>
+                      </Grid>
+                    ) : (
+                      <div />
+                    )}
+                    <Grid item xs={12}>
+                      <Typography className={classes.text}>
+                        <br />
+                        {data.summary}
+                      </Typography>
+                    </Grid>
+                  </Grid>
+                </CardContent>
+              </Card>
+            </Grid>
+          </>
+        )
+      })
   }
 
   const { dataArr, name } = props
@@ -86,8 +139,7 @@ export default (props) => {
   if (!dataArr || dataArr.length === 0) return <div />
 
   return (
-    <Card>
-      <CardHeader title="Published Works" className={classes.title} />
+    <Card title="Publications">
       <CardContent>
         <Grid
           container

@@ -14,10 +14,10 @@ const Content = (props) => {
   const { resume } = props
 
   return (
-    <Container>
+    <Container disableGutters="true">
       <Summary summary={resume.basics.summary} />
       <Experience dataArr={resume.work} name="Work" type="work" />
-      <SkillList dataArr={resume.skills} name="Skills" />
+      {/* <SkillList dataArr={resume.skills} name="Skills" /> */}
       <PublishedWorks dataArr={resume.publications} name="Publications" />
 
       {/* <Education dataArr={resume.education} name="Education" />

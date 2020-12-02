@@ -1,10 +1,4 @@
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  Grid,
-  Typography,
-} from '@material-ui/core'
+import { Card, CardContent, Divider, Grid, Typography } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import React from 'react'
 
@@ -112,6 +106,9 @@ export default (props) => {
           >
             {showHighlights(data.highlights)}
           </Grid>
+          <br />
+          <Divider variant="middle" />
+          <br />
         </>
       )
     })
@@ -122,8 +119,7 @@ export default (props) => {
   if (!dataArr || dataArr.length === 0) return <div />
 
   return (
-    <Card>
-      <CardHeader title="Experience" className={classes.title} />
+    <Card title="Experience">
       <CardContent>{renderData()}</CardContent>
     </Card>
   )

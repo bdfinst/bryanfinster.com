@@ -1,45 +1,41 @@
-import { Card, CardContent, Grid, Link, Typography } from '@material-ui/core'
+import { Chip, Grid, Typography } from '@material-ui/core'
 import {
   EmailOutlined,
   GitHub,
-  HomeOutlined,
   LanguageOutlined,
   LinkedIn,
   ShareOutlined,
   Twitter,
 } from '@material-ui/icons'
-import { blue } from '@material-ui/core/colors'
 import { makeStyles } from '@material-ui/core/styles'
 import React from 'react'
 
-const useStyles = makeStyles({
-  root: {
-    width: 200,
-  },
-  title: {
-    fontSize: 25,
-    textAlign: 'center',
-  },
-  subTitle: {
-    fontSize: 18,
-    textAlign: 'center',
-  },
-  info: {
-    fontSize: 14,
-  },
-  icon: {
-    color: blue[500],
-  },
+import Card from '../common/Card'
+import CardContent from '../common/CardContent'
+
+const useStyles = makeStyles((theme) => {
+  return {
+    title: {
+      fontSize: 25,
+      textAlign: 'center',
+    },
+    subTitle: {
+      fontSize: 18,
+      textAlign: 'center',
+    },
+    info: {
+      fontSize: 14,
+    },
+  }
 })
 
-const BasicsHeader = (props) => {
+export default (props) => {
   const { basics } = props
   const classes = useStyles()
 
   const address = `${basics.location.city}, ${basics.location.region}`
 
   const contacts = [
-    { icon: HomeOutlined, text: address },
     {
       icon: EmailOutlined,
       text: basics.email,
@@ -74,50 +70,49 @@ const BasicsHeader = (props) => {
     return list
   }
   const showContacts = () => {
-    return contacts.concat(buildSocialList(basics.profiles)).map((data) => {
-      return (
-        <>
-          <Grid item xs={2}>
-            <data.icon className={classes.icon} />
-          </Grid>
-          <Grid item xs={10}>
-            <Typography
-              className={classes.info}
-              color="textSecondary"
-              gutterBottom
-            >
-              {data.link ? (
-                <Link href={data.link}>{data.text}</Link>
-              ) : (
-                <>{data.text}</>
-              )}
-            </Typography>
-          </Grid>
-        </>
-      )
-    })
+    return contacts
+      .concat(buildSocialList(basics.profiles))
+      .map((data, index) => {
+        return (
+          <>
+            <Grid item>
+              <Chip
+                label={data.text}
+                variant="outlined"
+                color="primary"
+                size="small"
+                icon={<data.icon />}
+                clickable
+                component="a"
+                href={data.link}
+              />
+            </Grid>
+          </>
+        )
+      })
   }
 
   return (
-    <Card className={classes.root}>
+    <Card title={basics.name}>
       <CardContent>
-        <Typography className={classes.title} gutterBottom>
-          {basics.name}
-        </Typography>
         <Typography
           className={classes.subTitle}
           color="textSecondary"
           gutterBottom
         >
-          {basics.label}
+          {basics.label} - {address}
         </Typography>
 
-        <Grid container direction="row" justify="center" alignItems="center">
+        <Grid
+          container
+          direction="row"
+          justify="center"
+          alignItems="center"
+          spacing={1}
+        >
           {showContacts()}
         </Grid>
       </CardContent>
     </Card>
   )
 }
-
-export default BasicsHeader
