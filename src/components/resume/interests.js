@@ -5,7 +5,7 @@ import SectionLabel from './sectionLabel'
 
 const Interests = (props) => {
   const renderData = () => {
-    const { dataArr, type } = props
+    const { dataArr } = props
 
     return dataArr.map((data) => {
       return (

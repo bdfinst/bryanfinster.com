@@ -196,10 +196,21 @@ education:
   courses:
   - ''
 awards:
-- title: ''
+- title: 'DevOps 100'
+  date: '2020-10'
+  website: https://techbeacon.com/devops/devops-100-do-your-ops-boss-follow-these-top-pros
+  awarder: 'TechBeacon'
+  summary: 'Top 100 people to follow in DevOps'
+- title: 'US Patent 9015069'
+  date: '2015-04-21'
+  website: http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=9015069.PN.&OS=PN/9015069&RS=PN/9015069
+  awarder: 'USPTO'
+  summary: 'System and method for order processing using customer location information'
+- title: 'US Patent Application 20170091800'
   date: ''
-  awarder: ''
-  summary: ''
+  website: http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&p=1&u=/netahtml/PTO/srchnum.html&r=1&f=G&l=50&d=PG01&s1=20170091800.PGNR
+  awarder: 'USPTO'
+  summary: 'Electronic coupon system'
 publications:
 - name: 5 Minute DevOps
   publisher: Medium.com
@@ -241,7 +252,6 @@ publications:
   releaseDate: 2017-11
   website: https://www.youtube.com/watch?v=MHK16QNVXXU&t=5s
   summary: Using continuous delivery to grow the talent you have
-
 skills:
 - name: DevOps
   level: Proficient
@@ -281,8 +291,8 @@ references:
 - name: Upon request
   reference: Awesome guy
 projects:
-- name: Walmart
-  description: Global Logistics System
+- name: ''
+  description: ''
   highlights:
   - ''
   keywords: []

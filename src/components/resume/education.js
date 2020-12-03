@@ -13,7 +13,7 @@ import SectionLabel from './sectionLabel'
 
 const Education = (props) => {
   const renderData = () => {
-    const { dataArr, type } = props
+    const { dataArr } = props
 
     return dataArr.map((data) => {
       let endDate = ' - Current'

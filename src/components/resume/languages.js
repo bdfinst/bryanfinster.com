@@ -5,7 +5,7 @@ import SectionLabel from './sectionLabel'
 
 const Languages = (props) => {
   const renderData = () => {
-    const { dataArr, type } = props
+    const { dataArr } = props
 
     return dataArr.map((data) => {
       return (

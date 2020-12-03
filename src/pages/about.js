@@ -9,12 +9,6 @@ import ContactInfo from '../components/resume/ContactInfo'
 import Layout from '../components/Layout'
 
 const theme = createMuiTheme({
-  props: {
-    // Name of the component ⚛️
-    MuiTypography: {
-      color: '#ffffff',
-    },
-  },
   palette: {
     primary: {
       light: lightBlue[500],

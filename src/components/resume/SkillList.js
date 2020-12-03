@@ -60,16 +60,15 @@ export default (props) => {
   const classes = useStyles()
 
   const renderData = () => {
-    const { dataArr, type } = props
+    const { dataArr } = props
 
     return dataArr.map((data) => {
       return (
         <>
           <Grid item xs={3}>
-          <Typography className={classes.skill}>{data.name}</Typography>
+            <Typography className={classes.skill}>{data.name}</Typography>
 
             <div className={classes.root}>
-
               {data.keywords && data.keywords.length > 0 ? (
                 data.keywords.map((keyword) => {
                   const color =
@@ -93,7 +92,7 @@ export default (props) => {
     })
   }
 
-  const { dataArr, name } = props
+  const { dataArr } = props
 
   if (!dataArr || dataArr.length === 0) return <div />
 

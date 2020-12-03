@@ -5,41 +5,43 @@ import React from 'react'
 import Card from '../common/Card'
 import CardContent from '../common/CardContent'
 
-const useStyles = makeStyles(theme=>{
-  return {title: {
-    fontSize: 25,
-    textAlign: 'center',
-    color: theme.palette.primary.main,
-  },
-  subtitle: {
-    fontSize: 16,
-    textAlign: 'center',
-    color: theme.palette.primary.main,
-  },
-  text: {
-    fontSize: 14,
-    textAlign: 'justified',
-    color: theme.palette.secondary.main,
-  },
-  entity: {
-    fontSize: 20,
-    textAlign: 'left',
-  },
-  date: {
-    fontSize: 15,
-    textAlign: 'right',
-  },
-  position: {
-    fontSize: 12,
-    textAlign: 'left',
-  },
-}})
+const useStyles = makeStyles((theme) => {
+  return {
+    title: {
+      fontSize: 25,
+      textAlign: 'center',
+      color: theme.palette.primary.main,
+    },
+    subtitle: {
+      fontSize: 16,
+      textAlign: 'center',
+      color: theme.palette.primary.main,
+    },
+    text: {
+      fontSize: 14,
+      textAlign: 'justified',
+      color: theme.palette.secondary.main,
+    },
+    entity: {
+      fontSize: 20,
+      textAlign: 'left',
+    },
+    date: {
+      fontSize: 15,
+      textAlign: 'right',
+    },
+    position: {
+      fontSize: 12,
+      textAlign: 'left',
+    },
+  }
+})
 
 export default (props) => {
   const classes = useStyles()
 
   const renderData = () => {
-    const { dataArr, type } = props
+    const { dataArr } = props
 
     return dataArr
       .sort((dataA, dataB) => {
@@ -96,7 +98,7 @@ export default (props) => {
       })
   }
 
-  const { dataArr, name } = props
+  const { dataArr } = props
 
   if (!dataArr || dataArr.length === 0) return <div />
 
