@@ -51,7 +51,6 @@ export default (props) => {
     const sorted = dataArr
 
       .filter((item) => {
-        console.log(item.releaseDate.length)
         return item.releaseDate.length > 4
       })
       .sort((dataA, dataB) => {

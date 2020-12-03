@@ -33,7 +33,7 @@ const theme = createMuiTheme({
 const Resume = ({ data }) => {
   const resume = data.resumeYaml
   const { basics } = resume
-  console.log(resume)
+
   return (
     <Layout>
       <ThemeProvider theme={theme}>
