@@ -6,9 +6,9 @@ basics:
   email: me@bryanfinster.com
   phone: '479.426.7559'
   website: bryanfinster.com
-  summary: An experienced software engineer, application architect, team leader, technical
-    coach, product owner, DevOps practitioner, speaker, and evangelist with over two decades
-    of designing and implementing solutions for large enterprises.
+  summary: An experienced full-stack software engineer, architect, team leader, technical
+    coach, product owner, and DevOps practitioner, speaker, and evangelist with over two decades
+    of developing solutions for large enterprises.
   location:
     address: 13705 Stoneridge Rd
     postalCode: '72756'
@@ -256,14 +256,18 @@ skills:
 - name: DevOps
   level: Proficient
   keywords:
-  - 'Continuous Delivery'
-  - 'Continuous Integration'
   - 'Metrics'
-  - 'Application Architecture'
-  - 'Test Architecture'
-  - 'Lean Process'
+  - 'Value Stream Improvement'
   - 'Team Structure'
   - 'Culture'
+  - 'Community Building'
+- name: Continuous Delivery
+  level: Proficient
+  keywords:
+  - 'Continuous Integration'
+  - 'Application Architecture'
+  - 'Test Architecture'
+  - 'Pipeline Architecture'
 - name: Web Development
   level: Proficient
   keywords:
@@ -274,11 +278,6 @@ skills:
   keywords:
   - C
   - Informix
-- name: Database
-  level: Proficient
-  keywords:
-  - SQL
-  - NoSQL
 languages:
 - language: English
   fluency: Native
