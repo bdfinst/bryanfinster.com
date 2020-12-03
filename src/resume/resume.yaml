@@ -6,9 +6,11 @@ basics:
   email: me@bryanfinster.com
   phone: '479.426.7559'
   website: bryanfinster.com
-  summary: An experienced full-stack software engineer, architect, team leader, technical
-    coach, product owner, and DevOps practitioner, speaker, and evangelist with over two decades
-    of developing solutions for large enterprises.
+  summary: An experienced DevOps practitioner, speaker, and evangelist, product owner, technical
+    coach, architect, team leader, and full-stack software engineer. With over two decades of
+    experience developing solutions for large enterprises, I have a proven record for building
+    product teams and delivering solutions that allow enterprises to improve organizational
+    outcomes at scale.
   location:
     address: 13705 Stoneridge Rd
     postalCode: '72756'
@@ -32,23 +34,26 @@ work:
 - company: Walmart Technology
   location: ''
   description: 'Developer Productivity - DevOps Dojo'
-  position: Product Owner, Architect
+  position: Architect, Product Owner
   website: walmart.com
   startDate: '2018-01'
   endDate: ''
   summary: 'Founded the Walmart DevOps Dojo. Responsible for defining
     the techniques for helping product teams worldwide learn the principles
     and practices of continuous delivery and working with executive leadership to
-    coordinate efforts. Developed training and presentations to help
-    teams with every aspect of delivery, from idea to production. Worked with Platform
-    leadership to design changes to the platform to reinforce good practices, improve
-    security and compliance, and improve the developer experience.'
+    coordinate efforts. Develop training and presentations to help
+    teams with every aspect of delivery, from idea to production. Work with Platform
+    leadership to inform changes to the platform to reinforce good practices, improve
+    security and compliance, and enhance the developer experience.'
   highlights:
-  - Lead the cross-organizational effort to standardize enterprise delivery metrics which
-    resulted in a common approach to effectively measure efficiency, effectiveness, and
-    sustainability of software delivery for the enterprise.
-  - Helped standardize testing pattern definitions and good practices. This enabled the
-    scaling of testing knowledge and techniques globally.
+  - Used immersive learning techniques to pair with development teams for 6-week continuous
+    delivery boot camps to educate teams on the principles and practices required for daily
+    production delivery. This resulted in each team doubling their throughput, improving
+    quality, reducing process overhead and waste, and improving team morale.
+  - Designed the current enterprise scaling strategy to allow more rapid improvement
+    by growing senior engineers who have demonstrated the ability to help product teams
+    measurably improve delivery outcomes snd certifying them to lead transformation in their
+    area.
   - Built and supported enterprise communities of interest to improve cross-organizational
     sharing of techniques for all aspects of development. This resulted in a horizontal scaling
     of knowledge and effectively grew the capabilities of the Dojo team.
@@ -60,9 +65,11 @@ work:
     "ways of working" survey results to guide teams to improvement playbooks. This became an
     important tool to help teams find solutions to problem they didn't know they had without
     the expense of direct observation by the dojo team.
-  - Designed the current enterprise scaling strategy to allow more rapid improvement
-    by certifying senior engineers who have demonstrated the ability to help team measurably
-    improve delivery outcomes.
+  - Lead the cross-organizational effort to standardize enterprise delivery metrics which
+    resulted in a common approach to effectively measure efficiency, effectiveness, and
+    sustainability of software delivery for the enterprise.
+  - Core contributor for standardized testing pattern definitions and good practices. This
+    enabled the scaling of testing knowledge and techniques globally.
 - company: Walmart Technology
   startDate: '2017-09'
   endDate: '2018-01'
@@ -150,17 +157,19 @@ work:
   description: Customer Customizations
   position: Senior Programmer
   website:
-  summary: 'Worked on customer accounts to customize EXE’s warehouse management system to meet their distribution needs.'
+  summary: 'Worked as a technical lead and full stack engineer on customer modifications to
+   customize EXE’s warehouse management system to meet their supply chain needs.'
 volunteer:
 - organization: 'Enterprise Dojo Consortium'
   position: 'Member'
   website: ''
   startDate: '2018'
   endDate: ''
-  summary: 'A community of leaders from 50+ Fortune 500 companies and government agencies who collaborate on improving
-  organizational outcomes.'
+  summary: 'A community of leaders from 50+ Fortune 500 companies and government agencies who
+    collaborate on improving organizational outcomes.'
   highlights:
-  - ''
+  - 'Invited to present on multiple DevOps topics for JB Hunt, Fiat Chrysler, Tennessee Valley
+    Authority, DevOps Enterprise India, USAF BESPIN, and USAF Platform 1'
 - organization: 'Northwest Arkansas Tech Summit'
   position: 'DevOps Track Lead'
   website: 'https://www.nwatechsummit.com/'
@@ -214,12 +223,12 @@ awards:
 publications:
 - name: 5 Minute DevOps
   publisher: Medium.com
-  releaseDate: Ongoing
+  releaseDate: ''
   website: https://bdfinst.medium.com
   summary: Short articles on improving teamwork, testing, workflow, leadership, metrics, and all other things DevOps
 - name: Why Can't We CD?
-  publisher: AllDayDevOps
-  event: DevOps Enterprise Summit
+  publisher: Sonotype
+  event: AllDayDevOps
   releaseDate: 2020-10
   website: https://content.sonatype.com/2020addo-cicd/addo2020-cicd-bfinster
   summary: The common problems preventing teams from delivering daily.
@@ -233,7 +242,7 @@ publications:
   publisher: Canton Coders
   releaseDate: 2020-08
   website: https://www.youtube.com/watch?v=mwNgMDbr4gw
-  summary: Using CDD and contract testing to decouple teams
+  summary: Using Contract Driven Development and API contract testing to decouple teams and improve uptime
 - name: The Synergy of Mobbing and Continuous Delivery
   publisher: Mob Mentality Show
   event: Podcast
@@ -245,13 +254,31 @@ publications:
   event: DevOps Enterprise Summit
   releaseDate: 2018-10
   website: https://www.youtube.com/watch?v=7achOwp70q8
-  summary: The multi-faceted approach to enterprise transformation.
+  summary: Using the integration of tools, practices, communities, and incentives for the effective scaling of enterprise transformation.
 - name: Continuous Delivery - Solving the Talent Problem
   publisher: IT Revolution
   event: DevOps Enterprise Summit
   releaseDate: 2017-11
   website: https://www.youtube.com/watch?v=MHK16QNVXXU&t=5s
   summary: Using continuous delivery to grow the talent you have
+- name: Scaling Continuous Delivery at Walmart
+  publisher: Fiat-Chrysler
+  event: Fiat-Chrysler Adapt 2019
+  releaseDate: 2019-12
+  website:
+  summary: Using continuous delivery to grow the talent you have
+- name: The Walmart DevOps Journey
+  publisher: IT Revolution
+  event: DevOps Enterprise Summit
+  releaseDate: 2020-10
+  website:
+  summary: Using continuous delivery to grow the talent you have
+- name: Engineering Quality with Continuous Delivery
+  publisher: JB Hunt
+  event: JB Hunt Lunch & Learn
+  releaseDate: 2019-07
+  website:
+  summary: How CD, small batches, and testing improve and depend on each other to be effective at delivering quality.
 skills:
 - name: DevOps
   level: Proficient
@@ -268,6 +295,7 @@ skills:
   - 'Application Architecture'
   - 'Test Architecture'
   - 'Pipeline Architecture'
+  - 'Trunk-based Development'
 - name: Web Development
   level: Proficient
   keywords:

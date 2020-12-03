@@ -75,6 +75,7 @@ export const query = graphql`
         startDate
         endDate
         summary
+        highlights
       }
       skills {
         name

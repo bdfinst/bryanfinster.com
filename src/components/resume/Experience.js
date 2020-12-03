@@ -1,6 +1,8 @@
 import { Divider, Grid, Typography } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import React from 'react'
+
+import { formatDate } from '../../utils/formatDate'
 import Card from '../common/Card'
 import CardContent from '../common/CardContent'
 
@@ -77,7 +79,7 @@ export default (props) => {
       }
 
       if (data.endDate) {
-        endDate = ` - ${data.endDate}`
+        endDate = ` - ${formatDate(data.endDate, '-')}`
       }
 
       return (
@@ -90,14 +92,9 @@ export default (props) => {
             </Grid>
             <Grid item xs={3}>
               <Typography className={classes.date}>
-                {data.startDate} {endDate}
+                {formatDate(data.startDate, '-')} {endDate}
               </Typography>
             </Grid>
-            {/* <Grid item xs>
-              <Typography className={classes.position}>
-                {data.position}
-              </Typography>
-            </Grid> */}
             <Grid item xs={12}>
               <Typography className={classes.text}>{data.summary}</Typography>
             </Grid>
