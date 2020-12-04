@@ -46,30 +46,47 @@ work:
     leadership to inform changes to the platform to reinforce good practices, improve
     security and compliance, and enhance the developer experience.'
   highlights:
-  - Used immersive learning techniques to pair with development teams for 6-week continuous
-    delivery boot camps to educate teams on the principles and practices required for daily
-    production delivery. This resulted in each team doubling their throughput, improving
-    quality, reducing process overhead and waste, and improving team morale.
-  - Designed the current enterprise scaling strategy to allow more rapid improvement
-    by growing senior engineers who have demonstrated the ability to help product teams
-    measurably improve delivery outcomes snd certifying them to lead transformation in their
-    area.
+  - I was challenged to find effective ways to improve software delivery processes for nearly
+    2000 development teams worldwide with a small team of passionate Sr. developers. I developed
+    a strategy that combined platform delivery metrics, direct team engagement using immersive
+    learning techniques, and standardized self-guided playbooks based on the lessons learned
+    from the engagements. This combination allowed us to indirectly help many more teams by
+    showing them how to measure improvement and provide easy to consume information on how to
+    improve multiple aspects of delivery. Teams we worked with directly typically doubled their
+    throughput, improved quality, and reduced team stress and toil.
+  - To help more teams in self-improvement, we needed a way to both encourage teams to
+    measurably improve and to give them the information for their next improvement step that
+    they may not even know they needed. We built an application that combined platform delivery
+    metrics with a short "ways of working" survey. Using that data, we were able to add
+    gamification to encourage the desire to improve and direct them to the information for how
+    to improve on items they would not have known how to search for. This "Coaching as a
+    Service" tool became an invaluable reverse search engine and was very well received by the
+    teams.
+  - To further scale our efforts without incurring the overhead of a large increase in Dojo team
+    size, we needed a process to teach our techniques to other engineering leads in every line
+    of business. We also needed to make sure that the quality for the improvement projects was
+    maintained to our standrds. I developed a strategy of self-certifying practitioners. Level 1
+    for thouse who pass a certification test that they have knowledge of the core concepts
+    required for improving the flow of delivery, from idea to production. Level 2 for those who
+    demonstrate through an improvement project that they have the leadership and technical
+    ability to help a team improve delivery outcomes. Level 3 for those who demonstrate the
+    ability to grow more leaders. This resulted in horizontal scaling of flow improvement as a
+    capability and made those helping teams change excited that they finally understood how to
+    use a scientific approach to improvement instead of trying to copy others.
   - Built and supported enterprise communities of interest to improve cross-organizational
     sharing of techniques for all aspects of development. This resulted in a horizontal scaling
     of knowledge and effectively grew the capabilities of the Dojo team.
-  - Developed self-help playbooks for the common issues teams face when migrating to a
-    continuous delivery development flow. These playbooks were a force multiplier that allowed
-    the Dojo team to focus on helping with more complicated problems while providing actionable
-    improvement journeys for teams starting the journey.
-  - Designed a "Coaching as a Service" tool that combined pipeline delivery metrics and
-    "ways of working" survey results to guide teams to improvement playbooks. This became an
-    important tool to help teams find solutions to problem they didn't know they had without
-    the expense of direct observation by the dojo team.
-  - Lead the cross-organizational effort to standardize enterprise delivery metrics which
-    resulted in a common approach to effectively measure efficiency, effectiveness, and
-    sustainability of software delivery for the enterprise.
-  - Core contributor for standardized testing pattern definitions and good practices. This
-    enabled the scaling of testing knowledge and techniques globally.
+  - Metrics were being used in wildly different ways in each org, sometimes destructively.
+    Metrics are key to the success of any improvement effort and the lack of unity was an
+    impediment to the Dojo`s goals. To mitigate this I formed a cross-organizational effort by
+    bringing leaders from each area together to standardize the definitiations and usage of
+    enterprise delivery metrics which resulted in a common approach to effectively measure
+    efficiency, effectiveness, and sustainability of software delivery for the enterprise.
+  - Testing and test architecture is core to the success to any improvement of delivery.
+    Unfortunately, there are no industry common terms to define each pattern. I helped form
+    a coalition of Sr. developers so we could define standard terms for testing patterns and
+    good practices for how to use them. This enabled the scaling of testing knowledge and
+    techniques globally.
 - company: Walmart Technology
   startDate: '2017-09'
   endDate: '2018-01'
