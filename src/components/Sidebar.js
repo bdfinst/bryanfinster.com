@@ -134,6 +134,11 @@ export default ({ title, authorName }) => {
           </p>
           <p>
             <StyledLink to="/about">
+              <FaUserSecret /> <span>Profile</span>
+            </StyledLink>
+          </p>
+          <p>
+            <StyledLink to="/resume">
               <FaUserSecret /> <span>Resume</span>
             </StyledLink>
           </p>

@@ -2,7 +2,7 @@ import { Grid, Link, Typography } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import React from 'react'
 
-import { formatDate, parseDate } from '../../utils/formatDate'
+import { formatDate } from '../../utils/formatDate'
 import Card from '../common/Card'
 import CardContent from '../common/CardContent'
 
