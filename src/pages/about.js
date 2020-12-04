@@ -29,9 +29,10 @@ export default () => {
             chain solutions for many large enterprises. He is a passionate
             practitioner and evangelist for the principles, technical practices,
             metrics observability, and culture of community sharing and learning
-            required to improve organizational outcomes. He currently leads the
-            Walmart DevOps Dojo which focuses on helping teams transition to a
-            continuous flow of value delivery.
+            required to improve organizational outcomes. He currently leads a
+            DevOps Dojo for a large enterprise which focuses on helping teams
+            transition to a continuous flow of value delivery using immersive
+            learning techniques.
           </CardContent>
         </Card>
       </div>
