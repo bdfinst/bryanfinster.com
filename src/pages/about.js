@@ -1,153 +1,41 @@
-import { Grid } from '@material-ui/core'
-import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles'
-import { blueGrey, lightBlue } from '@material-ui/core/colors'
-import { graphql } from 'gatsby'
+import { CardMedia } from '@material-ui/core'
+import { makeStyles } from '@material-ui/core/styles'
+import Image from 'material-ui-image'
 import React from 'react'
 
-import Body from '../components/resume/Body'
-import ContactInfo from '../components/resume/ContactInfo'
+import Card from '../components/common/Card'
+import CardContent from '../components/common/CardContent'
 import Layout from '../components/Layout'
+import profileImage from '../images/profileImage'
 
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      light: lightBlue[500],
-      main: lightBlue[900],
-      dark: lightBlue,
-      contrastText: '#ffffff',
-    },
-    secondary: {
-      light: blueGrey[500],
-      main: blueGrey[900],
-      dark: blueGrey,
-      contrastText: '#ffffff',
-    },
-  },
-  overrides: {
-    MuiPaper: {
-      elevation: 0,
-    },
+const useStyles = makeStyles({
+  root: {
+    maxWidth: 345,
   },
 })
 
-const Resume = ({ data }) => {
-  const resume = data.resumeYaml
-  const { basics } = resume
+export default () => {
+  const classes = useStyles()
 
   return (
     <Layout>
-      <ThemeProvider theme={theme}>
-        <div style={{ padding: 10, maxWidth: 1000 }}>
-          <Grid container spacing={1}>
-            <Grid item xs={12}>
-              <ContactInfo basics={basics} />
-            </Grid>
-            <Grid item xs={12}>
-              <Body resume={resume} />
-            </Grid>
-          </Grid>
-        </div>
-      </ThemeProvider>
+      <div style={{ padding: 20, maxWidth: 8600 }}>
+        <Card title="About Me">
+          <div align="center">
+            <img src={profileImage} width="35%" alt="Bryan Finster" />
+          </div>
+          <CardContent>
+            Bryan has been a software developer since 1996 developing supply
+            chain solutions for many large enterprises. He is a passionate
+            practitioner and evangelist for the principles, technical practices,
+            metrics observability, and culture of community sharing and learning
+            required to improve organizational outcomes. He currently leads a
+            DevOps Dojo for a large enterprise which focuses on helping teams
+            transition to a continuous flow of value delivery using immersive
+            learning techniques.
+          </CardContent>
+        </Card>
+      </div>
     </Layout>
   )
 }
-
-export default Resume
-
-export const query = graphql`
-  query MyQuery {
-    resumeYaml {
-      work {
-        company
-        location
-        position
-        website
-        startDate
-        endDate
-        summary
-        description
-        highlights
-      }
-      volunteer {
-        organization
-        position
-        website
-        startDate
-        endDate
-        summary
-        highlights
-      }
-      skills {
-        name
-        level
-        keywords
-      }
-      references {
-        name
-        reference
-      }
-      publications {
-        name
-        publisher
-        releaseDate
-        website
-        summary
-        event
-      }
-      projects {
-        name
-        description
-        startDate
-        endDate
-        website
-        entity
-        type
-      }
-      languages {
-        language
-        fluency
-      }
-      internal {
-        content
-        description
-        ignoreType
-        mediaType
-      }
-      interests {
-        name
-      }
-      education {
-        institution
-        area
-        studyType
-        startDate
-        endDate
-        gpa
-      }
-      basics {
-        name
-        label
-        picture
-        email
-        phone
-        website
-        summary
-        location {
-          city
-          region
-        }
-        profiles {
-          network
-          url
-          username
-        }
-      }
-      awards {
-        title
-        date
-        awarder
-        summary
-      }
-    }
-  }
-`
