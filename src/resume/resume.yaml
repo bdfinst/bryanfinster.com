@@ -88,36 +88,40 @@ work:
     good practices for how to use them. This enabled the scaling of testing knowledge and
     techniques globally.
 - company: Walmart Technology
-  startDate: '2017-09'
+  startDate: '2017-08'
   endDate: '2018-01'
   description: Delivery Enablement Insights
   position: Product Owner
   website: walmart.com
-  summary: 'Product owner for Global Platform’s delivery metrics solution using CapitalOne’s Hygieia DevOps dashboard.
-  with custom visualizations and automation to meet Walmart’s goal of guiding teams to CD good practices. '
+  summary: 'Product owner for Global Platform’s delivery metrics dashboard designed to meet Walmart’s goal of guiding
+  teams to good continuous delivery practices. '
   highlights:
-  - Scoring teams based on good practices for continuous delivery resulted in immediate
-    requests for information on how to execute better. This resulted in enough demand from
-    early adopter teams that I was asked to build an enterprise Dojo to meet the need.
-  - Worked with platform customers to build team, product, and leadership dashboards to
-    aggregate pipeline data. This allowed improved observability to development flow for all
-    levels of the organization and increased requests for tips to improve.
-  - Expanded the user base of Hygieia from less than 20% of teams to more than 80% of teams
-    in less than 6 months with automated dashboard onboarding.
+  - As part of the effort to establish a global platform to enable continuous delivery, we
+    needed a method to indicate to teams that they were not using the platform with CD
+    practices. Using an existing open source DevOps metrics dashboard, we added gamification to
+    show where practices did not match the goals of CD. We also added automation to generate
+    dashboards for any team who used the platform. This led to early adopters asking my team for
+    assistance to improve the scores by moving closer to daily production delivery. The volume
+    of customer requests led to management request for me to start a dedicated DevOps Dojo.
 - company: Walmart Technology
   startDate: '2014'
   endDate: '2017'
   description: Logistics Systems Platform Team
   position: Systems Architect
   website: walmart.com
-  summary: 'Member of the core team responsible for exploring the tools, techniques, and
-    behaviors required to execute continuous delivery workflows. '
+  summary: 'Responsible for exploring the techniques, and behaviors required to execute
+    continuous delivery workflows using the developing Logistics CD platform. '
   highlights:
-  - Defined product domains and product team structure for the NextGen WMS. This resulted
-    in loosly coupled, cross-functional teams that could deliver independently and on-demand.
-  - Led the first team focusing on continuous delivery to find good techniques for upskilling
-    teams. This resulted in growing a normal team from 1 delivery per quarter to a sustainable
-    flow of multiple deliveries per day with a peak of 12 per day from team of 13 engineers.
+  - There was a challenge from Logistics management to accelerate delivery cadence from once per
+    quarter to once every two weeks. While the Platform was being built, I was responsible for
+    discovering the practices and coding techniques teams needed to use the delivery platform
+    effectively. I also led the effort to define the new team / product domain structure to
+    enable a loosly coupled architecture. Using on e of the new teams as a pilot, we discovered
+    the effectiveness of reducing batch size, using continuous integration practices,  and
+    focusing on team outcomes instead of individual deliverables to accelerate delivery. This
+    allowed the team to increase delivery cadence from quarterly to several times per day
+    and exceeding the request from management by several orders of magnitude over a 9 month
+    period.
 - company: Walmart Technology
   startDate: '2013'
   endDate: '2014'
@@ -128,13 +132,18 @@ work:
     Walmart’s global warehouse management system with the mandate to develop better processes
     that would make the team unnecessary.'
   highlights:
-  - Automated the branching and build configuration process for more than 800 SVN repositories.
-    This reduced the lead time for branch creation from 48 hours to 90 minutes, made it a
-    self-service activity instead of controlled by the Source team, and saved over 96 hours
-    of manual effort for each feature branch for 400 development teams.
-  - Changed the branching model for the area to reduce the number of long-lived branches from
-    more than 400 to 2. This greatly simplified code integration and enabled the source
-    management team to be obsoleted.
+  - I was placed on the source management team to find ways to reduce the expense and time
+    delays caused by having
+    a single team responsbible for merging from multiple project teams. The team was
+    also responsible for creating source branches as required for each of the development teams.
+    This effort required two developer for a minimum of 2 days and resulted in a 48 hour lead
+    time for the development team to start work. I created scripts to automate the braching and
+    build configuration for the 800+ applications that the system used. This effort resulted in
+    a reduction of lead time from 48 hours to 90 minutes and became a self-service process. In
+    addition, I changed the operating model to require team to resolve their own merge
+    conflicts. I also introduced concepts from continuous integration and trunk-based
+    development. These operating changes reduced the number of permanant branches from over 400
+    to 3 and removed the need for a source management team.
 - company: Walmart Technology
   startDate: '2011'
   endDate: '2013'
@@ -148,9 +157,17 @@ work:
   description: Global WMS Project
   position: Systems Analyst
   website: walmart.com
-  summary: 'One of the team leads on the a project to merge four different warehouse management
-    systems into a single set of global capabilities. This resulted in a common system that
-    could be used in nearly every GM and grocery DC worldwide.'
+  summary: 'One of the 3 team leads on the a project to merge four different warehouse management
+    systems into a single set of global capabilities with responsibility for recommending the
+    contracting vendor and leading the sumsequent development. '
+  highlights:
+  - 'There were multiple unrelated systems running in distribution centers worldwide. To improve
+    the ability to implement changes while reducing duplication, it was decided to take four of
+    the most used systems and merge their capabilities. I was responsible for working with
+    business stakeholders to define requirements for the common modules, reviewing designs,
+    defining coding standards, mapping data models between four systems to a common model, and
+    code review. The result was a system that was able to grow to meet the needs of an
+    omni-channel supply chain and remove the duplication of efforts in each market. '
 - company: Walmart Technology
   startDate: '2001'
   endDate: '2006'
@@ -302,27 +319,52 @@ skills:
   keywords:
   - 'Metrics'
   - 'Value Stream Improvement'
-  - 'Team Structure'
+  - 'Team Structure / Conway’s Law'
   - 'Culture'
-  - 'Community Building'
+  - 'Building Communities'
 - name: Continuous Delivery
   level: Proficient
   keywords:
-  - 'Continuous Integration'
-  - 'Application Architecture'
-  - 'Test Architecture'
-  - 'Pipeline Architecture'
-  - 'Trunk-based Development'
+  - Continuous Integration
+  - Pipeline Architecture
+  - Trunk-based Development
+  - Jenkins
+  - Concord
+  - Hygieia
+  - Azure
+
+- name: Architecture
+  level: Proficient
+  keywords:
+  - Distributed
+  - Monolithic
+  - Domain Driven design
+  - Test patterns
+  - Quality gate design
 - name: Web Development
   level: Proficient
   keywords:
   - NodeJS
   - ReactJS
-- name: ESQL/C
+- name: Server Development
   level: Proficient
   keywords:
   - C
-  - Informix
+  - Informix 4GL
+  - ESQL/C
+  - Java
+  - Docker
+- name: Database
+  level: Proficient
+  keywords:
+  - SQL
+  - MongoDB
+- name: OS
+  level: Proficient
+  keywords:
+  - '*NIX'
+  - Bash
+  - Ksh
 languages:
 - language: English
   fluency: Native

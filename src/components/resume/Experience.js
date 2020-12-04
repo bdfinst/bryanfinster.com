@@ -46,7 +46,7 @@ export default (props) => {
   const classes = useStyles()
 
   const showHighlights = (highlights) => {
-    return highlights && highlights.length > 0 ? (
+    return highlights && highlights.length > 1 ? (
       <>
         <Grid item xs={12}>
           <Typography className={classes.subTitle}>Highlights</Typography>
