@@ -1,9 +1,9 @@
-import { Grid, Link, Typography } from '@material-ui/core'
+import { Grid, Link, Typography, Card } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import React from 'react'
 
-import { formatDate, parseDate } from '../../utils/formatDate'
-import Card from '../common/Card'
+import { formatDate } from '../../utils/formatDate'
+import CardX from '../common/Card'
 import CardContent from '../common/CardContent'
 
 const useStyles = makeStyles((theme) => {
@@ -63,7 +63,7 @@ export default (props) => {
       return (
         <>
           <Grid item xs={6}>
-            <Card>
+            <Card elevation={1}>
               <CardContent>
                 <Grid container>
                   <Grid item xs={12}>
@@ -115,7 +115,7 @@ export default (props) => {
   if (!dataArr || dataArr.length === 0) return <div />
 
   return (
-    <Card title="Publications & Presentations">
+    <CardX title="Publications & Presentations">
       <CardContent>
         <Grid
           container
@@ -127,6 +127,6 @@ export default (props) => {
           {renderData()}
         </Grid>
       </CardContent>
-    </Card>
+    </CardX>
   )
 }
