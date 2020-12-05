@@ -13,11 +13,11 @@ const useStyles = makeStyles((theme) => {
   }
 })
 
-export default ({ title, children }) => {
+export default ({ title, elevation, children }) => {
   const classes = useStyles()
 
   return (
-    <Card className={classes.root} elevation={0} space={2}>
+    <Card className={classes.root} elevation={elevation || 0} space={2}>
       {title ? (
         <CardHeader title={title} className={classes.header} />
       ) : (

@@ -14,7 +14,7 @@ const Content = (props) => {
   const { resume } = props
 
   return (
-    <Container disableGutters="true">
+    <Container disableGutters={true}>
       <Summary summary={resume.basics.summary} />
       <Experience dataArr={resume.work} name="Experience" type="work" />
       <PublishedWorks dataArr={resume.publications} name="Publications" />

@@ -30,7 +30,7 @@ export default (props) => {
 
     return dataArr.map((data) => {
       return (
-        <Grid item xs={3}>
+        <Grid key={data.id} item xs={3}>
           <Typography className={classes.subTitle}>
             <Link href={data.website}>{data.title}</Link>
           </Typography>

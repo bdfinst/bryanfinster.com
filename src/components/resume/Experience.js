@@ -53,14 +53,14 @@ export default (props) => {
         </Grid>
         {highlights.map((highlight) => {
           return (
-            <>
+            <div key={highlight.id}>
               <Grid item xs={1}>
                 -
               </Grid>
               <Grid item xs={11}>
                 <Typography className={classes.text}>{highlight}</Typography>
               </Grid>
-            </>
+            </div>
           )
         })}
       </>

@@ -88,7 +88,7 @@ export default (props) => {
       .concat(buildSocialList(basics.profiles))
       .map((data, index) => {
         return (
-          <>
+          <div key={data.id}>
             <Grid item>
               <Chip
                 label={data.text}
@@ -101,7 +101,7 @@ export default (props) => {
                 href={data.link}
               />
             </Grid>
-          </>
+          </div>
         )
       })
   }
