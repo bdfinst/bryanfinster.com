@@ -1,3 +1,4 @@
+import { CgWebsite } from 'react-icons/cg'
 import { Chip, Grid, Typography } from '@material-ui/core'
 import {
   EmailOutlined,
@@ -7,6 +8,16 @@ import {
   ShareOutlined,
   Twitter,
 } from '@material-ui/icons'
+import {
+  FaGithub,
+  FaHashtag,
+  FaHome,
+  FaLinkedin,
+  FaMedium,
+  FaTwitter,
+  FaUserEdit,
+  FaUserTie,
+} from 'react-icons/fa'
 import { makeStyles } from '@material-ui/core/styles'
 import React from 'react'
 
@@ -41,7 +52,7 @@ export default (props) => {
       text: basics.email,
       link: `mailto: ${basics.email}`,
     },
-    { icon: LanguageOutlined, text: basics.website, link: basics.website },
+    { icon: CgWebsite, text: basics.website, link: basics.website },
   ]
 
   const buildSocialList = (profiles) => {
@@ -52,13 +63,16 @@ export default (props) => {
         let icon
         switch (profile.network.toLowerCase()) {
           case 'linkedin':
-            icon = LinkedIn
+            icon = FaLinkedin
             break
           case 'github':
-            icon = GitHub
+            icon = FaGithub
             break
           case 'twitter':
-            icon = Twitter
+            icon = FaTwitter
+            break
+          case 'medium':
+            icon = FaMedium
             break
           default:
             icon = ShareOutlined

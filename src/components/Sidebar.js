@@ -5,9 +5,11 @@ import {
   FaLinkedin,
   FaMedium,
   FaTwitter,
-  FaUserSecret,
+  FaUserEdit,
+  FaUserTie,
 } from 'react-icons/fa'
 import { Link } from 'gatsby'
+import PersonOutlineOutlined from '@material-ui/icons/PersonOutlineOutlined'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -134,12 +136,12 @@ export default ({ title, authorName }) => {
           </p>
           <p>
             <StyledLink to="/about">
-              <FaUserSecret /> <span>Profile</span>
+              <FaUserEdit /> <span>Profile</span>
             </StyledLink>
           </p>
           <p>
             <StyledLink to="/resume">
-              <FaUserSecret /> <span>Resume</span>
+              <FaUserTie /> <span>Résumé</span>
             </StyledLink>
           </p>
           <p>

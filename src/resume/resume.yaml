@@ -25,7 +25,7 @@ basics:
     username: '@BryanFinster'
     url: https://twitter.com/BryanFinster
   - network: Medium
-    username: 'bdfinst.medium.com'
+    username: 'bdfinst'
     url: https://bdfinst.medium.com/
   - network: GitHub
     username: bdfinst
