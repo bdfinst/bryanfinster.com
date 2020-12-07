@@ -4,6 +4,7 @@ import {
   FaHome,
   FaLinkedin,
   FaMedium,
+  FaTools,
   FaTwitter,
   FaUserEdit,
   FaUserTie,
@@ -151,7 +152,7 @@ export default ({ title, authorName }) => {
           </p>
           <p>
             <StyledLink to="/meeting">
-              <FaHashtag /> <span>Meeting Calculator</span>
+              <FaTools /> <span>Meeting Cost</span>
             </StyledLink>
           </p>
         </div>
