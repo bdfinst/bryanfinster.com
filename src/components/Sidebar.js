@@ -146,7 +146,12 @@ export default ({ title, authorName }) => {
           </p>
           <p>
             <StyledLink to="/tags">
-              <FaHashtag /> <span>Tags</span>
+              <FaHashtag /> <span>Blog Tags</span>
+            </StyledLink>
+          </p>
+          <p>
+            <StyledLink to="/meeting">
+              <FaHashtag /> <span>Meeting Calculator</span>
             </StyledLink>
           </p>
         </div>
