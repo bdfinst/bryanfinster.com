@@ -341,14 +341,14 @@ skills:
   - Domain Driven design
   - Test patterns
   - Quality gate design
-- name: Web Development
+- name: UI Development
   level: Proficient
   keywords:
-  - NodeJS
   - ReactJS
 - name: Server Development
   level: Proficient
   keywords:
+  - NodeJS
   - C
   - Informix 4GL
   - ESQL/C
@@ -359,10 +359,9 @@ skills:
   keywords:
   - SQL
   - MongoDB
-- name: OS
+- name: '*NIX'
   level: Proficient
   keywords:
-  - '*NIX'
   - Bash
   - Ksh
 languages:
