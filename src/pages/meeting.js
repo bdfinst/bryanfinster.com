@@ -25,7 +25,10 @@ const useStyles = makeStyles((theme) => {
       textAlign: 'center',
       color: theme.palette.primary.main,
     },
-
+    formControl: {
+      margin: theme.spacing(1),
+      minWidth: 80,
+    },
     title: {
       fontSize: 25,
       textAlign: 'center',
@@ -59,7 +62,7 @@ const Meeting = ({ data }) => {
     blendedHourlyRate: 50,
     productName: 'Bananas',
     margin: 0.03,
-    retailCost: 0.58,
+    unitRetail: 0.58,
     uom: 'lb',
   })
 
@@ -204,17 +207,17 @@ const Meeting = ({ data }) => {
           <Grid item xs={2}>
             <TextField
               className={classes.numberField}
-              label="Retail Cost"
+              label="Unit Retail"
               type="number"
-              defaultValue={values.retailCost}
-              id="retailCost"
+              defaultValue={values.unitRetail}
+              id="unitRetail"
               InputProps={{
                 startAdornment: (
                   <InputAdornment position="start">$</InputAdornment>
                 ),
               }}
               variant="outlined"
-              onChange={handleChange('retailCost')}
+              onChange={handleChange('unitRetail')}
             />
           </Grid>
           <Grid item xs={2}>
@@ -229,17 +232,18 @@ const Meeting = ({ data }) => {
             />
           </Grid>
           <Grid item xs={1}>
-            <FormControl className={classes.formControl}>
-              <InputLabel shrink id="uom">
-                Units
-              </InputLabel>
-              <Select
-                labelId="uom"
+          <FormControl variant="outlined" className={classes.formControl}>
+        <InputLabel  >
+        Units
+        </InputLabel>
+        <Select
+        labelId="uom"
                 id="uom"
-                value={values.uom}
-                onChange={handleChange('uom')}
-                variant="outlined"
-              >
+          value={values.uom}
+          onChange={handleChange('uom')}
+        >
+
+
                 {unitsOfMeasure.map((uom) => {
                   return (
                     <MenuItem key={uom} value={uom}>
@@ -302,7 +306,7 @@ const Meeting = ({ data }) => {
                 We need to sell{' '}
                 {commodityQuantity(
                   cost(values.attendance, values.blendedHourlyRate, seconds),
-                  values.retailCost,
+                  values.unitRetail,
                   values.margin,
                 )}{' '}
                 {values.uom} of {values.productName} to pay for this meeting.
