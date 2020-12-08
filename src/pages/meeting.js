@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import {
   Button,
-  Container,
+  Card,
+  CardContent,
+  CardHeader,
   FormControl,
   Grid,
   InputAdornment,
@@ -9,6 +11,7 @@ import {
   MenuItem,
   Select,
   TextField,
+  Typography,
 } from '@material-ui/core'
 import { blueGrey, lightBlue } from '@material-ui/core/colors'
 import { makeStyles } from '@material-ui/core/styles'
@@ -17,6 +20,12 @@ import Layout from '../components/Layout'
 
 const useStyles = makeStyles((theme) => {
   return {
+    header: {
+      fontSize: 30,
+      textAlign: 'center',
+      color: theme.palette.primary.main,
+    },
+
     title: {
       fontSize: 25,
       textAlign: 'center',
@@ -31,7 +40,7 @@ const useStyles = makeStyles((theme) => {
     numberField: {
       marginLeft: theme.spacing(1),
       marginRight: theme.spacing(1),
-      width: '10ch',
+      width: '15ch',
     },
     textField: {
       marginLeft: theme.spacing(1),
@@ -73,6 +82,12 @@ const Meeting = ({ data }) => {
     }
   }
 
+  const handleChangeMargin = () => {
+    return (event) => {
+      setValues({ ...values, margin: event.target.value / 100 })
+    }
+  }
+
   const toggle = () => {
     setIsActive(!isActive)
   }
@@ -100,55 +115,87 @@ const Meeting = ({ data }) => {
 
   const uoms = ['lb', 'kg', 'ea', 'l', 'gal'].sort()
 
-  return (
-    <Layout>
-      {/* <div id="resume" style={{ padding: 10, maxWidth: 1000 }}> */}
-      <Container>
-        <Grid container spacing={1}>
-          <Grid key="header" item xs={12}>
-            Meeting Cost Calculator
+  const Header = () => {
+    return (
+      <>
+        <CardHeader
+          className={classes.header}
+          title="Meeting Cost Calculator"
+        />
+      </>
+    )
+  }
+
+  const CostInput = () => {
+    return (
+      <>
+        <CardContent>
+          <Grid
+            container
+            spacing={1}
+            direction="row"
+            justify="center"
+            alignItems="center"
+          >
+            <Grid key="inputs" item xs={2}>
+              <TextField
+                required
+                className={classes.numberField}
+                label="Attendance"
+                type="number"
+                defaultValue={values.attendance}
+                id="attendance"
+                variant="outlined"
+                onChange={handleChange('attendance')}
+              />{' '}
+            </Grid>
+
+            <Grid key="inputs" item xs={2}>
+              <TextField
+                required
+                className={classes.numberField}
+                label="Blended Rate"
+                type="number"
+                defaultValue={values.blendedHourlyRate}
+                id="rate"
+                InputProps={{
+                  startAdornment: (
+                    <InputAdornment position="start">$</InputAdornment>
+                  ),
+                }}
+                variant="outlined"
+                onChange={handleChange('blendedHourlyRate')}
+              />
+            </Grid>
           </Grid>
-          <Grid key="inputs" item xs={12}>
-            <TextField
-              className={classes.numberField}
-              class={classes.textField}
-              size="small"
-              label="Attendance"
-              type="number"
-              defaultValue={values.attendance}
-              id="attendance"
-              variant="outlined"
-              onChange={handleChange('attendance')}
-            />
-            <TextField
-              className={classes.numberField}
-              size="small"
-              label="Blended Rate"
-              type="number"
-              defaultValue={values.blendedHourlyRate}
-              id="rate"
-              InputProps={{
-                startAdornment: (
-                  <InputAdornment position="start">$</InputAdornment>
-                ),
-              }}
-              variant="outlined"
-              onChange={handleChange('blendedHourlyRate')}
-            />
-          </Grid>
-          <Grid key="commodity" item xs={12}>
+        </CardContent>
+      </>
+    )
+  }
+
+  const Commodity = () => {
+    return (
+      <>
+        <Grid
+          container
+          spacing={1}
+          direction="row"
+          justify="center"
+          alignItems="center"
+        >
+          <Grid item xs={3}>
             <TextField
               className={classes.textField}
-              size="small"
               label="Product Name"
               defaultValue={values.productName}
               id="attendance"
               variant="outlined"
               onChange={handleChange('productName')}
             />
+          </Grid>
+          <Grid item xs={2}>
             <TextField
               className={classes.numberField}
-              size="small"
               label="Retail Cost"
               type="number"
               defaultValue={values.retailCost}
@@ -161,23 +208,21 @@ const Meeting = ({ data }) => {
               variant="outlined"
               onChange={handleChange('retailCost')}
             />
+          </Grid>
+          <Grid item xs={2}>
             <TextField
               className={classes.numberField}
-              size="small"
-              label="Margin"
+              label="% Margin"
               type="number"
-              defaultValue={values.marginPct}
-              id="marginPct"
-              InputProps={{
-                startAdornment: (
-                  <InputAdornment position="start">%</InputAdornment>
-                ),
-              }}
+              defaultValue={values.margin * 100}
+              id="margin"
               variant="outlined"
-              onChange={handleChange('marginPct')}
+              onChange={handleChangeMargin()}
             />
+          </Grid>
+          <Grid item xs={1}>
             <FormControl className={classes.formControl}>
-              <InputLabel id="uom">Unit of Measure</InputLabel>
+              <InputLabel id="uom">Units</InputLabel>
               <Select
                 labelId="uom"
                 id="uom"
@@ -196,29 +241,79 @@ const Meeting = ({ data }) => {
               </Select>
             </FormControl>
           </Grid>
-          <Grid item xs={12}>
+        </Grid>
+      </>
+    )
+  }
+
+  const Buttons = () => {
+    return (
+      <>
+        <Grid
+          container
+          spacing={2}
+          direction="row"
+          justify="center"
+          alignItems="center"
+        >
+          <Grid item xs={1}>
             <Button variant="contained" onClick={toggle}>
               {isActive ? 'Pause' : 'Start'}
             </Button>
+          </Grid>
 
+          <Grid item xs={1}>
             <Button variant="contained" onClick={reset}>
               Reset
             </Button>
           </Grid>
-          <Grid key="inputs" item xs={12}>
-            ${cost(values.attendance, values.blendedHourlyRate, seconds)}
-            <br />
-            We need to sell{' '}
-            {commodityQuantity(
-              cost(values.attendance, values.blendedHourlyRate, seconds),
-              values.retailCost,
-              values.margin,
-            )}{' '}
-            {values.uom} of {values.productName} to pay for this meeting.
-          </Grid>
         </Grid>
-      </Container>
-      {/* </div> */}
+      </>
+    )
+  }
+
+  const TotalCost = () => {
+    return (
+      <>
+        <div id="resume" style={{ padding: 10 }}>
+          <Grid
+            container
+            spacing={1}
+            direction="row"
+            justify="center"
+            alignItems="center"
+          >
+            <Grid key="inputs" item xs={12}>
+              <Typography className={classes.title}>
+                Cost: $
+                {cost(values.attendance, values.blendedHourlyRate, seconds)}
+              </Typography>
+              <br />
+              <Typography className={classes.title}>
+                We need to sell{' '}
+                {commodityQuantity(
+                  cost(values.attendance, values.blendedHourlyRate, seconds),
+                  values.retailCost,
+                  values.margin,
+                )}{' '}
+                {values.uom} of {values.productName} to pay for this meeting.
+              </Typography>
+            </Grid>
+          </Grid>
+        </div>
+      </>
+    )
+  }
+  return (
+    <Layout>
+      <Card elevation={0}>
+        <Header />
+        <CostInput />
+        <Commodity />
+        <Buttons />
+        <br />
+        <TotalCost />
+      </Card>
     </Layout>
   )
 }
