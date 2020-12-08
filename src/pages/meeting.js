@@ -222,14 +222,15 @@ const Meeting = ({ data }) => {
           </Grid>
           <Grid item xs={1}>
             <FormControl className={classes.formControl}>
-              <InputLabel id="uom">Units</InputLabel>
+              <InputLabel shrink id="uom">
+                Units
+              </InputLabel>
               <Select
                 labelId="uom"
                 id="uom"
-                autoWidth={true}
-                variant="outlined"
-                value="{values.uom}"
+                value={values.uom}
                 onChange={handleChange('uom')}
+                variant="outlined"
               >
                 {uoms.map((uom) => {
                   return (
