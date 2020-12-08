@@ -82,9 +82,17 @@ const Meeting = ({ data }) => {
     }
   }
 
+
+
   const handleChangeMargin = () => {
     return (event) => {
+      if (event.target.value > 100 ) {
+        setValues({ ...values, margin: 1 })
+      } else if (event.target.value <0 ) {
+        setValues({ ...values, margin: 0 })
+      } else {
       setValues({ ...values, margin: event.target.value / 100 })
+      }
     }
   }
 
@@ -101,8 +109,8 @@ const Meeting = ({ data }) => {
     let interval = null
     if (isActive) {
       interval = setInterval(() => {
-        setSeconds((seconds) => {
-          return seconds + 1
+        setSeconds((time) => {
+          return time + 1
         })
       }, 1000)
     } else if (!isActive && seconds !== 0) {
@@ -113,7 +121,7 @@ const Meeting = ({ data }) => {
     }
   }, [isActive, seconds])
 
-  const uoms = ['lb', 'kg', 'ea', 'l', 'gal'].sort()
+  const unitsOfMeasure = ['lb', 'kg', 'ea', 'l', 'gal'].sort()
 
   const Header = () => {
     return (
@@ -232,7 +240,7 @@ const Meeting = ({ data }) => {
                 onChange={handleChange('uom')}
                 variant="outlined"
               >
-                {uoms.map((uom) => {
+                {unitsOfMeasure.map((uom) => {
                   return (
                     <MenuItem key={uom} value={uom}>
                       {uom}
