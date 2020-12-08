@@ -1,23 +1,7 @@
 import { CgWebsite } from 'react-icons/cg'
 import { Chip, Grid, Typography } from '@material-ui/core'
-import {
-  EmailOutlined,
-  GitHub,
-  LanguageOutlined,
-  LinkedIn,
-  ShareOutlined,
-  Twitter,
-} from '@material-ui/icons'
-import {
-  FaGithub,
-  FaHashtag,
-  FaHome,
-  FaLinkedin,
-  FaMedium,
-  FaTwitter,
-  FaUserEdit,
-  FaUserTie,
-} from 'react-icons/fa'
+import { EmailOutlined, ShareOutlined } from '@material-ui/icons'
+import { FaGithub, FaLinkedin, FaMedium, FaTwitter } from 'react-icons/fa'
 import { makeStyles } from '@material-ui/core/styles'
 import React from 'react'
 

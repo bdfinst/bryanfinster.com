@@ -4,6 +4,7 @@ import {
   FaHome,
   FaLinkedin,
   FaMedium,
+  FaTools,
   FaTwitter,
   FaUserEdit,
   FaUserTie,
@@ -146,7 +147,12 @@ export default ({ title, authorName }) => {
           </p>
           <p>
             <StyledLink to="/tags">
-              <FaHashtag /> <span>Tags</span>
+              <FaHashtag /> <span>Blog Tags</span>
+            </StyledLink>
+          </p>
+          <p>
+            <StyledLink to="/meeting">
+              <FaTools /> <span>Meeting Cost</span>
             </StyledLink>
           </p>
         </div>
