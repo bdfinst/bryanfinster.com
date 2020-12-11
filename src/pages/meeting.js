@@ -53,6 +53,9 @@ const useStyles = makeStyles((theme) => {
   }
 })
 
+const removeNegative = (num) => {
+  return num < 0 ? num * -1 : num
+}
 const Meeting = ({ data }) => {
   const classes = useStyles()
   const [seconds, setSeconds] = useState(0)
@@ -85,20 +88,23 @@ const Meeting = ({ data }) => {
     }
   }
 
-
-
   const handleChangeMargin = () => {
     return (event) => {
-      if (event.target.value > 100 ) {
+      if (event.target.value > 100) {
         setValues({ ...values, margin: 1 })
-      } else if (event.target.value <0 ) {
+      } else if (event.target.value < 0) {
         setValues({ ...values, margin: 0 })
       } else {
-      setValues({ ...values, margin: event.target.value / 100 })
+        setValues({ ...values, margin: event.target.value / 100 })
       }
     }
   }
 
+  const handleChangeQuantity = (prop) => {
+    return (event) => {
+      setValues({ ...values, [prop]: removeNegative(event.target.value) })
+    }
+  }
   const toggle = () => {
     setIsActive(!isActive)
   }
@@ -157,8 +163,8 @@ const Meeting = ({ data }) => {
                 defaultValue={values.attendance}
                 id="attendance"
                 variant="outlined"
-                onChange={handleChange('attendance')}
-              />{' '}
+                onChange={handleChangeQuantity('attendance')}
+              />
             </Grid>
 
             <Grid key="inputs" item xs={2}>
@@ -175,7 +181,7 @@ const Meeting = ({ data }) => {
                   ),
                 }}
                 variant="outlined"
-                onChange={handleChange('blendedHourlyRate')}
+                onChange={handleChangeQuantity('blendedHourlyRate')}
               />
             </Grid>
           </Grid>
@@ -217,7 +223,7 @@ const Meeting = ({ data }) => {
                 ),
               }}
               variant="outlined"
-              onChange={handleChange('unitRetail')}
+              onChange={handleChangeQuantity('unitRetail')}
             />
           </Grid>
           <Grid item xs={2}>
@@ -232,18 +238,14 @@ const Meeting = ({ data }) => {
             />
           </Grid>
           <Grid item xs={1}>
-          <FormControl variant="outlined" className={classes.formControl}>
-        <InputLabel  >
-        Units
-        </InputLabel>
-        <Select
-        labelId="uom"
+            <FormControl variant="outlined" className={classes.formControl}>
+              <InputLabel>Units</InputLabel>
+              <Select
+                labelId="uom"
                 id="uom"
-          value={values.uom}
-          onChange={handleChange('uom')}
-        >
-
-
+                value={values.uom}
+                onChange={handleChange('uom')}
+              >
                 {unitsOfMeasure.map((uom) => {
                   return (
                     <MenuItem key={uom} value={uom}>
