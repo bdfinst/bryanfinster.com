@@ -25,14 +25,17 @@ export default () => {
             <img src={profileImage} width="35%" alt="Bryan Finster" />
           </div>
           <CardContent>
-            Bryan has been a software developer since 1996 developing supply
-            chain solutions for many large enterprises. He is a passionate
-            practitioner and evangelist for the principles, technical practices,
-            metrics observability, and culture of community sharing and learning
-            required to improve organizational outcomes. He currently leads a
-            DevOps Dojo for a large enterprise which focuses on helping teams
-            transition to a continuous flow of value delivery using immersive
-            learning techniques.
+            Bryan is an experienced value stream architect, technical lead,
+            product owner, and passionate advocate for organizational
+            improvement required to optimize the flow of delivery. With over two
+            decades of experience developing enterprise supply chain solutions,
+            he applies lean supply chain thinking to the problem of software
+            delivery to minimize costs and maximize delivered quality.
+            <br />
+            He is a practitioner and mentor of continuous delivery practices and
+            DevOps principles who uses data-driven approaches to optimize the
+            flow of value, improve business outcomes, and improve the lives of
+            software engineers.
           </CardContent>
         </Card>
       </div>
