@@ -2,15 +2,15 @@ import { graphql } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
 
-import { PostWrapper } from '../components/PostWrapper'
 import Layout from '../components/Layout'
 import PostTags from '../components/PostTags'
+import PostWrapper from '../components/PostWrapper'
 
 const StyledTag = styled.span`
   font-style: italic;
 `
 
-export default ({ data }) => {
+const BlogPosts = ({ data }) => {
   const post = data.markdownRemark
 
   return (
@@ -40,3 +40,4 @@ export const query = graphql`
     }
   }
 `
+export default BlogPosts

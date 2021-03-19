@@ -52,18 +52,16 @@ const Education = (props) => {
                 <List>
                   <List.Item>
                     <Header sub>Courses</Header>
-                    {data.courses.map((course) => {
-                      return (
-                        <List.List key={course}>
-                          <List.Item>
-                            <Icon name="right triangle" />
-                            <List.Content>
-                              <List.Description>{course}</List.Description>
-                            </List.Content>
-                          </List.Item>
-                        </List.List>
-                      )
-                    })}
+                    {data.courses.map((course) => (
+                      <List.List key={course}>
+                        <List.Item>
+                          <Icon name="right triangle" />
+                          <List.Content>
+                            <List.Description>{course}</List.Description>
+                          </List.Content>
+                        </List.Item>
+                      </List.List>
+                    ))}
                   </List.Item>
                 </List>
               ) : (
@@ -78,7 +76,7 @@ const Education = (props) => {
 
   const { dataArr, name } = props
 
-  if (!dataArr || dataArr.length === 0) return <Container></Container>
+  if (!dataArr || dataArr.length === 0) return <Container />
 
   return (
     <Grid>

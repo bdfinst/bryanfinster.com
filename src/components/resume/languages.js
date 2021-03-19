@@ -7,27 +7,25 @@ const Languages = (props) => {
   const renderData = () => {
     const { dataArr } = props
 
-    return dataArr.map((data) => {
-      return (
-        <Item key={data.language}>
-          <Item.Content>
-            <Item.Header>
-              <Header as="h3" floated="left">
-                <Header.Content>
-                  {data.language}
-                  <Header.Subheader>{data.fluency}</Header.Subheader>
-                </Header.Content>
-              </Header>
-            </Item.Header>
-          </Item.Content>
-        </Item>
-      )
-    })
+    return dataArr.map((data) => (
+      <Item key={data.language}>
+        <Item.Content>
+          <Item.Header>
+            <Header as="h3" floated="left">
+              <Header.Content>
+                {data.language}
+                <Header.Subheader>{data.fluency}</Header.Subheader>
+              </Header.Content>
+            </Header>
+          </Item.Header>
+        </Item.Content>
+      </Item>
+    ))
   }
 
   const { dataArr, name } = props
 
-  if (!dataArr) return <Container></Container>
+  if (!dataArr) return <Container />
 
   return (
     <Grid>

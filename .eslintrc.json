@@ -1,36 +1,23 @@
 {
-  "extends": ["react-app", "prettier", "prettier/react"],
-
-  "settings": {
-    "import/core-modules": []
-  },
-  "env": {
-    "browser": true,
-    "es6": true
-  },
-  "plugins": ["prefer-arrow", "react", "jsx-a11y", "import", "prettier"],
+  "extends": [ "airbnb", "plugin:jsx-a11y/recommended", "prettier"],
+  "plugins": ["jsx-a11y", "prettier"],
+  "overrides": [
+    {
+      "files": ["**/*.js"]
+    }
+  ],
+  "ignorePatterns": [
+    "**/*.test.js",
+    "**/*.spec.js",
+    "/cypress/**/*.js",
+    "/build/**/*.js"
+  ],
   "rules": {
-    "no-var": "error",
-    "prefer-const": "error",
-    "prefer-arrow-callback": "error",
-    "prefer-template": "error",
-    "prefer-arrow/prefer-arrow-functions": [
-      "warn",
-      {
-        "disallowPrototype": true,
-        "singleReturnOnly": false,
-        "classPropertiesAllowed": false
-      }
-    ],
-    "react/prefer-stateless-function": "off",
-    "arrow-body-style": ["error", "always"],
-    "react/no-danger": "off",
-    "jsx-a11y/anchor-is-valid": [
+    "semi": 0,
+    "prettier/prettier": [
       "error",
       {
-        "components": ["Link"],
-        "specialLink": ["hrefLeft", "hrefRight", "to"],
-        "aspects": ["noHref", "invalidHref", "preferButton"]
+        "semi": false
       }
     ],
     "react/jsx-filename-extension": [
@@ -43,6 +30,7 @@
     "no-underscore-dangle": 0,
     "import/imports-first": ["error", "absolute-first"],
     "import/newline-after-import": "error",
+    "import/no-cycle": [2, { "maxDepth": 1 }],
     "import/no-extraneous-dependencies": [
       "error",
       {
