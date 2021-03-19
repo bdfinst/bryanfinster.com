@@ -29,26 +29,24 @@ const Query = graphql`
   }
 `
 
-export default ({ children }) => {
-  return (
-    <StaticQuery
-      query={Query}
-      render={(data) => {
-        const { title, siteDescription, authorName } = data.site.siteMetadata
-        return (
-          <>
-            <Helmet>
-              <meta charSet="utf-8" />
-              <meta name="description" content={siteDescription} />
-              <title>{title}</title>
-            </Helmet>
-            <Container>
-              <Sidebar title={title} authorName={authorName} />
-              <Content>{children}</Content>
-            </Container>
-          </>
-        )
-      }}
-    />
-  )
-}
+export default ({ children }) => (
+  <StaticQuery
+    query={Query}
+    render={(data) => {
+      const { title, siteDescription, authorName } = data.site.siteMetadata
+      return (
+        <>
+          <Helmet>
+            <meta charSet="utf-8" />
+            <meta name="description" content={siteDescription} />
+            <title>{title}</title>
+          </Helmet>
+          <Container>
+            <Sidebar title={title} authorName={authorName} />
+            <Content>{children}</Content>
+          </Container>
+        </>
+      )
+    }}
+  />
+)
