@@ -6,21 +6,19 @@ import { formatDate } from '../../utils/formatDate'
 import Card from '../common/Card'
 import CardContent from '../common/CardContent'
 
-const useStyles = makeStyles((theme) => {
-  return {
-    title: {
-      fontSize: 25,
-      textAlign: 'center',
-    },
-    subTitle: {
-      fontSize: 18,
-      textAlign: 'center',
-    },
-    text: {
-      fontSize: 14,
-    },
-  }
-})
+const useStyles = makeStyles(() => ({
+  title: {
+    fontSize: 25,
+    textAlign: 'center',
+  },
+  subTitle: {
+    fontSize: 18,
+    textAlign: 'center',
+  },
+  text: {
+    fontSize: 14,
+  },
+}))
 
 export default (props) => {
   const classes = useStyles()
@@ -28,29 +26,27 @@ export default (props) => {
   const renderData = () => {
     const { dataArr } = props
 
-    return dataArr.map((data) => {
-      return (
-        <Grid key={data.id} item xs={3}>
-          <Typography className={classes.subTitle}>
-            <Link href={data.website}>{data.title}</Link>
-          </Typography>
-          <Grid container>
-            <Grid item xs={6}>
-              <Typography className={classes.text} align="left">
-                {data.awarder}
-              </Typography>
-            </Grid>
-            <Grid item xs={6}>
-              <Typography className={classes.text} align="right">
-                {formatDate(data.date, '-')}
-              </Typography>
-            </Grid>
+    return dataArr.map((data) => (
+      <Grid key={data.id} item xs={3}>
+        <Typography className={classes.subTitle}>
+          <Link href={data.website}>{data.title}</Link>
+        </Typography>
+        <Grid container>
+          <Grid item xs={6}>
+            <Typography className={classes.text} align="left">
+              {data.awarder}
+            </Typography>
           </Grid>
-
-          <Typography className={classes.text}>{data.summary}</Typography>
+          <Grid item xs={6}>
+            <Typography className={classes.text} align="right">
+              {formatDate(data.date, '-')}
+            </Typography>
+          </Grid>
         </Grid>
-      )
-    })
+
+        <Typography className={classes.text}>{data.summary}</Typography>
+      </Grid>
+    ))
   }
 
   const { dataArr } = props

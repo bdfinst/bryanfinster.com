@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const PostWrapper = styled.div`
+const PostWrapper = styled.div`
   margin: auto;
   padding: 30px;
   // max-width: 720px;
@@ -226,3 +226,4 @@ export const PostWrapper = styled.div`
     opacity: 0.5;
   }
 `
+export default PostWrapper

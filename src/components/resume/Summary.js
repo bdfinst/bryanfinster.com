@@ -5,15 +5,13 @@ import React from 'react'
 import Card from '../common/Card'
 import CardContent from '../common/CardContent'
 
-const useStyles = makeStyles((theme) => {
-  return {
-    text: {
-      fontSize: 14,
-      textAlign: 'justified',
-      color: theme.palette.primary.dark,
-    },
-  }
-})
+const useStyles = makeStyles((theme) => ({
+  text: {
+    fontSize: 14,
+    textAlign: 'justified',
+    color: theme.palette.primary.dark,
+  },
+}))
 
 export default (props) => {
   const { summary } = props

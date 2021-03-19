@@ -6,70 +6,65 @@ import { formatDate } from '../../utils/formatDate'
 import Card from '../common/Card'
 import CardContent from '../common/CardContent'
 
-const useStyles = makeStyles((theme) => {
-  return {
-    // root: {
-    //   minWidth: 275,
-    // },
-    title: {
-      fontSize: 25,
-      textAlign: 'center',
-      color: 'blue',
-    },
-    subTitle: {
-      fontSize: 18,
-      textAlign: 'center',
-      color: theme.palette.primary.main,
-    },
-    text: {
-      fontSize: 14,
-      textAlign: 'justified',
-      color: theme.palette.secondary.main,
-    },
-    entity: {
-      fontSize: 18,
-      textAlign: 'left',
-      color: theme.palette.primary.main,
-    },
-    date: {
-      fontSize: 15,
-      textAlign: 'right',
-    },
-    position: {
-      fontSize: 12,
-      textAlign: 'left',
-    },
-  }
-})
+const useStyles = makeStyles((theme) => ({
+  // root: {
+  //   minWidth: 275,
+  // },
+  title: {
+    fontSize: 25,
+    textAlign: 'center',
+    color: 'blue',
+  },
+  subTitle: {
+    fontSize: 18,
+    textAlign: 'center',
+    color: theme.palette.primary.main,
+  },
+  text: {
+    fontSize: 14,
+    textAlign: 'justified',
+    color: theme.palette.secondary.main,
+  },
+  entity: {
+    fontSize: 18,
+    textAlign: 'left',
+    color: theme.palette.primary.main,
+  },
+  date: {
+    fontSize: 15,
+    textAlign: 'right',
+  },
+  position: {
+    fontSize: 12,
+    textAlign: 'left',
+  },
+}))
 
 export default (props) => {
   const classes = useStyles()
 
-  const showHighlights = (highlights) => {
-    return highlights && highlights.length > 1 ? (
+  const showHighlights = (highlights) =>
+    highlights && highlights.length > 1 ? (
       <>
         <Grid item xs={12}>
           <Typography className={classes.subTitle}>Highlights</Typography>
         </Grid>
-        {highlights.map((highlight) => {
-          return (
-            <div key={highlight.id}>
-              <Grid item xs={1}>
-                -
-              </Grid>
-              <Grid item xs={11}>
-                <Typography className={classes.text}>{highlight}</Typography>
-              </Grid>
-            </div>
-          )
-        })}
+        {highlights.map((highlight) => (
+          <div key={highlight.id}>
+            <Grid item xs={1}>
+              -
+            </Grid>
+            <Grid item xs={11}>
+              <Typography className={classes.text}>{highlight}</Typography>
+            </Grid>
+          </div>
+        ))}
       </>
     ) : (
       <></>
     )
-  }
-  const renderData = (dataArr, type) => {
-    return dataArr.map((data) => {
+  const renderData = (dataArr, type) =>
+    dataArr.map((data) => {
       let endDate = ' - Current'
       let entityName = ''
       if (type === 'work') {
@@ -114,7 +109,6 @@ export default (props) => {
         </>
       )
     })
-  }
 
   const { dataArr, name, type } = props
 

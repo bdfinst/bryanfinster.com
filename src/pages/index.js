@@ -4,13 +4,13 @@ import React from 'react'
 import Layout from '../components/Layout'
 import PostList from '../components/PostList'
 
-export default ({ data }) => {
-  return (
-    <Layout>
-      <PostList data={data.allMarkdownRemark.edges} />
-    </Layout>
-  )
-}
+const Index = ({ data }) => (
+  <Layout>
+    <PostList data={data.allMarkdownRemark.edges} />
+  </Layout>
+)
+
+export default Index
 
 export const query = graphql`
   query {
