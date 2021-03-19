@@ -3,7 +3,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import PostList from '../components/PostList'
 
-export default ({ data, pageContext }) => {
+const SingleTagIndex = ({ pageContext }) => {
   const { posts, tagName } = pageContext
 
   return (
@@ -13,3 +13,5 @@ export default ({ data, pageContext }) => {
     </Layout>
   )
 }
+
+export default SingleTagIndex

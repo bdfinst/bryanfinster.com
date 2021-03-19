@@ -8,21 +8,19 @@ import React from 'react'
 import Card from '../common/Card'
 import CardContent from '../common/CardContent'
 
-const useStyles = makeStyles((theme) => {
-  return {
-    title: {
-      fontSize: 25,
-      textAlign: 'center',
-    },
-    subTitle: {
-      fontSize: 18,
-      textAlign: 'center',
-    },
-    info: {
-      fontSize: 14,
-    },
-  }
-})
+const useStyles = makeStyles(() => ({
+  title: {
+    fontSize: 25,
+    textAlign: 'center',
+  },
+  subTitle: {
+    fontSize: 18,
+    textAlign: 'center',
+  },
+  info: {
+    fontSize: 14,
+  },
+}))
 
 export default (props) => {
   const { basics } = props
@@ -62,33 +60,28 @@ export default (props) => {
             icon = ShareOutlined
             break
         }
-        return { icon: icon, text: profile.username, link: profile.url }
+        return { icon, text: profile.username, link: profile.url }
       })
     }
     return list
   }
-  const showContacts = () => {
-    return contacts
-      .concat(buildSocialList(basics.profiles))
-      .map((data, index) => {
-        return (
-          <div key={data.id}>
-            <Grid item>
-              <Chip
-                label={data.text}
-                variant="outlined"
-                color="primary"
-                size="small"
-                icon={<data.icon />}
-                clickable
-                component="a"
-                href={data.link}
-              />
-            </Grid>
-          </div>
-        )
-      })
-  }
+  const showContacts = () =>
+    contacts.concat(buildSocialList(basics.profiles)).map((data) => (
+      <div key={data.id}>
+        <Grid item>
+          <Chip
+            label={data.text}
+            variant="outlined"
+            color="primary"
+            size="small"
+            icon={<data.icon />}
+            clickable
+            component="a"
+            href={data.link}
+          />
+        </Grid>
+      </div>
+    ))
 
   return (
     <Card title={basics.name}>

@@ -5,56 +5,38 @@ import React from 'react'
 import Card from '../common/Card'
 import CardContent from '../common/CardContent'
 
-const useStyles = makeStyles((theme) => {
-  return {
-    root: {
-      display: 'flex',
-      justifyContent: 'center',
-      flexWrap: 'wrap',
-      '& > *': {
-        margin: theme.spacing(0.2),
-      },
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    justifyContent: 'center',
+    flexWrap: 'wrap',
+    '& > *': {
+      margin: theme.spacing(0.2),
     },
-    skill: {
-      fontSize: 15,
-      textAlign: 'center',
-      color: theme.palette.primary.dark,
-    },
-    text: {
-      fontSize: 14,
-      textAlign: 'justified',
-      color: theme.palette.secondary.main,
-    },
-    entity: {
-      fontSize: 20,
-      textAlign: 'left',
-    },
-    date: {
-      fontSize: 15,
-      textAlign: 'right',
-    },
-    position: {
-      fontSize: 12,
-      textAlign: 'left',
-    },
-  }
-})
-
-const colors = [
-  'red',
-  'orange',
-  'yellow',
-  'olive',
-  'green',
-  'teal',
-  'blue',
-  'violet',
-  'purple',
-  'pink',
-  'brown',
-  'grey',
-  'black',
-]
+  },
+  skill: {
+    fontSize: 15,
+    textAlign: 'center',
+    color: theme.palette.primary.dark,
+  },
+  text: {
+    fontSize: 14,
+    textAlign: 'justified',
+    color: theme.palette.secondary.main,
+  },
+  entity: {
+    fontSize: 20,
+    textAlign: 'left',
+  },
+  date: {
+    fontSize: 15,
+    textAlign: 'right',
+  },
+  position: {
+    fontSize: 12,
+    textAlign: 'left',
+  },
+}))
 
 export default (props) => {
   const classes = useStyles()
@@ -62,34 +44,28 @@ export default (props) => {
   const renderData = () => {
     const { dataArr } = props
 
-    return dataArr.map((data) => {
-      return (
-        <>
-          <Grid item xs={3}>
-            <Typography className={classes.skill}>{data.name}</Typography>
+    return dataArr.map((data) => (
+      <>
+        <Grid item xs={3}>
+          <Typography className={classes.skill}>{data.name}</Typography>
 
-            <div className={classes.root}>
-              {data.keywords && data.keywords.length > 0 ? (
-                data.keywords.map((keyword) => {
-                  const color =
-                    colors[Math.floor(Math.random() * colors.length)]
-                  return (
-                    <Chip
-                      label={keyword}
-                      variant="outlined"
-                      color="primary"
-                      size="small"
-                    />
-                  )
-                })
-              ) : (
-                <div />
-              )}
-            </div>
-          </Grid>
-        </>
-      )
-    })
+          <div className={classes.root}>
+            {data.keywords && data.keywords.length > 0 ? (
+              data.keywords.map((keyword) => (
+                <Chip
+                  label={keyword}
+                  variant="outlined"
+                  color="primary"
+                  size="small"
+                />
+              ))
+            ) : (
+              <div />
+            )}
+          </div>
+        </Grid>
+      </>
+    ))
   }
 
   const { dataArr } = props

@@ -4,18 +4,13 @@ const parseDate = (dateStr, deliminator) => {
   const sep = deliminator || '-'
   const dateArr = dateStr.split(sep)
 
-  let date
   switch (dateStr.length) {
     case 4:
-      date = new Date().setFullYear(dateStr)
-      break
+      return new Date().setFullYear(dateStr)
     case 7:
-      date = new Date(dateArr[0], dateArr[1])
-      break
+      return new Date(dateArr[0], dateArr[1])
     default:
-      date = Date.now()
-
-      return date
+      return Date.now()
   }
 }
 
@@ -23,7 +18,7 @@ const formatDate = (dateStr, deliminator) => {
   const sep = deliminator || '-'
   const dateArr = dateStr.split(sep)
 
-  let formatted = ''
+  let formatted
 
   switch (dateStr.length) {
     case 4:
