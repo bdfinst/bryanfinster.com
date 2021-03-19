@@ -1,35 +1,31 @@
-import React from 'react'
 import { graphql } from 'gatsby'
+import React from 'react'
 
-export default ({ data }) => {
-  return (
-    <>
-      <h1>My Site's Files</h1>
-      <table>
-        <thead>
-          <tr>
-            <th>relativePath</th>
-            <th>prettySize</th>
-            <th>extension</th>
-            <th>birthTime</th>
+const PostFiles = ({ data }) => (
+  <>
+    <h1>My Site&apos;s Files</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>relativePath</th>
+          <th>prettySize</th>
+          <th>extension</th>
+          <th>birthTime</th>
+        </tr>
+      </thead>
+      <tbody>
+        {data.allFile.edges.map(({ node }) => (
+          <tr key={node.relativePath}>
+            <td>{node.relativePath}</td>
+            <td>{node.prettySize}</td>
+            <td>{node.extension}</td>
+            <td>{node.birthTime}</td>
           </tr>
-        </thead>
-        <tbody>
-          {data.allFile.edges.map(({ node }, index) => {
-            return (
-              <tr key={index}>
-                <td>{node.relativePath}</td>
-                <td>{node.prettySize}</td>
-                <td>{node.extension}</td>
-                <td>{node.birthTime}</td>
-              </tr>
-            )
-          })}
-        </tbody>
-      </table>
-    </>
-  )
-}
+        ))}
+      </tbody>
+    </table>
+  </>
+)
 
 export const query = graphql`
   query {
@@ -45,3 +41,5 @@ export const query = graphql`
     }
   }
 `
+
+export default PostFiles

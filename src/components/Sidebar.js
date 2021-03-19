@@ -1,7 +1,7 @@
 import {
+  FaBlog,
   FaGithub,
   FaHashtag,
-  FaHome,
   FaLinkedin,
   FaMedium,
   FaTools,
@@ -10,7 +10,6 @@ import {
   FaUserTie,
 } from 'react-icons/fa'
 import { Link } from 'gatsby'
-import PersonOutlineOutlined from '@material-ui/icons/PersonOutlineOutlined'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -121,80 +120,83 @@ const SiteTitle = styled.h1`
   }
 `
 
-export default ({ title, authorName }) => {
-  return (
-    <Sidebar>
-      <StyledLink to="/">
-        <SiteTitle>{title}</SiteTitle>
-      </StyledLink>
-      <Logo src={profileImage} alt={authorName} />
-      <MenuWrapper>
-        <div>
-          <p>
-            <StyledLink to="/">
-              <FaHome /> <span>Home</span>
-            </StyledLink>
-          </p>
-          <p>
-            <StyledLink to="/about">
-              <FaUserEdit /> <span>Profile</span>
-            </StyledLink>
-          </p>
-          <p>
-            <StyledLink to="/resume">
-              <FaUserTie /> <span>Résumé</span>
-            </StyledLink>
-          </p>
-          <p>
-            <StyledLink to="/tags">
-              <FaHashtag /> <span>Blog Tags</span>
-            </StyledLink>
-          </p>
-          <p>
-            <StyledLink to="/meeting">
-              <FaTools /> <span>Meeting Cost</span>
-            </StyledLink>
-          </p>
-        </div>
-        <div>
-          <p>
-            <StyledHref
-              href="https://www.linkedin.com/in/bryan-finster/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <FaLinkedin /> <span>Linkedin</span>
-            </StyledHref>
-          </p>
-          <p>
-            <StyledHref
-              href="https://twitter.com/BryanFinster"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <FaTwitter /> <span>Twitter</span>
-            </StyledHref>
-          </p>
-          <p>
-            <StyledHref
-              href="https://bdfinst.medium.com/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <FaMedium /> <span>Medium</span>
-            </StyledHref>
-          </p>
-          <p>
-            <StyledHref
-              href="https://github.com/bdfinst"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub /> <span>Github</span>
-            </StyledHref>
-          </p>
-        </div>
-      </MenuWrapper>
-    </Sidebar>
-  )
-}
+export default ({ title, authorName }) => (
+  <Sidebar>
+    <StyledLink to="/">
+      <SiteTitle>{title}</SiteTitle>
+    </StyledLink>
+    <Logo src={profileImage} alt={authorName} />
+    <MenuWrapper>
+      <div>
+        <p>
+          <StyledLink to="/">
+            <FaBlog /> <span>Blog</span>
+          </StyledLink>
+        </p>
+        <p>
+          <StyledLink to="/talks">
+            <FaBlog /> <span>Talks</span>
+          </StyledLink>
+        </p>
+        <p>
+          <StyledLink to="/about">
+            <FaUserEdit /> <span>Profile</span>
+          </StyledLink>
+        </p>
+        <p>
+          <StyledLink to="/resume">
+            <FaUserTie /> <span>Résumé</span>
+          </StyledLink>
+        </p>
+        <p>
+          <StyledLink to="/tags">
+            <FaHashtag /> <span>Blog Tags</span>
+          </StyledLink>
+        </p>
+        <p>
+          <StyledLink to="/meeting">
+            <FaTools /> <span>Meeting Cost</span>
+          </StyledLink>
+        </p>
+      </div>
+      <div>
+        <p>
+          <StyledHref
+            href="https://www.linkedin.com/in/bryan-finster/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <FaLinkedin /> <span>LinkedIn</span>
+          </StyledHref>
+        </p>
+        <p>
+          <StyledHref
+            href="https://twitter.com/BryanFinster"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <FaTwitter /> <span>Twitter</span>
+          </StyledHref>
+        </p>
+        <p>
+          <StyledHref
+            href="https://bdfinst.medium.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <FaMedium /> <span>Medium</span>
+          </StyledHref>
+        </p>
+        <p>
+          <StyledHref
+            href="https://github.com/bdfinst"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub /> <span>Github</span>
+          </StyledHref>
+        </p>
+      </div>
+    </MenuWrapper>
+  </Sidebar>
+)
