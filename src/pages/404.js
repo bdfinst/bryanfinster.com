@@ -1,5 +1,5 @@
 import React from 'react'
 
-export default () => {
-  return <h1>404 Page NotFound</h1>
-}
+const Error404 = () => <h1>404 Page NotFound</h1>
+
+export default Error404

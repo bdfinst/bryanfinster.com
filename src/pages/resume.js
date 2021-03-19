@@ -7,7 +7,6 @@ import React from 'react'
 import Body from '../components/resume/Body'
 import ContactInfo from '../components/resume/ContactInfo'
 import Layout from '../components/Layout'
-import PrintButton from '../components/common/PrintButton'
 
 const theme = createMuiTheme({
   palette: {
@@ -33,10 +32,6 @@ const Resume = ({ data }) => {
   return (
     <Layout>
       <ThemeProvider theme={theme}>
-        {/* <div>
-          <PrintButton id={'resume'} label={'Print single page'} />
-        </div> */}
-
         <div id="resume" style={{ padding: 10, maxWidth: 1000 }}>
           <Grid container spacing={1}>
             <Grid key="basics" item xs={12}>
