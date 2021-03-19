@@ -7,28 +7,26 @@ const References = (props) => {
   const renderData = () => {
     const { dataArr } = props
 
-    return dataArr.map((data) => {
-      return (
-        <Item key={data.name}>
-          <Item.Content>
-            <Item.Header>
-              <Header as="h3" floated="left">
-                <Icon name="star" color="teal" />
-                <Header.Content>
-                  {data.name}
-                  <Header.Subheader>{data.reference}</Header.Subheader>
-                </Header.Content>
-              </Header>
-            </Item.Header>
-          </Item.Content>
-        </Item>
-      )
-    })
+    return dataArr.map((data) => (
+      <Item key={data.name}>
+        <Item.Content>
+          <Item.Header>
+            <Header as="h3" floated="left">
+              <Icon name="star" color="teal" />
+              <Header.Content>
+                {data.name}
+                <Header.Subheader>{data.reference}</Header.Subheader>
+              </Header.Content>
+            </Header>
+          </Item.Header>
+        </Item.Content>
+      </Item>
+    ))
   }
 
   const { dataArr, name } = props
 
-  if (!dataArr || dataArr.length === 0) return <Container></Container>
+  if (!dataArr || dataArr.length === 0) return <Container />
 
   return (
     <Grid>
