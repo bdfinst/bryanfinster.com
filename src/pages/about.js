@@ -13,17 +13,23 @@ const About = () => (
           <img src={profileImage} width="35%" alt="Bryan Finster" />
         </div>
         <CardContent>
-          Bryan is an experienced value stream architect, technical lead,
-          product owner, and passionate advocate for organizational improvement
-          required to optimize the flow of delivery. With over two decades of
-          experience developing enterprise supply chain solutions, he applies
-          lean supply chain thinking to the problem of software delivery to
-          minimize costs and maximize delivered quality.
+          I am a developer, technical lead, product owner, value stream
+          architect, and passionate advocate for the organizational and culture
+          changes needed to optimize the flow of value to the customer. I use my
+          experience developing enterprise supply chain solutions to apply lean
+          supply chain thinking to software delivery to minimize costs and
+          maximize delivered quality.
           <br />
-          He is a practitioner and mentor of continuous delivery practices and
-          DevOps principles who uses data-driven approaches to optimize the flow
+          I practice and mentor disciplined continuous delivery practices and
+          DevOps principles. I use data-driven approaches to optimize the flow
           of value, improve business outcomes, and improve the lives of software
           engineers.
+          <br />
+          My preferred way to see the world is from my motorcycle. I see every
+          corner as an opportunity for continuous improvement of the skills
+          needed to stay safe in an unpredictable world. Because I use my risk
+          budget for fun, I prefer to optimize my development workflow to
+          minimize risk and drama. Don't be Batman. Optimize for sleep.
         </CardContent>
       </Card>
     </div>
