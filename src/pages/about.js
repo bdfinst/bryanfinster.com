@@ -29,7 +29,7 @@ const About = () => (
           corner as an opportunity for continuous improvement of the skills
           needed to stay safe in an unpredictable world. Because I use my risk
           budget for fun, I prefer to optimize my development workflow to
-          minimize risk and drama. Don't be Batman. Optimize for sleep.
+          minimize risk and drama. Don&apos;t be Batman. Optimize for sleep.
         </CardContent>
       </Card>
     </div>
