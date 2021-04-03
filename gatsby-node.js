@@ -42,13 +42,13 @@ const createTagPages = (createPage, posts) => {
   })
 
   tags.forEach((tagName) => {
-    const taggedPosts = postsByTag[tagName]
+    const posts = postsByTag[tagName]
 
     createPage({
       path: `/tags/${tagName}`,
       component: singleTagIndexTemplate,
       context: {
-        taggedPosts,
+        posts,
         tagName,
       },
     })
@@ -57,7 +57,7 @@ const createTagPages = (createPage, posts) => {
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
-  return new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
     graphql(`
       {
         allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
