@@ -1,0 +1,2 @@
+(self.webpackChunkbryanfinster_com=self.webpackChunkbryanfinster_com||[]).push([[980],{5172:function(e,t,n){"use strict";n.r(t);var a=n(7294),r=n(4225),s=n(6225);t.default=function(e){var t=e.pageContext,n=t.posts,u=t.tagName;return a.createElement(r.Z,null,a.createElement("h1",null,"PostList about ",u),a.createElement(s.Z,{data:n}))}}}]);
+//# sourceMappingURL=component---src-templates-single-tag-index-js-93ef9134239a698ab800.js.map

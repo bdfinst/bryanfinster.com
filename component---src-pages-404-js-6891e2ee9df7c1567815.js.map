@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://bryanfinster.com/./src/pages/404.js"],"names":[],"mappings":"8IAIA,UAFiB,kBAAM","file":"component---src-pages-404-js-6891e2ee9df7c1567815.js","sourcesContent":["import React from 'react'\n\nconst Error404 = () => <h1>404 Page NotFound</h1>\n\nexport default Error404\n"],"sourceRoot":""}

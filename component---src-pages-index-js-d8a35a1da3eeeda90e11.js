@@ -1,0 +1,2 @@
+(self.webpackChunkbryanfinster_com=self.webpackChunkbryanfinster_com||[]).push([[678],{7704:function(e,a,n){"use strict";n.r(a);var r=n(7294),t=n(4225),c=n(6225);a.default=function(e){var a=e.data;return r.createElement(t.Z,null,r.createElement(c.Z,{data:a.allMarkdownRemark.edges}))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-d8a35a1da3eeeda90e11.js.map
